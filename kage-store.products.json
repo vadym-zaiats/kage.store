@@ -1,0 +1,110 @@
+[
+  {
+    "enabled": true,
+    "name": "Hduygnd",
+    "currentPrice": 500,
+    "categories": "t-shirt",
+    "imageUrls": ["/imgs/products/t-shirt/1.png"],
+    "quantity": 7,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:47.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Qwiurfgch",
+    "currentPrice": 500,
+    "categories": "t-shirt",
+    "imageUrls": ["/imgs/products/t-shirt/2.png"],
+    "quantity": 7,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:48.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Wgfvhdt",
+    "currentPrice": 500,
+    "categories": "t-shirt",
+    "imageUrls": ["/imgs/products/t-shirt/3.png"],
+    "quantity": 7,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Oirjanf",
+    "currentPrice": 31,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/1.png"],
+    "quantity": 7,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:48:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Klsdhjf",
+    "currentPrice": 234,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/2.png"],
+    "quantity": 7,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:49:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kqncvdh",
+    "currentPrice": 200,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/3.png"],
+    "quantity": 7,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:50:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kqncvdh",
+    "currentPrice": 873,
+    "categories": "hoodie",
+    "imageUrls": ["/imgs/products/hoodie/1.png"],
+    "quantity": 7,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:51:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kqncvdh",
+    "currentPrice": 765,
+    "categories": "hoodie",
+    "imageUrls": ["/imgs/products/hoodie/2.png"],
+    "quantity": 7,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:52:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kqncvdh",
+    "currentPrice": 678,
+    "categories": "hoodie",
+    "imageUrls": ["/imgs/products/hoodie/3.png"],
+    "quantity": 7,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:53:49.042Z"
+    }
+  }
+]
