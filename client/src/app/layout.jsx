@@ -8,8 +8,8 @@ import styles from "./layout.module.scss";
 const mont = Montserrat({ subsets: ["latin"], weight: "900" });
 
 export const metadata = {
-  title: "tviy.buyeer",
-  description: "tviy.buyeer",
+  title: "kage.store",
+  // description: "tviy.buyeer",
 };
 
 export default function RootLayout({ children }) {

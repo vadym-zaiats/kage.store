@@ -1,3 +1,9 @@
+import { Hot } from "@/components/hot/page";
+
 export default function Home() {
-  return <main>HOME PAGE</main>;
+  return (
+    <main>
+      <Hot />
+    </main>
+  );
 }
