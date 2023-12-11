@@ -1,4 +1,4 @@
-import { Hot } from "@/components/hot/page";
+import { Hot } from "./ui/hot/page";
 
 export default function Home() {
   return (

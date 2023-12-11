@@ -1,7 +1,7 @@
 import "./global.css";
 import { Montserrat } from "next/font/google";
-import Header from "@/components/header/page";
-import Footer from "@/components/footer/page";
+import Header from "./ui/header/page";
+import Footer from "./ui/footer/page";
 import { StoreProvider } from "@/redux/slices/StoreProvider";
 import styles from "./layout.module.scss";
 

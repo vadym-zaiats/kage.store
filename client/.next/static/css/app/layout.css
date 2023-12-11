@@ -131,22 +131,22 @@ body {
   height: 100%;
 }
 
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/components/footer/footer.module.scss ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.footer_footer__mQF6i {
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/footer/footer.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__vvrAC {
   background-color: rgb(125, 192, 229);
   color: rgb(255, 255, 255);
   font-weight: 100;
 }
 
-.footer_footer__title__W_UiK {
+.footer_footer__title__ccInP {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.footer_footer__grid__eNXxG {
+.footer_footer__grid__8Cduo {
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -156,11 +156,11 @@ body {
   column-gap: 20px;
 }
 
-.footer_footer__item__XJew9 {
+.footer_footer__item__Rtlge {
   margin-bottom: 10px;
 }
 
-.footer_footer__last__EskM4 {
+.footer_footer__last__ou2Qw {
   background-color: rgb(52, 142, 218);
   text-align: center;
 }
@@ -176,10 +176,10 @@ body {
 .layout_main__30FUz {
   flex: 1 1 auto;
 }
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/components/burgerMenu/burgerMenu.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.burgerMenu_burger-menu__3cerd {
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/burgerMenu/burgerMenu.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.burgerMenu_burger-menu__OcvGw {
   position: absolute;
   top: 0;
   background-color: rgb(125, 192, 229);
@@ -187,14 +187,14 @@ body {
   height: 100vh;
 }
 
-.burgerMenu_burger-menu__cap__whLl4 {
+.burgerMenu_burger-menu__cap__fjxWP {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.burgerMenu_burger-menu__close__d45yf {
+.burgerMenu_burger-menu__close__wBDKB {
   border: none;
   background-color: transparent;
   position: absolute;
@@ -202,22 +202,22 @@ body {
   top: 50%;
   transform: translate(0, -50%);
 }
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/components/header/header.module.scss ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.header_header__list__PokAF {
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/header/header.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header_header__list__ETH1S {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.header_header__fav__FBi09,
-.header_header__cart__zaV9m {
+.header_header__fav__NHP_h,
+.header_header__cart__Mn9ij {
   position: relative;
 }
 
-.header_header__badge__hKmHh {
+.header_header__badge__Bj1fT {
   width: 17px;
   height: 17px;
   border-radius: 100%;
@@ -232,7 +232,7 @@ body {
   right: -6px;
 }
 
-.header_header__burger__KOe3D {
+.header_header__burger__JfNSo {
   border: none;
   background-color: transparent;
 }
