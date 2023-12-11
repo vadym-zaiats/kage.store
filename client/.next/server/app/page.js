@@ -78,6 +78,72 @@ module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js
 
 /***/ }),
 
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "net":
+/*!**********************!*\
+  !*** external "net" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("net");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -89,6 +155,39 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "tty":
+/*!**********************!*\
+  !*** external "tty" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tty");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
 /***/ "util":
 /*!***********************!*\
   !*** external "util" ***!
@@ -97,6 +196,17 @@ module.exports = require("path");
 
 "use strict";
 module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -191,7 +301,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Hot: () => (/* binding */ Hot)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tanstack/react-query */ \"(ssr)/./node_modules/@tanstack/react-query/build/modern/useQuery.js\");\n/* __next_internal_client_entry_do_not_use__ Hot auto */ \n\nfunction Hot() {\n    const { data } = (0,_tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__.useQuery)({\n        queryKey: [\n            \"products\"\n        ],\n        queryFn: ()=>fetch(\"http://localhost:4000/api/products\").then((res)=>res.json())\n    });\n    console.log(data);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: \"HOT PRODS\"\n    }, void 0, false, {\n        fileName: \"/Users/vadym/dev/projects/kage.store/client/src/app/ui/hot/page.jsx\",\n        lineNumber: 12,\n        columnNumber: 10\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL3VpL2hvdC9wYWdlLmpzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUVpRDtBQUUxQyxTQUFTQztJQUNkLE1BQU0sRUFBRUMsSUFBSSxFQUFFLEdBQUdGLCtEQUFRQSxDQUFDO1FBQ3hCRyxVQUFVO1lBQUM7U0FBVztRQUN0QkMsU0FBUyxJQUNQQyxNQUFNLHNDQUFzQ0MsSUFBSSxDQUFDLENBQUNDLE1BQVFBLElBQUlDLElBQUk7SUFDdEU7SUFDQUMsUUFBUUMsR0FBRyxDQUFDUjtJQUNaLHFCQUFPLDhEQUFDUztrQkFBSTs7Ozs7O0FBQ2QiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rYWdlLnN0b3JlLy4vc3JjL2FwcC91aS9ob3QvcGFnZS5qc3g/YmQ0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBjbGllbnRcIjtcblxuaW1wb3J0IHsgdXNlUXVlcnkgfSBmcm9tIFwiQHRhbnN0YWNrL3JlYWN0LXF1ZXJ5XCI7XG5cbmV4cG9ydCBmdW5jdGlvbiBIb3QoKSB7XG4gIGNvbnN0IHsgZGF0YSB9ID0gdXNlUXVlcnkoe1xuICAgIHF1ZXJ5S2V5OiBbXCJwcm9kdWN0c1wiXSxcbiAgICBxdWVyeUZuOiAoKSA9PlxuICAgICAgZmV0Y2goXCJodHRwOi8vbG9jYWxob3N0OjQwMDAvYXBpL3Byb2R1Y3RzXCIpLnRoZW4oKHJlcykgPT4gcmVzLmpzb24oKSksXG4gIH0pO1xuICBjb25zb2xlLmxvZyhkYXRhKTtcbiAgcmV0dXJuIDxkaXY+SE9UIFBST0RTPC9kaXY+O1xufVxuIl0sIm5hbWVzIjpbInVzZVF1ZXJ5IiwiSG90IiwiZGF0YSIsInF1ZXJ5S2V5IiwicXVlcnlGbiIsImZldGNoIiwidGhlbiIsInJlcyIsImpzb24iLCJjb25zb2xlIiwibG9nIiwiZGl2Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./src/app/ui/hot/page.jsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Hot: () => (/* binding */ Hot)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tanstack/react-query */ \"(ssr)/./node_modules/@tanstack/react-query/build/modern/useQuery.js\");\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @tanstack/react-query */ \"(ssr)/./node_modules/@tanstack/react-query/build/modern/useMutation.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n/* __next_internal_client_entry_do_not_use__ Hot auto */ \n\n\nfunction Hot() {\n    const { data } = (0,_tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__.useQuery)({\n        queryKey: [\n            \"products\"\n        ],\n        queryFn: ()=>fetch(\"http://localhost:4000/api/products\").then((res)=>res.json())\n    });\n    console.log(data);\n    const mutation = (0,_tanstack_react_query__WEBPACK_IMPORTED_MODULE_2__.useMutation)({\n        mutationFn: (newProduct)=>{\n            return axios__WEBPACK_IMPORTED_MODULE_3__[\"default\"].post(\"http://localhost:4000/api/products\", newProduct);\n        }\n    });\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                children: \"HOT PRODS\"\n            }, void 0, false, {\n                fileName: \"/Users/vadym/dev/projects/kage.store/client/src/app/ui/hot/page.jsx\",\n                lineNumber: 22,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                onClick: ()=>{\n                    mutation.mutate({\n                        enabled: true,\n                        imageUrls: [\n                            \"/imgs/products/t-shirt/4.png\"\n                        ],\n                        quantity: 7,\n                        name: \"Qwuie\",\n                        currentPrice: 999,\n                        categories: \"t-shirt\",\n                        hot: false,\n                        date: new Date()\n                    });\n                },\n                children: \"POST new Product\"\n            }, void 0, false, {\n                fileName: \"/Users/vadym/dev/projects/kage.store/client/src/app/ui/hot/page.jsx\",\n                lineNumber: 23,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/vadym/dev/projects/kage.store/client/src/app/ui/hot/page.jsx\",\n        lineNumber: 21,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvYXBwL3VpL2hvdC9wYWdlLmpzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBRThEO0FBQ3BDO0FBRW5CLFNBQVNHO0lBQ2QsTUFBTSxFQUFFQyxJQUFJLEVBQUUsR0FBR0osK0RBQVFBLENBQUM7UUFDeEJLLFVBQVU7WUFBQztTQUFXO1FBQ3RCQyxTQUFTLElBQ1BDLE1BQU0sc0NBQXNDQyxJQUFJLENBQUMsQ0FBQ0MsTUFBUUEsSUFBSUMsSUFBSTtJQUN0RTtJQUNBQyxRQUFRQyxHQUFHLENBQUNSO0lBRVosTUFBTVMsV0FBV1osa0VBQVdBLENBQUM7UUFDM0JhLFlBQVksQ0FBQ0M7WUFDWCxPQUFPYiw2Q0FBS0EsQ0FBQ2MsSUFBSSxDQUFDLHNDQUFzQ0Q7UUFDMUQ7SUFDRjtJQUVBLHFCQUNFLDhEQUFDRTs7MEJBQ0MsOERBQUNDOzBCQUFHOzs7Ozs7MEJBQ0osOERBQUNDO2dCQUNDQyxTQUFTO29CQUNQUCxTQUFTUSxNQUFNLENBQUM7d0JBQ2RDLFNBQVM7d0JBQ1RDLFdBQVc7NEJBQUM7eUJBQStCO3dCQUMzQ0MsVUFBVTt3QkFDVkMsTUFBTTt3QkFDTkMsY0FBYzt3QkFDZEMsWUFBWTt3QkFDWkMsS0FBSzt3QkFDTEMsTUFBTSxJQUFJQztvQkFDWjtnQkFDRjswQkFDRDs7Ozs7Ozs7Ozs7O0FBS1AiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rYWdlLnN0b3JlLy4vc3JjL2FwcC91aS9ob3QvcGFnZS5qc3g/YmQ0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBjbGllbnRcIjtcblxuaW1wb3J0IHsgdXNlUXVlcnksIHVzZU11dGF0aW9uIH0gZnJvbSBcIkB0YW5zdGFjay9yZWFjdC1xdWVyeVwiO1xuaW1wb3J0IGF4aW9zIGZyb20gXCJheGlvc1wiO1xuXG5leHBvcnQgZnVuY3Rpb24gSG90KCkge1xuICBjb25zdCB7IGRhdGEgfSA9IHVzZVF1ZXJ5KHtcbiAgICBxdWVyeUtleTogW1wicHJvZHVjdHNcIl0sXG4gICAgcXVlcnlGbjogKCkgPT5cbiAgICAgIGZldGNoKFwiaHR0cDovL2xvY2FsaG9zdDo0MDAwL2FwaS9wcm9kdWN0c1wiKS50aGVuKChyZXMpID0+IHJlcy5qc29uKCkpLFxuICB9KTtcbiAgY29uc29sZS5sb2coZGF0YSk7XG5cbiAgY29uc3QgbXV0YXRpb24gPSB1c2VNdXRhdGlvbih7XG4gICAgbXV0YXRpb25GbjogKG5ld1Byb2R1Y3QpID0+IHtcbiAgICAgIHJldHVybiBheGlvcy5wb3N0KFwiaHR0cDovL2xvY2FsaG9zdDo0MDAwL2FwaS9wcm9kdWN0c1wiLCBuZXdQcm9kdWN0KTtcbiAgICB9LFxuICB9KTtcblxuICByZXR1cm4gKFxuICAgIDxkaXY+XG4gICAgICA8aDI+SE9UIFBST0RTPC9oMj5cbiAgICAgIDxidXR0b25cbiAgICAgICAgb25DbGljaz17KCkgPT4ge1xuICAgICAgICAgIG11dGF0aW9uLm11dGF0ZSh7XG4gICAgICAgICAgICBlbmFibGVkOiB0cnVlLFxuICAgICAgICAgICAgaW1hZ2VVcmxzOiBbXCIvaW1ncy9wcm9kdWN0cy90LXNoaXJ0LzQucG5nXCJdLFxuICAgICAgICAgICAgcXVhbnRpdHk6IDcsXG4gICAgICAgICAgICBuYW1lOiBcIlF3dWllXCIsXG4gICAgICAgICAgICBjdXJyZW50UHJpY2U6IDk5OSxcbiAgICAgICAgICAgIGNhdGVnb3JpZXM6IFwidC1zaGlydFwiLFxuICAgICAgICAgICAgaG90OiBmYWxzZSxcbiAgICAgICAgICAgIGRhdGU6IG5ldyBEYXRlKCksXG4gICAgICAgICAgfSk7XG4gICAgICAgIH19XG4gICAgICA+XG4gICAgICAgIFBPU1QgbmV3IFByb2R1Y3RcbiAgICAgIDwvYnV0dG9uPlxuICAgIDwvZGl2PlxuICApO1xufVxuIl0sIm5hbWVzIjpbInVzZVF1ZXJ5IiwidXNlTXV0YXRpb24iLCJheGlvcyIsIkhvdCIsImRhdGEiLCJxdWVyeUtleSIsInF1ZXJ5Rm4iLCJmZXRjaCIsInRoZW4iLCJyZXMiLCJqc29uIiwiY29uc29sZSIsImxvZyIsIm11dGF0aW9uIiwibXV0YXRpb25GbiIsIm5ld1Byb2R1Y3QiLCJwb3N0IiwiZGl2IiwiaDIiLCJidXR0b24iLCJvbkNsaWNrIiwibXV0YXRlIiwiZW5hYmxlZCIsImltYWdlVXJscyIsInF1YW50aXR5IiwibmFtZSIsImN1cnJlbnRQcmljZSIsImNhdGVnb3JpZXMiLCJob3QiLCJkYXRlIiwiRGF0ZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/app/ui/hot/page.jsx\n");
 
 /***/ }),
 
@@ -440,7 +550,7 @@ const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__W
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/@tanstack","vendor-chunks/react-redux","vendor-chunks/redux-persist","vendor-chunks/@babel","vendor-chunks/use-sync-external-store","vendor-chunks/hoist-non-react-statics","vendor-chunks/reselect","vendor-chunks/react-is","vendor-chunks/immer","vendor-chunks/redux","vendor-chunks/redux-thunk","vendor-chunks/@reduxjs"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.jsx&appDir=%2FUsers%2Fvadym%2Fdev%2Fprojects%2Fkage.store%2Fclient%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fvadym%2Fdev%2Fprojects%2Fkage.store%2Fclient&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@tanstack","vendor-chunks/@reduxjs","vendor-chunks/react-redux","vendor-chunks/redux-persist","vendor-chunks/immer","vendor-chunks/redux","vendor-chunks/use-sync-external-store","vendor-chunks/hoist-non-react-statics","vendor-chunks/reselect","vendor-chunks/react-is","vendor-chunks/@babel","vendor-chunks/@swc","vendor-chunks/redux-thunk","vendor-chunks/axios","vendor-chunks/asynckit","vendor-chunks/debug","vendor-chunks/mime-db","vendor-chunks/form-data","vendor-chunks/follow-redirects","vendor-chunks/ms","vendor-chunks/proxy-from-env","vendor-chunks/mime-types","vendor-chunks/delayed-stream","vendor-chunks/combined-stream"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.jsx&appDir=%2FUsers%2Fvadym%2Fdev%2Fprojects%2Fkage.store%2Fclient%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fvadym%2Fdev%2Fprojects%2Fkage.store%2Fclient&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
