@@ -1,0 +1,29 @@
+@import "@/styles/variables";
+
+.footer {
+  background-color: $main-color;
+  color: $footer-text;
+  font-weight: 100;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer__grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__last {
+  background-color: rgb(52, 142, 218);
+  text-align: center;
+}

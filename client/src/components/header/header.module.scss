@@ -1,0 +1,32 @@
+@import "@/styles/variables";
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__fav,
+.header__cart {
+  position: relative;
+}
+.header__badge {
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: $main-color;
+  font-size: 10px;
+  position: absolute;
+  top: -10px;
+  right: -6px;
+}
+
+.header__burger {
+  border: none;
+  background-color: transparent;
+}
