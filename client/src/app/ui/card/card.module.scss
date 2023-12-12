@@ -1,0 +1,32 @@
+.card-wrapper {
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+.card-wrapper__img {
+  margin: 10px 0;
+  border-radius: 20px;
+}
+.card-wrapper__name {
+  text-align: left;
+  margin: 10px;
+}
+
+.card-wrapper__current-price {
+  text-align: left;
+  margin: 10px;
+}
+
+.card-wrapper__to-fav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card-wrapper__to-cart {
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+}
