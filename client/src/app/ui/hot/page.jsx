@@ -1,18 +1,14 @@
 "use client";
 
-import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { Card } from "../card/card";
 import styles from "./hot.module.scss";
+import { useGetProductsQuery } from "@/redux/api/productsApi";
 
 export function Hot() {
-  const { data } = useQuery({
-    queryKey: ["products"],
-    queryFn: () =>
-      fetch("http://localhost:4000/api/products").then((res) => res.json()),
-  });
-
-  const [numElements, setNumElements] = useState(7);
+  const { data, isLoading } = useGetProductsQuery(null);
+  console.log(data);
+  const [numElements, setNumElements] = useState(4);
   const handleLoadMore = () => {
     setNumElements((prevNumElements) => prevNumElements + 4);
   };
@@ -20,7 +16,7 @@ export function Hot() {
   return (
     <div>
       <div className={styles[`hot-wrapper`]}>
-        {data && Array.isArray(data) && data.length > 0 ? (
+        {!isLoading && Array.isArray(data) && data.length > 0 ? (
           data
             .slice(0, numElements)
             .map(({ name, currentPrice, imageUrls, _id, hot }) =>
@@ -42,29 +38,4 @@ export function Hot() {
       )}
     </div>
   );
-}
-
-{
-  /* 
-  const mutation = useMutation({
-    mutationFn: (newProduct) => {
-      return axios.post("http://localhost:4000/api/products", newProduct);
-    },
-  });
-<button
-onClick={() => {
-  mutation.mutate({
-    enabled: true,
-    imageUrls: ["/imgs/products/t-shirt/4.png"],
-    quantity: 7,
-    name: "Qwuie",
-    currentPrice: 999,
-    categories: "t-shirt",
-    hot: false,
-    date: new Date(),
-  });
-}}
->
-POST new Product
-</button> */
 }
