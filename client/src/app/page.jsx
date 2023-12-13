@@ -1,8 +1,9 @@
 import { Hot } from "./ui/hot/page";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles[`main-wrapper`]}>
       <Hot />
     </main>
   );

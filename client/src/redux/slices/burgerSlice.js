@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const burgerSlice = createSlice({
-  name: "theme",
+  name: "burger",
   initialState: {
     isOpen: false,
   },
