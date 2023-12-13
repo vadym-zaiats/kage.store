@@ -1,13 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card } from "../card/card";
 import styles from "./hot.module.scss";
-import { useGetProductsQuery } from "@/redux/api/productsApi";
+import { setProducts } from "@/redux/slices/productsSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 export function Hot() {
-  const { data, isLoading } = useGetProductsQuery(null);
-  console.log(data);
+  const data = useSelector((state) => state.allProducts.allProducts);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setProducts());
+  }, [dispatch]);
+
   const [numElements, setNumElements] = useState(4);
   const handleLoadMore = () => {
     setNumElements((prevNumElements) => prevNumElements + 4);
@@ -16,7 +22,7 @@ export function Hot() {
   return (
     <div>
       <div className={styles[`hot-wrapper`]}>
-        {!isLoading && Array.isArray(data) && data.length > 0 ? (
+        {data && Array.isArray(data) && data.length > 0 ? (
           data
             .slice(0, numElements)
             .map(({ name, currentPrice, imageUrls, _id, hot }) =>

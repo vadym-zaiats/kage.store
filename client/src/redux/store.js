@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import { productsApi } from "./api/productsApi";
+// import { productsApi } from "./api/productsApi";
 import {
   persistStore,
   persistReducer,
@@ -12,16 +12,18 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import burgerSlice from "./slices/burgerSlice";
+import productsSlice from "./slices/productsSlice";
 
 const rootReducer = combineReducers({
   burger: burgerSlice,
-  [productsApi.reducerPath]: productsApi.reducer,
+  allProducts: productsSlice,
+  // [productsApi.reducerPath]: productsApi.reducer,
 });
 
 const persistConfig = {
-  key: "data",
+  key: "root",
   storage,
-  whitelist: [""],
+  whitelist: ["allProducts"],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
@@ -33,7 +35,8 @@ const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }).concat(productsApi.middleware),
+    }),
+  // ...productsApi.middleware,
 });
 
 export const persistor = persistStore(store);
