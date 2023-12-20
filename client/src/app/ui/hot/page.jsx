@@ -3,16 +3,16 @@
 import { useState, useEffect } from "react";
 import { Card } from "../card/card";
 import styles from "./hot.module.scss";
-import { setHotProducts } from "@/redux/slices/hotProducts";
+import { setHotProducts } from "@/redux/slices/hotProductsSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 export function Hot() {
   const hotProducts = useSelector((state) => state.hotProducts.hotProducts);
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(setHotProducts());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(setHotProducts());
+  }, [dispatch]);
 
   const handleLoadMore = () => {};
 

@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import burgerSlice from "./slices/burgerSlice";
 import allProductsSlice from "./slices/productsSlice";
-import hotProductsSlice from "./slices/hotProducts";
+import hotProductsSlice from "./slices/hotProductsSlice";
 import { thunk } from "redux-thunk";
 
 export const store = configureStore({
