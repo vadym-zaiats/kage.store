@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <StoreProvider>
           <div className={styles[`wrapper`]}>
             <Header />
-            <main className={styles[`main`]}>{children}</main>
+            {children}
             <Footer />
           </div>
         </StoreProvider>
