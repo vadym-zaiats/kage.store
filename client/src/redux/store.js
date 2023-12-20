@@ -1,14 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import burgerSlice from "./slices/burgerSlice";
-import allProductsSlice from "./slices/productsSlice";
-import hotProductsSlice from "./slices/hotProductsSlice";
-import { thunk } from "redux-thunk";
+import productsSlice from "./slices/productsSlice";
 
 export const store = configureStore({
   reducer: {
     burger: burgerSlice,
-    allProducts: allProductsSlice,
-    hotProducts: hotProductsSlice,
+    allProducts: productsSlice,
     // middleware: [thunk],
   },
 });
