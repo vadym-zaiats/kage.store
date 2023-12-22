@@ -1,8 +1,24 @@
 @import "@/scss/variables";
 
-.hot-wrapper {
+.hot {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  background-color: $main-color;
+  gap: 4px;
+}
+
+.hot__show-more {
+  // display: inline-block;
+  vertical-align: top;
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  background-color: #00d6dc;
+  border: 2px solid #00d6dc;
+  border-radius: 30px;
+  -webkit-transition: all ease 0.35s;
+  -o-transition: all ease 0.35s;
+  transition: all ease 0.35s;
 }

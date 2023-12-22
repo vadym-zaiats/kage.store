@@ -20,8 +20,8 @@ export function Hot() {
   };
 
   return (
-    <div>
-      <div className={styles[`hot-wrapper`]}>
+    <>
+      <div className={styles[`hot`]}>
         {hotProducts && Array.isArray(hotProducts) && hotProducts.length > 0 ? (
           hotProducts
             .slice(0, count)
@@ -37,8 +37,11 @@ export function Hot() {
           <p>No data available</p>
         )}
       </div>
-
-      <button onClick={handleLoadMore}>Показати ще</button>
-    </div>
+      {count <= hotProducts.length && (
+        <button className={styles[`hot__show-more`]} onClick={handleLoadMore}>
+          Показати ще
+        </button>
+      )}
+    </>
   );
 }
