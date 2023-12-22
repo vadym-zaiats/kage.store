@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import styles from "./header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import BurgerMenu from "../burgerMenu/burgerMenu.jsx";
+import BurgerMenu from "../burgerMenu/BurgerMenu.jsx";
 import { useSelector, useDispatch } from "react-redux";
 import { setBurger } from "@/redux/slices/burgerSlice";
 

@@ -10,7 +10,7 @@ export default function BurgerMenu() {
   const burger = useSelector((state) => state.burger.isOpen);
   return (
     <div className={`${styles["burger-menu"]} ${styles["qwe"]}`}>
-      <ul className={`${styles["burger-menu__cap"]} ${styles["qwe"]}`}>
+      <ul className={`${styles["burger-menu__head"]} ${styles["qwe"]}`}>
         <li>
           <button
             className={`${styles["burger-menu__close"]}`}

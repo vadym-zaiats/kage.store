@@ -5,13 +5,12 @@ const productsSlice = createSlice({
   initialState: {
     allProducts: [],
     hotProducts: [],
-    isLoading: false,
+    newProducts: [],
+    isLoading: true,
   },
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(setAllProducts.pending, (state) => {
-      state.isLoading = true;
-    });
+    builder.addCase(setAllProducts.pending, (state) => {});
     builder.addCase(setAllProducts.fulfilled, (state, action) => {
       state.isLoading = false;
       state.allProducts = action.payload;

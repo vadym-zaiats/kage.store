@@ -1,9 +1,12 @@
+@import "@/scss/variables";
+
 .card-wrapper {
   padding: 5px;
   text-align: center;
   position: relative;
-  background-color: antiquewhite;
+  background-color: $card-color;
   border-radius: 5px;
+  color: $text-color;
 }
 .card-wrapper__img {
   margin: 10px 0;

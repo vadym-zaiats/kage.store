@@ -1,11 +1,14 @@
 import "./global.css";
-import { Montserrat } from "next/font/google";
-import Header from "./ui/header/header.jsx";
-import Footer from "./ui/footer/footer.jsx";
+import { Nunito } from "next/font/google";
+import Header from "./ui/header/Header.jsx";
+import Footer from "./ui/footer/Footer.jsx";
 import { StoreProvider } from "@/redux/slices/StoreProvider";
 import styles from "./layout.module.scss";
 
-const mont = Montserrat({ subsets: ["latin"], weight: "900" });
+export const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900", "1000"],
+});
 
 export const metadata = {
   title: "kage.store",
@@ -15,14 +18,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={styles[mont.className]}>
-        <StoreProvider>
-          <div className={styles[`wrapper`]}>
+      <body className={nunito.className}>
+        <div className={styles[`wrapper`]}>
+          <StoreProvider>
             <Header />
             {children}
-            <Footer />
-          </div>
-        </StoreProvider>
+          </StoreProvider>
+          <Footer />
+        </div>
       </body>
     </html>
   );

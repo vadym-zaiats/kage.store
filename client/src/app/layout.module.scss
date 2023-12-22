@@ -5,3 +5,7 @@
   flex-direction: column;
   background-color: $main-color;
 }
+
+.wrapper.scroll-off {
+  overflow: hidden;
+}
