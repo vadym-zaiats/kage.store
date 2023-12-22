@@ -1,11 +1,8 @@
 import { useState } from "react";
 import { Card } from "../card/Card";
 import styles from "./productsBlock.module.scss";
-import { useSelector } from "react-redux";
-import { Loader } from "../loader/Loader";
 
 export function ProductsBlock({ title, products }) {
-  const isLoading = useSelector((state) => state.allProducts.isLoading);
   const [count, setCount] = useState(2);
 
   const handleLoadMore = () => {
@@ -16,7 +13,6 @@ export function ProductsBlock({ title, products }) {
     <div className={styles[`block`]}>
       <h2 className={styles[`block__title`]}>{title}</h2>
       <div className={styles[`block__list`]}>
-        {isLoading && <Loader />}
         {products &&
           Array.isArray(products) &&
           products.length > 0 &&
@@ -31,7 +27,7 @@ export function ProductsBlock({ title, products }) {
               />
             ))}
       </div>
-      {count <= products.length && (
+      {count < products.length && (
         <button className={styles[`block__show-more`]} onClick={handleLoadMore}>
           Показати ще
         </button>

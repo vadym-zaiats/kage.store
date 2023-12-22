@@ -36,6 +36,37 @@
   bottom: 12px;
   right: 15px;
 }
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/productsBlock/productsBlock.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.productsBlock_block__bJsBH {
+  text-align: center;
+}
+
+.productsBlock_block__title__3Y05z {
+  margin: 10px 0;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.productsBlock_block__list__6lTLr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4px;
+  gap: 4px;
+}
+
+.productsBlock_block__show-more__oJJg3 {
+  margin: 15px 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(125, 193, 229);
+  border: 2px solid #00d6dc;
+  border-radius: 30px;
+  transition: all ease 0.35s;
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/loader/loader.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -48,7 +79,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -72,38 +102,6 @@
     transform: rotate(360deg);
   }
 }
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/productsBlock/productsBlock.module.scss ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.productsBlock_block__bJsBH {
-  text-align: center;
-}
-
-.productsBlock_block__title__3Y05z {
-  margin: 10px 0;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-}
-
-.productsBlock_block__list__6lTLr {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 4px;
-  gap: 4px;
-  position: relative;
-}
-
-.productsBlock_block__show-more__oJJg3 {
-  margin: 15px 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: #fff;
-  text-align: center;
-  background-color: rgb(125, 193, 229);
-  border: 2px solid #00d6dc;
-  border-radius: 30px;
-  transition: all ease 0.35s;
-}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/page.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -111,4 +109,5 @@
   flex: 1 1 auto;
   margin-top: 57px;
   padding: 0 5px;
+  position: relative;
 }
