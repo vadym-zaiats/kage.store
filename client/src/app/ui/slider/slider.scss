@@ -1,0 +1,18 @@
+@import "@/scss/variables";
+
+.slider {
+  text-align: center;
+}
+.slider__title {
+  margin: 10px 0;
+  font-weight: 700;
+  color: $text-color;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $card-color;
+  &:hover {
+    color: $text-color;
+  }
+}
