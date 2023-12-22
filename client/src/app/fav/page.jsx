@@ -1,3 +1,5 @@
+import styles from "./fav.module.scss";
+
 export default function Fav() {
-  return <div>FAV PAGE</div>;
+  return <div className={styles[`favourite`]}>FAV PAGE</div>;
 }

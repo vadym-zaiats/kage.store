@@ -4,7 +4,6 @@ import styles from "./productsBlock.module.scss";
 
 export function ProductsBlock({ title, products }) {
   const [count, setCount] = useState(2);
-
   const handleLoadMore = () => {
     setCount((prevState) => prevState + 2);
   };
@@ -18,12 +17,13 @@ export function ProductsBlock({ title, products }) {
           products.length > 0 &&
           products
             .slice(0, count)
-            .map(({ name, currentPrice, imageUrls, _id }) => (
+            .map(({ name, currentPrice, imageUrls, _id, itemNo }) => (
               <Card
                 key={_id}
                 name={name}
                 currentPrice={currentPrice}
                 imageUrls={imageUrls}
+                itemNo={itemNo}
               />
             ))}
       </div>

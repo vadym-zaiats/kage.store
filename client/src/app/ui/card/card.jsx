@@ -1,7 +1,9 @@
 import Image from "next/image";
 import styles from "./card.module.scss";
+import Link from "next/link";
 
-export function Card({ name, currentPrice, imageUrls }) {
+export function Card({ name, currentPrice, imageUrls, itemNo }) {
+  console.log(itemNo);
   return (
     <div className={styles[`card-wrapper`]}>
       <Image
@@ -11,18 +13,20 @@ export function Card({ name, currentPrice, imageUrls }) {
         height={25}
         alt="to-fav"
       />
-      <Image
-        className={styles[`card-wrapper__img`]}
-        src={imageUrls[0]}
-        width={130}
-        height={130}
-        alt={name}
-        priority
-      />
-      <div className={styles[`card-wrapper__name`]}>{name}</div>
-      <div className={styles[`card-wrapper__current-price`]}>
-        {currentPrice} грн
-      </div>
+      <Link href={`/product/${itemNo}`}>
+        <Image
+          className={styles[`card-wrapper__img`]}
+          src={imageUrls[0]}
+          width={130}
+          height={130}
+          alt={name}
+          priority
+        />
+        <div className={styles[`card-wrapper__name`]}>{name}</div>
+        <div className={styles[`card-wrapper__current-price`]}>
+          {currentPrice} грн
+        </div>
+      </Link>
       <Image
         className={styles[`card-wrapper__to-cart`]}
         src="/imgs/add-to-cart.png"
