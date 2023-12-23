@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { ProductsBlock } from "./ui/productsBlock/ProductsBlock";
 import { Loader } from "./ui/loader/Loader";
 import { Slider } from "./ui/slider/Slider";
-import { Instagram } from "./ui/instagram/instagram";
+import { Instagram } from "./ui/instagram/Instagram";
 
 export default function Home() {
   const dispatch = useDispatch();

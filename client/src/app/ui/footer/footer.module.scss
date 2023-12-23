@@ -5,7 +5,7 @@
   color: black;
   font-weight: 100;
   border-radius: 10px 10px 0 0;
-  padding: 20px 0px;
+  padding: 20px 0 0 0;
 }
 
 .footer__items {
@@ -15,22 +15,36 @@
 .footer__contacts {
   margin: 0 0 20px 0;
 }
-
 .footer__title {
+  position: relative;
   margin: 0 0 15px 0;
 }
 
-.footer__pages {
-  height: 30px;
-  overflow: hidden;
-}
-.footer__catalog {
-  height: 30px;
-  overflow: hidden;
-}
+.footer__pages,
+.footer__catalog,
 .footer__cooperation {
   height: 30px;
   overflow: hidden;
+  position: relative;
+}
+
+.footer__title-arrow {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  transition: transform 0.5s ease;
+}
+
+.footer__title-arrow.rotate-90 {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease;
+}
+
+.footer__pages.footer__pages--open,
+.footer__catalog.footer__catalog--open,
+.footer__cooperation.footer__cooperation--open {
+  height: auto;
+  overflow: visible;
 }
 
 .footer__link {
