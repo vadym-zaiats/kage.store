@@ -512,15 +512,31 @@ a {
 }
 
 .footer_footer__title__ccInP {
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
+}
+
+.footer_footer__pages__ac3jk {
+  height: 30px;
+  overflow: hidden;
+}
+
+.footer_footer__catalog__bmQqM {
+  height: 30px;
+  overflow: hidden;
+}
+
+.footer_footer__cooperation__jYUWu {
+  height: 30px;
+  overflow: hidden;
 }
 
 .footer_footer__link__sPjY7 {
-  margin: 0 0 10px 15px;
+  margin: 0 0 12px 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  font-weight: 400;
 }
 
 .footer_footer__socials-list__yDwHd,

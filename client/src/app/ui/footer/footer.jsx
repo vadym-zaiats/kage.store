@@ -150,8 +150,8 @@ export default function Footer() {
             </li>
           </ul>
         </li>
-        <li>
-          <h3 className={`${styles["footer__title"]}`}>Cторінки</h3>
+        <li className={`${styles["footer__pages"]}`}>
+          <h3 className={`${styles["footer__title"]} `}>Cторінки</h3>
           <ul>
             <li className={`${styles["footer__link"]}`}>Новини</li>
             <li className={`${styles["footer__link"]}`}>
@@ -173,7 +173,7 @@ export default function Footer() {
             </li>
           </ul>
         </li>
-        <li>
+        <li className={`${styles["footer__catalog"]}`}>
           <h3 className={`${styles["footer__title"]}`}>Kаталог</h3>
           <ul>
             <li className={`${styles["footer__link"]}`}>Футболки</li>
@@ -182,7 +182,7 @@ export default function Footer() {
             <li className={`${styles["footer__link"]}`}>Подушки</li>
           </ul>
         </li>
-        <li>
+        <li className={`${styles["footer__cooperation"]}`}>
           <h3 className={`${styles["footer__title"]}`}>Співробітництво</h3>
           <ul>
             <li className={`${styles["footer__link"]}`}>Оптовим клієнтам</li>

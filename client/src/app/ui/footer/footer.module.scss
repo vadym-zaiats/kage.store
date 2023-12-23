@@ -17,15 +17,29 @@
 }
 
 .footer__title {
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
+}
+
+.footer__pages {
+  height: 30px;
+  overflow: hidden;
+}
+.footer__catalog {
+  height: 30px;
+  overflow: hidden;
+}
+.footer__cooperation {
+  height: 30px;
+  overflow: hidden;
 }
 
 .footer__link {
-  margin: 0 0 10px 15px;
+  margin: 0 0 12px 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  font-weight: 400;
 }
 .footer__socials-list,
 .footer__payment {
