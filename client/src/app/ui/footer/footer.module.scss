@@ -5,7 +5,7 @@
   color: black;
   font-weight: 100;
   border-radius: 10px 10px 0 0;
-  padding: 20px 10px 0;
+  padding: 20px 0 0;
 }
 
 .footer__title {
@@ -15,7 +15,7 @@
 }
 
 .footer__grid {
-  padding: 10px;
+  padding: 10px 15px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;
