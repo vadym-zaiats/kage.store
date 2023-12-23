@@ -1,0 +1,32 @@
+.current-product {
+  flex: 1 1 auto;
+  margin: 67px auto 10px;
+  padding: 10px 0;
+}
+
+.current-product__title {
+  margin-bottom: 20px;
+}
+
+.current-product__quantity {
+  margin-bottom: 20px;
+}
+
+.current-product__item-no {
+  margin-bottom: 20px;
+}
+
+.current-product__img-container {
+  display: inline-flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.current-product__fav {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 20px;
+}
+.current-product__img {
+}

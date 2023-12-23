@@ -492,9 +492,11 @@ body {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/footer/footer.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .footer_footer__vvrAC {
-  background-color: rgb(125, 193, 229);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: black;
   font-weight: 100;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 10px 0;
 }
 
 .footer_footer__title__ccInP {
@@ -520,6 +522,7 @@ body {
 .footer_footer__last__ou2Qw {
   background-color: rgb(52, 142, 218);
   text-align: center;
+  padding: 10px 0;
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/layout.module.scss ***!
@@ -570,8 +573,8 @@ body {
   top: 0;
   z-index: 100;
   width: 100%;
-  background-color: #fff;
-  border-radius: 0 0 8px 8px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 10px 10px;
 }
 
 .header_header__list__ETH1S {

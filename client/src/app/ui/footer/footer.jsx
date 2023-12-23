@@ -5,15 +5,6 @@ export default function Footer() {
     <footer className={`${styles["footer"]}`}>
       <div className={`${styles["footer__grid"]}`}>
         <div>
-          <p className={`${styles["footer__title"]}`}>каталог</p>
-          <ul className={`${styles["footer__list"]}`}>
-            <li className={`${styles["footer__item"]}`}>Футболки</li>
-            <li className={`${styles["footer__item"]}`}>Худі</li>
-            <li className={`${styles["footer__item"]}`}>Шкарпетки</li>
-            <li className={`${styles["footer__item"]}`}>Подушки</li>
-          </ul>
-        </div>
-        <div>
           <p className={`${styles["footer__title"]}`}>сторінки</p>
           <ul className={`${styles["footer__list"]}`}>
             <li className={`${styles["footer__item"]}`}>Новини</li>
@@ -34,6 +25,15 @@ export default function Footer() {
             <li className={`${styles["footer__item"]}`}>
               Згода на обробку персональних даних
             </li>
+          </ul>
+        </div>
+        <div>
+          <p className={`${styles["footer__title"]}`}>каталог</p>
+          <ul className={`${styles["footer__list"]}`}>
+            <li className={`${styles["footer__item"]}`}>Футболки</li>
+            <li className={`${styles["footer__item"]}`}>Худі</li>
+            <li className={`${styles["footer__item"]}`}>Шкарпетки</li>
+            <li className={`${styles["footer__item"]}`}>Подушки</li>
           </ul>
         </div>
         <div>

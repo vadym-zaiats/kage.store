@@ -1,9 +1,11 @@
 @import "@/scss/variables";
 
 .footer {
-  background-color: $main-color;
-  color: $text-color;
+  background-color: $text-color;
+  color: black;
   font-weight: 100;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 10px 0;
 }
 
 .footer__title {
@@ -26,4 +28,5 @@
 .footer__last {
   background-color: rgb(52, 142, 218);
   text-align: center;
+  padding: 10px 0;
 }

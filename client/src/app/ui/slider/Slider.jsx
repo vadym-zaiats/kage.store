@@ -12,7 +12,7 @@ export function Slider({ products }) {
       <h2 className="slider__title">Товари зі знижкою</h2>
       <Swiper
         autoplay={{
-          delay: 1000,
+          delay: 5000,
           disableOnInteraction: true,
         }}
         pagination={{
