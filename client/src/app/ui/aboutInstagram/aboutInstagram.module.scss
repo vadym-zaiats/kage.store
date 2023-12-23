@@ -1,0 +1,30 @@
+@import "@/scss/variables";
+@import "@/scss/mixines";
+
+.about-instagram {
+  text-align: center;
+  color: $text-color;
+  margin-bottom: 15px;
+}
+
+.about-instagram__title {
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.about-instagram__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 3px;
+}
+
+.about-instagram__gallery-item {
+  border-radius: 10px;
+}
+
+.about-instagram__button {
+  @include button();
+}
+.about-instagram__link {
+  color: $text-color;
+}

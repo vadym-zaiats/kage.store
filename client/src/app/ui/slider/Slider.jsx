@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
 import "swiper/scss";
 import "swiper/scss/autoplay";
 import "swiper/scss/navigation";
@@ -24,18 +25,39 @@ export function Slider({ products }) {
         {products &&
           Array.isArray(products) &&
           products.length > 0 &&
-          products.map(({ name, imageUrls, _id }) => (
-            <SwiperSlide
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              key={_id}
-            >
-              <Image src={imageUrls[0]} alt={name} width={250} height={250} />
-            </SwiperSlide>
-          ))}
+          products.map(
+            ({ name, currentPrice, imageUrls, itemNo, quantity, _id }) => (
+              <SwiperSlide
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                key={_id}
+              >
+                <Link
+                  href={{
+                    pathname: `/product/${itemNo}`,
+                    query: {
+                      name,
+                      currentPrice,
+                      imageUrls,
+                      itemNo,
+                      quantity,
+                    },
+                  }}
+                >
+                  <Image
+                    className="slider__img"
+                    src={imageUrls[0]}
+                    alt={name}
+                    width={250}
+                    height={250}
+                  />
+                </Link>
+              </SwiperSlide>
+            )
+          )}
       </Swiper>
     </div>
   );
