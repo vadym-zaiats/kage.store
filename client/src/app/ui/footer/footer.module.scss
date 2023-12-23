@@ -5,27 +5,35 @@
   color: black;
   font-weight: 100;
   border-radius: 10px 10px 0 0;
-  padding: 20px 0 0;
+  padding: 20px 0px;
+}
+
+.footer__items {
+  margin: 0 8px;
+}
+
+.footer__contacts {
+  margin: 0 0 20px 0;
 }
 
 .footer__title {
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 15px;
+  margin: 0 0 10px 0;
 }
 
-.footer__grid {
-  padding: 10px 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 20px;
-  column-gap: 20px;
+.footer__link {
+  margin: 0 0 10px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 }
-.footer__item {
-  margin-bottom: 10px;
+.footer__socials-list,
+.footer__payment {
+  margin: 0 0 10px 15px;
+  display: flex;
+  gap: 20px;
 }
-
-.footer__last {
+.footer__rights {
   background-color: rgb(52, 142, 218);
   text-align: center;
   padding: 10px 0;

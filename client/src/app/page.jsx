@@ -21,12 +21,12 @@ export default function Home() {
 
   return (
     <main className={styles[`main`]}>
-      {isLoading && <Loader />}
+      {/* {isLoading && <Loader />}
       <Slider products={saleProducts} />
       {!isLoading && (
         <ProductsBlock title="Гарячі пропозиції" products={hotProducts} />
       )}
-      {!isLoading && <ProductsBlock title="Новинки" products={newProducts} />}
+      {!isLoading && <ProductsBlock title="Новинки" products={newProducts} />} */}
       {/* <Instagram /> */}
     </main>
   );

@@ -488,6 +488,10 @@ body {
   height: 100%;
 }
 
+a {
+  color: black;
+}
+
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/footer/footer.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -496,30 +500,37 @@ body {
   color: black;
   font-weight: 100;
   border-radius: 10px 10px 0 0;
-  padding: 20px 0 0;
+  padding: 20px 0px;
+}
+
+.footer_footer__items__WANwL {
+  margin: 0 8px;
+}
+
+.footer_footer__contacts__iuAjl {
+  margin: 0 0 20px 0;
 }
 
 .footer_footer__title__ccInP {
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 15px;
+  margin: 0 0 10px 0;
 }
 
-.footer_footer__grid__8Cduo {
-  padding: 10px 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 20px;
-  row-gap: 20px;
-  grid-column-gap: 20px;
-  column-gap: 20px;
+.footer_footer__link__sPjY7 {
+  margin: 0 0 10px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer_footer__item__Rtlge {
-  margin-bottom: 10px;
+.footer_footer__socials-list__yDwHd,
+.footer_footer__payment__K1Aa_ {
+  margin: 0 0 10px 15px;
+  display: flex;
+  gap: 20px;
 }
 
-.footer_footer__last__ou2Qw {
+.footer_footer__rights__mC72l {
   background-color: rgb(52, 142, 218);
   text-align: center;
   padding: 10px 0;
