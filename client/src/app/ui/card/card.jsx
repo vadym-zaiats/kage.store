@@ -3,7 +3,6 @@ import styles from "./card.module.scss";
 import Link from "next/link";
 
 export function Card({ name, currentPrice, imageUrls, itemNo }) {
-  console.log(itemNo);
   return (
     <div className={styles[`card-wrapper`]}>
       <Image
@@ -13,7 +12,12 @@ export function Card({ name, currentPrice, imageUrls, itemNo }) {
         height={25}
         alt="to-fav"
       />
-      <Link href={`/product/${itemNo}`}>
+      <Link
+        href={{
+          pathname: `/product/${itemNo}`,
+          query: {},
+        }}
+      >
         <Image
           className={styles[`card-wrapper__img`]}
           src={imageUrls[0]}
