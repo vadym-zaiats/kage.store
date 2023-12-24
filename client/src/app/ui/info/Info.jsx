@@ -10,11 +10,7 @@ export function Info() {
   const [cooperationIsOpen, setCooperationIsOpen] = useState(false);
   return (
     <>
-      <li
-        className={`${styles["footer__pages"]} ${
-          pagesIsOpen && styles["footer__pages--open"]
-        }`}
-      >
+      <li className={`${styles["footer__pages"]}`}>
         <h3 className={`${styles["footer__title"]}`}>Cторінки</h3>
         <Image
           onClick={() => {
@@ -28,7 +24,11 @@ export function Info() {
           height={15}
           alt="master-card"
         />
-        <ul>
+        <ul
+          className={`${styles["footer__pages-items"]} ${
+            pagesIsOpen && styles["footer__pages-items--open"]
+          }`}
+        >
           <li className={`${styles["footer__link"]}`}>Новини</li>
           <li className={`${styles["footer__link"]}`}>Як зробити замовлення</li>
           <li className={`${styles["footer__link"]}`}>Доставка та оплата</li>
@@ -45,11 +45,7 @@ export function Info() {
           </li>
         </ul>
       </li>
-      <li
-        className={`${styles["footer__catalog"]} ${
-          catalogIsOpen && styles["footer__catalog--open"]
-        }`}
-      >
+      <li className={`${styles["footer__catalog"]}`}>
         <h3 className={`${styles["footer__title"]}`}>Kаталог</h3>
         <Image
           onClick={() => {
@@ -63,18 +59,18 @@ export function Info() {
           height={15}
           alt="master-card"
         />
-        <ul>
+        <ul
+          className={`${styles["footer__catalog-items"]} ${
+            catalogIsOpen && styles["footer__catalog-items--open"]
+          }`}
+        >
           <li className={`${styles["footer__link"]}`}>Футболки</li>
           <li className={`${styles["footer__link"]}`}>Худі</li>
           <li className={`${styles["footer__link"]}`}>Шкарпетки</li>
           <li className={`${styles["footer__link"]}`}>Подушки</li>
         </ul>
       </li>
-      <li
-        className={`${styles["footer__cooperation"]} ${
-          cooperationIsOpen && styles["footer__cooperation--open"]
-        }`}
-      >
+      <li className={`${styles["footer__cooperation"]}`}>
         <h3 className={`${styles["footer__title"]}`}>Співробітництво</h3>
         <Image
           onClick={() => {
@@ -88,7 +84,11 @@ export function Info() {
           height={15}
           alt="master-card"
         />
-        <ul>
+        <ul
+          className={`${styles["footer__cooperation-items"]} ${
+            cooperationIsOpen && styles["footer__cooperation-items--open"]
+          }`}
+        >
           <li className={`${styles["footer__link"]}`}>Оптовим клієнтам</li>
           <li className={`${styles["footer__link"]}`}>Дропшипінг</li>
           <li className={`${styles["footer__link"]}`}>Дизайнерам</li>

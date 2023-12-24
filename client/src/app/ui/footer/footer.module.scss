@@ -23,9 +23,8 @@
 .footer__pages,
 .footer__catalog,
 .footer__cooperation {
-  height: 30px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .footer__title-arrow {
@@ -40,11 +39,24 @@
   transition: transform 0.5s ease;
 }
 
-.footer__pages.footer__pages--open,
-.footer__catalog.footer__catalog--open,
-.footer__cooperation.footer__cooperation--open {
-  height: auto;
+.footer__pages-items,
+.footer__catalog-items,
+.footer__cooperation-items {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.footer__pages-items.footer__pages-items--open {
+  height: 280px;
   overflow: visible;
+  transition: height 0.5s ease;
+}
+.footer__catalog-items.footer__catalog-items--open,
+.footer__cooperation-items.footer__cooperation-items--open {
+  height: 110px;
+  overflow: visible;
+  transition: height 0.5s ease;
 }
 
 .footer__link {
