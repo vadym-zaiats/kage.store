@@ -53,6 +53,7 @@ export function Slider({ products }) {
                     alt={name}
                     width={250}
                     height={250}
+                    priority
                   />
                 </Link>
               </SwiperSlide>

@@ -18,7 +18,13 @@ export default function BurgerMenu() {
               dispatch(setBurger());
             }}
           >
-            <Image src="/imgs/close.png" width={25} height={25} alt="burger" />
+            <Image
+              src="/imgs/close.png"
+              width={25}
+              height={25}
+              alt="burger"
+              priority
+            />
           </button>
         </li>
         <li>
@@ -27,6 +33,7 @@ export default function BurgerMenu() {
             width={70}
             height={70}
             alt="burger"
+            priority
           />
         </li>
       </ul>

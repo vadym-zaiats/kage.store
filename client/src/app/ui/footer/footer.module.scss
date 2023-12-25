@@ -5,11 +5,10 @@
   color: black;
   font-weight: 100;
   border-radius: 10px 10px 0 0;
-  padding: 20px 0 0 0;
 }
 
 .footer__items {
-  margin: 0 8px;
+  margin: 20px;
 }
 
 .footer__contacts {
@@ -29,7 +28,7 @@
 
 .footer__title-arrow {
   position: absolute;
-  right: 30px;
+  right: 15px;
   top: 0;
   transition: transform 0.5s ease;
 }
@@ -48,13 +47,13 @@
 }
 
 .footer__pages-items.footer__pages-items--open {
-  height: 280px;
+  height: 290px;
   overflow: visible;
   transition: height 0.5s ease;
 }
 .footer__catalog-items.footer__catalog-items--open,
 .footer__cooperation-items.footer__cooperation-items--open {
-  height: 110px;
+  height: 120px;
   overflow: visible;
   transition: height 0.5s ease;
 }

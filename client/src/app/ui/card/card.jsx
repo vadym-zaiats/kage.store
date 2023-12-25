@@ -11,6 +11,7 @@ export function Card({ name, currentPrice, imageUrls, itemNo, quantity }) {
         width={25}
         height={25}
         alt="to-fav"
+        priority
       />
       <Link
         href={{
@@ -43,6 +44,7 @@ export function Card({ name, currentPrice, imageUrls, itemNo, quantity }) {
         width={25}
         height={25}
         alt="to-cart"
+        priority
       />
     </div>
   );

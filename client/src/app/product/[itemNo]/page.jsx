@@ -17,6 +17,7 @@ export default function CurrentProduct({ searchParams }) {
           width={45}
           height={45}
           alt="to-fav"
+          priority
         />
         <Image
           className={styles[`current-product__img`]}
@@ -24,6 +25,7 @@ export default function CurrentProduct({ searchParams }) {
           width={320}
           height={320}
           alt={name}
+          priority
         />
       </p>
       <p className={styles[`current-product__price`]}>{currentPrice} грн</p>

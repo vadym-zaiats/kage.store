@@ -16,18 +16,36 @@ export default function Header() {
         <ul className={`${styles["header__list"]}`}>
           <li>
             <Link href="/">
-              <Image src="/imgs/logo.jpg" width={50} height={50} alt="logo" />
+              <Image
+                src="/imgs/logo.jpg"
+                width={50}
+                height={50}
+                alt="logo"
+                priority
+              />
             </Link>
           </li>
           <li className={`${styles["header__fav"]}`}>
             <Link href="/fav">
-              <Image src="/imgs/fav.png" width={25} height={25} alt="fav" />
+              <Image
+                src="/imgs/fav.png"
+                width={25}
+                height={25}
+                alt="fav"
+                priority
+              />
               <div className={`${styles["header__badge"]}`}>0</div>
             </Link>
           </li>
           <li className={`${styles["header__cart"]}`}>
             <Link href="/cart">
-              <Image src="/imgs/cart.png" width={25} height={25} alt="cart" />
+              <Image
+                src="/imgs/cart.png"
+                width={25}
+                height={25}
+                alt="cart"
+                priority
+              />
               <div className={`${styles["header__badge"]}`}>0</div>
             </Link>
           </li>
@@ -43,6 +61,7 @@ export default function Header() {
                 width={25}
                 height={25}
                 alt="burger"
+                priority
               />
             </button>
           </li>

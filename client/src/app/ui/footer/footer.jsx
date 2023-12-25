@@ -1,6 +1,6 @@
 import styles from "./footer.module.scss";
 import Image from "next/image";
-import { Info } from "../info/Info";
+import { Info } from "./info/Info";
 export default function Footer() {
   return (
     <footer className={`${styles["footer"]}`}>
@@ -24,6 +24,7 @@ export default function Footer() {
                         width={25}
                         height={25}
                         alt="phone"
+                        priority
                       />
                     </span>
                     <span>+38 067 777 77 77</span>
@@ -41,6 +42,7 @@ export default function Footer() {
                         width={25}
                         height={25}
                         alt="email"
+                        priority
                       />
                     </span>
                     <span>sales@gmail.com</span>
@@ -54,6 +56,7 @@ export default function Footer() {
                         width={25}
                         height={25}
                         alt="location"
+                        priority
                       />
                     </span>
                     <span>
@@ -149,9 +152,40 @@ export default function Footer() {
                 </li>
               </ul>
             </li>
+            <Info />
+            <li>
+              <h3 className={`${styles["footer__title"]}`}>Партнери</h3>
+              <Image
+                className={`${styles["footer__title-arrow"]}`}
+                src="/imgs/arrow.svg"
+                width={15}
+                height={15}
+                alt="master-card"
+                priority
+              />
+              <ul className={`${styles["footer__payment"]}`}>
+                <li>
+                  <Image
+                    src="/imgs/master-card.png"
+                    width={35}
+                    height={35}
+                    alt="master-card"
+                    priority
+                  />
+                </li>
+                <li>
+                  <Image
+                    src="/imgs/visa.png"
+                    width={35}
+                    height={35}
+                    alt="visa"
+                    priority
+                  />
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
-        <Info />
       </ul>
       <p className={`${styles["footer__rights"]}`}>
         &#xa9; 2024 Kage Store. Усі права захищено

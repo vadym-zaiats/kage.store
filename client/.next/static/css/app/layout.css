@@ -500,11 +500,10 @@ a {
   color: black;
   font-weight: 100;
   border-radius: 10px 10px 0 0;
-  padding: 20px 0 0 0;
 }
 
 .footer_footer__items__WANwL {
-  margin: 0 8px;
+  margin: 20px;
 }
 
 .footer_footer__contacts__iuAjl {
@@ -525,7 +524,7 @@ a {
 
 .footer_footer__title-arrow__7eYNZ {
   position: absolute;
-  right: 30px;
+  right: 15px;
   top: 0;
   transition: transform 0.5s ease;
 }
@@ -544,14 +543,14 @@ a {
 }
 
 .footer_footer__pages-items__OZV3K.footer_footer__pages-items--open__TRtQn {
-  height: 280px;
+  height: 290px;
   overflow: visible;
   transition: height 0.5s ease;
 }
 
 .footer_footer__catalog-items__lGsdR.footer_footer__catalog-items--open__tD5Lh,
 .footer_footer__cooperation-items__s26uB.footer_footer__cooperation-items--open__3fFzm {
-  height: 110px;
+  height: 120px;
   overflow: visible;
   transition: height 0.5s ease;
 }
