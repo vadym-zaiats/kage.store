@@ -49,3 +49,8 @@
 .current-product__increase {
   @include decreaseIncreaseButton();
 }
+
+.current-product__add-to-cart {
+  margin: 0 auto;
+  @include button();
+}

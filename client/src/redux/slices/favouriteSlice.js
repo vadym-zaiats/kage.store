@@ -17,4 +17,4 @@ const favouriteSlice = createSlice({
 });
 
 export default favouriteSlice.reducer;
-export const { toggleFav } = favouriteSlice.actions;
+export const {} = favouriteSlice.actions;

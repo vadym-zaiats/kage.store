@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addToCartFunc } from "../middlewares/cart";
+import { addToCartFunc, addSeveralToCart } from "../middlewares/cart";
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
@@ -8,8 +8,6 @@ const cartSlice = createSlice({
     error: null,
     totalInCart: 0,
   },
-  // reducers: {
-  // },
   extraReducers: (builder) => {
     builder.addCase(addToCartFunc.pending, (state) => {
       state.loading = true;
@@ -31,6 +29,29 @@ const cartSlice = createSlice({
     });
 
     builder.addCase(addToCartFunc.rejected, (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    });
+    builder.addCase(addSeveralToCart.pending, (state) => {
+      state.loading = true;
+      state.error = null;
+    });
+
+    builder.addCase(addSeveralToCart.fulfilled, (state, action) => {
+      const existingProductIndex = state.cart.findIndex(
+        (prod) => prod.itemNo === action.payload.itemNo
+      );
+      if (existingProductIndex !== -1) {
+        state.cart[existingProductIndex] = action.payload;
+      } else {
+        state.cart.push(action.payload);
+      }
+      state.loading = false;
+      state.error = null;
+      state.totalInCart = state.cart.reduce((sum, item) => item.count + sum, 0);
+    });
+
+    builder.addCase(addSeveralToCart.rejected, (state, action) => {
       state.loading = false;
       state.error = action.payload;
     });

@@ -21,7 +21,6 @@ export function Card({
   return (
     <div className={styles[`card-wrapper`]}>
       <button className={styles[`card-wrapper__to-fav`]}>
-        {" "}
         <Image
           onClick={() => {
             dispatch(

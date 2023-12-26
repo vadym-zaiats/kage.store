@@ -3,8 +3,22 @@
 import styles from "./itemNo.module.scss";
 import Image from "next/image";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addSeveralToCart } from "@/redux/middlewares/cart";
+
 export default function CurrentProduct({ searchParams }) {
-  const { name, currentPrice, imageUrls, itemNo, quantity } = searchParams;
+  const dispatch = useDispatch();
+  const {
+    name,
+    currentPrice,
+    imageUrls,
+    itemNo,
+    quantity,
+    categories,
+    date,
+    hot,
+    sale,
+  } = searchParams;
   const [number, setNumber] = useState(1);
   const decrease = () => {
     number !== 1 ? setNumber((prevState) => prevState - 1) : null;
@@ -17,7 +31,9 @@ export default function CurrentProduct({ searchParams }) {
   return (
     <div className={styles[`current-product`]}>
       <h3 className={styles[`current-product__title`]}>{name}</h3>
-      {quantity > 0 && <p className={styles[`current-product__quantity`]}>Є</p>}
+      <p className={styles[`current-product__quantity`]}>
+        {quantity > 0 ? "Є" : "Немає"}
+      </p>
       <p className={styles[`current-product__item-no`]}>{itemNo}</p>
       <p className={styles[`current-product__img-container`]}>
         <Image
@@ -59,6 +75,27 @@ export default function CurrentProduct({ searchParams }) {
           +
         </button>
       </div>
+      <button
+        onClick={() => {
+          dispatch(
+            addSeveralToCart({
+              name,
+              currentPrice,
+              imageUrls,
+              itemNo,
+              quantity,
+              categories,
+              date,
+              hot,
+              sale,
+              count: number,
+            })
+          );
+        }}
+        className={styles[`current-product__add-to-cart`]}
+      >
+        Додати до корзини
+      </button>
     </div>
   );
 }
