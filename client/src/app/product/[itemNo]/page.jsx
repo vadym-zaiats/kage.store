@@ -1,10 +1,19 @@
 "use client";
-import { useRouter } from "next/navigation";
+
 import styles from "./itemNo.module.scss";
 import Image from "next/image";
+import { useState } from "react";
 export default function CurrentProduct({ searchParams }) {
   const { name, currentPrice, imageUrls, itemNo, quantity } = searchParams;
-
+  const [number, setNumber] = useState(1);
+  const decrease = () => {
+    number !== 1 ? setNumber((prevState) => prevState - 1) : null;
+  };
+  const increase = () => {
+    number >= 1 && quantity > number
+      ? setNumber((prevState) => prevState + 1)
+      : null;
+  };
   return (
     <div className={styles[`current-product`]}>
       <h3 className={styles[`current-product__title`]}>{name}</h3>
@@ -28,7 +37,28 @@ export default function CurrentProduct({ searchParams }) {
           priority
         />
       </p>
-      <p className={styles[`current-product__price`]}>{currentPrice} грн</p>
+      <p className={styles[`current-product__price`]}>
+        {currentPrice * number} грн
+      </p>
+      <div className={styles[`current-product__count`]}>
+        <button
+          className={styles[`current-product__decrease`]}
+          onClick={() => {
+            decrease();
+          }}
+        >
+          -
+        </button>
+        <span className={styles[`current-product__number`]}>{number}</span>
+        <button
+          className={styles[`current-product__increase`]}
+          onClick={() => {
+            increase();
+          }}
+        >
+          +
+        </button>
+      </div>
     </div>
   );
 }

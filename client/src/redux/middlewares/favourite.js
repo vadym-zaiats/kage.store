@@ -21,8 +21,7 @@ export const addToFavFunc = createAsyncThunk(
     for (let product of favourite) {
       if (product.itemNo === itemNo) {
         favourite = favourite.filter((product) => product.itemNo !== itemNo);
-
-        return dispatch(toggleFav(favourite));
+        return favourite;
       }
     }
     favourite.push({
@@ -36,6 +35,6 @@ export const addToFavFunc = createAsyncThunk(
       hot,
       sale,
     });
-    return dispatch(toggleFav(favourite));
+    return favourite;
   }
 );

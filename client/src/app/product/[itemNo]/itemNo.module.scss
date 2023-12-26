@@ -1,3 +1,6 @@
+@import "@/scss/variables";
+@import "@/scss/mixines";
+
 .current-product {
   flex: 1 1 auto;
   margin: 67px auto 10px;
@@ -29,4 +32,20 @@
   right: 20px;
 }
 .current-product__img {
+}
+
+.current-product__count {
+  margin: 30px 0 0 0;
+}
+
+.current-product__decrease {
+  @include decreaseIncreaseButton();
+}
+
+.current-product__number {
+  margin: 0 15px;
+}
+
+.current-product__increase {
+  @include decreaseIncreaseButton();
 }

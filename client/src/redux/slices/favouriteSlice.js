@@ -6,10 +6,13 @@ const favouriteSlice = createSlice({
   initialState: {
     favourite: [],
   },
-  reducers: {
-    toggleFav: (state, action) => {
+  extraReducers: (builder) => {
+    builder.addCase(addToFavFunc.fulfilled, (state, action) => {
       state.favourite = action.payload;
-    },
+    });
+    builder.addCase(addToFavFunc.rejected, (state, action) => {
+      state.error = action.payload;
+    });
   },
 });
 

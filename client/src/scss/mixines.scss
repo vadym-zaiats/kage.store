@@ -17,3 +17,10 @@
     border: 2px solid $main-color;
   }
 }
+
+@mixin decreaseIncreaseButton() {
+  border: transparent;
+  background-color: $card-color;
+  width: 30px;
+  height: 30px;
+}

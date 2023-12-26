@@ -3,6 +3,7 @@ import styles from "./card.module.scss";
 import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
 import { addToFavFunc } from "@/redux/middlewares/favourite";
+import { addToCartFunc } from "@/redux/middlewares/cart";
 
 export function Card({
   name,
@@ -16,7 +17,6 @@ export function Card({
   sale,
 }) {
   const dispatch = useDispatch();
-  const favourite = useSelector((state) => state.favourite.favourite);
 
   return (
     <div className={styles[`card-wrapper`]}>
@@ -69,6 +69,22 @@ export function Card({
         </div>
       </Link>
       <Image
+        onClick={() => {
+          dispatch(
+            addToCartFunc({
+              name,
+              currentPrice,
+              imageUrls,
+              itemNo,
+              quantity,
+              categories,
+              date,
+              hot,
+              sale,
+              count: 1,
+            })
+          );
+        }}
         className={styles[`card-wrapper__to-cart`]}
         src="/imgs/add-to-cart.png"
         width={25}
