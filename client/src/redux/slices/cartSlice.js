@@ -6,7 +6,10 @@ const cartSlice = createSlice({
     cart: [],
     loading: false,
     error: null,
+    totalInCart: 0,
   },
+  // reducers: {
+  // },
   extraReducers: (builder) => {
     builder.addCase(addToCartFunc.pending, (state) => {
       state.loading = true;
@@ -24,6 +27,7 @@ const cartSlice = createSlice({
       }
       state.loading = false;
       state.error = null;
+      state.totalInCart = state.cart.reduce((sum, item) => item.count + sum, 0);
     });
 
     builder.addCase(addToCartFunc.rejected, (state, action) => {

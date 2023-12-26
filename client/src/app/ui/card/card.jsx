@@ -20,29 +20,31 @@ export function Card({
 
   return (
     <div className={styles[`card-wrapper`]}>
-      <Image
-        onClick={() => {
-          dispatch(
-            addToFavFunc({
-              name,
-              currentPrice,
-              imageUrls,
-              itemNo,
-              quantity,
-              categories,
-              date,
-              hot,
-              sale,
-            })
-          );
-        }}
-        className={styles[`card-wrapper__to-fav`]}
-        src="/imgs/add-to-fav.png"
-        width={25}
-        height={25}
-        alt="to-fav"
-        priority
-      />
+      <button className={styles[`card-wrapper__to-fav`]}>
+        {" "}
+        <Image
+          onClick={() => {
+            dispatch(
+              addToFavFunc({
+                name,
+                currentPrice,
+                imageUrls,
+                itemNo,
+                quantity,
+                categories,
+                date,
+                hot,
+                sale,
+              })
+            );
+          }}
+          src="/imgs/add-to-fav.png"
+          width={25}
+          height={25}
+          alt="to-fav"
+          priority
+        />
+      </button>
       <Link
         href={{
           pathname: `/product/${itemNo}`,
@@ -68,30 +70,31 @@ export function Card({
           {currentPrice} грн
         </div>
       </Link>
-      <Image
-        onClick={() => {
-          dispatch(
-            addToCartFunc({
-              name,
-              currentPrice,
-              imageUrls,
-              itemNo,
-              quantity,
-              categories,
-              date,
-              hot,
-              sale,
-              count: 1,
-            })
-          );
-        }}
-        className={styles[`card-wrapper__to-cart`]}
-        src="/imgs/add-to-cart.png"
-        width={25}
-        height={25}
-        alt="to-cart"
-        priority
-      />
+      <button className={styles[`card-wrapper__to-cart`]}>
+        <Image
+          onClick={() => {
+            dispatch(
+              addToCartFunc({
+                name,
+                currentPrice,
+                imageUrls,
+                itemNo,
+                quantity,
+                categories,
+                date,
+                hot,
+                sale,
+                count: 1,
+              })
+            );
+          }}
+          src="/imgs/add-to-cart.png"
+          width={25}
+          height={25}
+          alt="to-cart"
+          priority
+        />
+      </button>
     </div>
   );
 }
