@@ -1,26 +1,26 @@
 @import "@/scss/variables";
 
-@mixin button() {
+@mixin button($bc: $main-color, $brdrclr: $card-color) {
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;
   color: #fff;
   text-align: center;
-  background-color: $main-color;
-  border: 2px solid $card-color;
+  background-color: $bc;
+  border: 2px solid $brdrclr;
   border-radius: 30px;
   -webkit-transition: all ease 0.35s;
   -o-transition: all ease 0.35s;
   transition: all ease 0.35s;
   &:hover {
-    background-color: $card-color;
-    border: 2px solid $main-color;
+    background-color: $brdrclr;
+    border: 2px solid $bc;
   }
 }
 
-@mixin decreaseIncreaseButton() {
+@mixin decreaseIncreaseButton($bc: $card-color) {
   border: transparent;
-  background-color: $card-color;
+  background-color: $bc;
   width: 30px;
   height: 30px;
 }

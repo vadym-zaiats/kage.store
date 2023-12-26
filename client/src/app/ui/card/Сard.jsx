@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./card.module.scss";
 import Link from "next/link";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToFavFunc } from "@/redux/middlewares/favourite";
 import { addToCartFunc } from "@/redux/middlewares/cart";
 
@@ -15,6 +15,7 @@ export function Card({
   date,
   hot,
   sale,
+  count,
 }) {
   const dispatch = useDispatch();
 
@@ -66,34 +67,52 @@ export function Card({
         />
         <div className={styles[`card-wrapper__name`]}>{name}</div>
         <div className={styles[`card-wrapper__current-price`]}>
-          {currentPrice} грн
+          {!count ? `${currentPrice} грн` : `${currentPrice * count} грн`}
         </div>
       </Link>
-      <button className={styles[`card-wrapper__to-cart`]}>
-        <Image
-          onClick={() => {
-            dispatch(
-              addToCartFunc({
-                name,
-                currentPrice,
-                imageUrls,
-                itemNo,
-                quantity,
-                categories,
-                date,
-                hot,
-                sale,
-                count: 1,
-              })
-            );
-          }}
-          src="/imgs/add-to-cart.png"
-          width={25}
-          height={25}
-          alt="to-cart"
-          priority
-        />
-      </button>
+      {!count ? (
+        <button className={styles[`card-wrapper__to-cart`]}>
+          <Image
+            onClick={() => {
+              dispatch(
+                addToCartFunc({
+                  name,
+                  currentPrice,
+                  imageUrls,
+                  itemNo,
+                  quantity,
+                  categories,
+                  date,
+                  hot,
+                  sale,
+                  count: 1,
+                })
+              );
+            }}
+            src="/imgs/add-to-cart.png"
+            width={25}
+            height={25}
+            alt="to-cart"
+            priority
+          />
+        </button>
+      ) : (
+        <div className={styles[`card-wrapper__to-cart`]}>
+          <button
+            className={styles[`card-wrapper__decrease`]}
+            onClick={() => {}}
+          >
+            -
+          </button>
+          <span className={styles[`card-wrapper__number`]}>{count}</span>
+          <button
+            className={styles[`card-wrapper__increase`]}
+            onClick={() => {}}
+          >
+            +
+          </button>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Card } from "../card/Card";
+import { Card } from "../card/Сard";
 import styles from "./productsBlock.module.scss";
 
 export function ProductsBlock({ title, products }) {

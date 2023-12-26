@@ -7,7 +7,6 @@
   position: relative;
   background-color: rgb(178, 214, 234);
   border-radius: 5px;
-  color: rgb(255, 255, 255);
 }
 
 .card_card-wrapper__img__OeIwZ {
@@ -15,12 +14,9 @@
   border-radius: 15px;
 }
 
-.card_card-wrapper__name__7TXCI {
-  text-align: left;
-  margin: 10px;
-}
-
-.card_card-wrapper__current-price__vgRpv {
+.card_card-wrapper__name__7TXCI,
+.card_card-wrapper__current-price__vgRpv,
+.card_card-wrapper__count__psGlZ {
   text-align: left;
   margin: 10px;
 }
@@ -39,6 +35,24 @@
   right: 15px;
   background-color: transparent;
   border: none;
+}
+
+.card_card-wrapper__decrease__ruwsb {
+  border: transparent;
+  background-color: rgb(125, 193, 229);
+  width: 30px;
+  height: 30px;
+}
+
+.card_card-wrapper__number__QprGe {
+  margin: 0 15px;
+}
+
+.card_card-wrapper__increase__lbsVc {
+  border: transparent;
+  background-color: rgb(125, 193, 229);
+  width: 30px;
+  height: 30px;
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/productsBlock/productsBlock.module.scss ***!
