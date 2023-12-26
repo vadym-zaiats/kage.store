@@ -3,39 +3,23 @@ import { addToCart } from "../slices/cartSlice";
 
 export const addToCartFunc = createAsyncThunk(
   "cart/addToCartFunc",
-  (
-    {
-      name,
-      currentPrice,
-      imageUrls,
-      itemNo,
-      quantity,
-      categories,
-      date,
-      hot,
-      sale,
-      count,
-    },
-    { dispatch, rejectWithValue, getState }
-  ) => {
-    let cart = [...getState().cart.cart];
-    for (let product of cart) {
-      if (product.itemNo === itemNo) {
-        return { ...product, count: product.count + 1 };
+  (itemData, { rejectWithValue, getState }) => {
+    try {
+      const state = getState();
+      const existingItem = state.cart.cart.find(
+        (item) => item.itemNo === itemData.itemNo
+      );
+      if (existingItem) {
+        const updatedItem = {
+          ...existingItem,
+          count: existingItem.count + 1,
+        };
+        return updatedItem;
+      } else {
+        return itemData;
       }
+    } catch (error) {
+      return rejectWithValue(error.message);
     }
-    cart.push({
-      name,
-      currentPrice,
-      imageUrls,
-      itemNo,
-      quantity,
-      categories,
-      date,
-      hot,
-      sale,
-      count,
-    });
-    return cart;
   }
 );
