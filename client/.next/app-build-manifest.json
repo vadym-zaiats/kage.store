@@ -28,6 +28,12 @@
       "static/chunks/main-app.js",
       "static/css/app/cart/page.css",
       "static/chunks/app/cart/page.js"
+    ],
+    "/fav/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/fav/page.css",
+      "static/chunks/app/fav/page.js"
     ]
   }
 }
