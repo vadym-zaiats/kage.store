@@ -1,0 +1,55 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/product/[itemNo]/itemNo.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.itemNo_current-product__nWomI {
+  flex: 1 1 auto;
+  margin: 67px auto 10px;
+  padding: 10px 0;
+}
+
+.itemNo_current-product__title__Mco1p {
+  margin-bottom: 20px;
+}
+
+.itemNo_current-product__quantity__yn3yO {
+  margin-bottom: 20px;
+}
+
+.itemNo_current-product__item-no__DReho {
+  margin-bottom: 20px;
+}
+
+.itemNo_current-product__img-container__Lu4iD {
+  display: inline-flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.itemNo_current-product__fav__zYfTO {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 20px;
+}
+
+.itemNo_current-product__count__9edHR {
+  margin: 30px 0 0 0;
+}
+
+.itemNo_current-product__decrease__IpoG1 {
+  border: transparent;
+  background-color: rgb(178, 214, 234);
+  width: 30px;
+  height: 30px;
+}
+
+.itemNo_current-product__number__UBj0T {
+  margin: 0 15px;
+}
+
+.itemNo_current-product__increase__is2UK {
+  border: transparent;
+  background-color: rgb(178, 214, 234);
+  width: 30px;
+  height: 30px;
+}

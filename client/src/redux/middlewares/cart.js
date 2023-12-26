@@ -10,11 +10,15 @@ export const addToCartFunc = createAsyncThunk(
         (item) => item.itemNo === itemData.itemNo
       );
       if (existingItem) {
-        const updatedItem = {
-          ...existingItem,
-          count: existingItem.count + 1,
-        };
-        return updatedItem;
+        if (existingItem.count < itemData.quantity) {
+          const updatedItem = {
+            ...existingItem,
+            count: existingItem.count + 1,
+          };
+          return updatedItem;
+        } else {
+          return existingItem;
+        }
       } else {
         return itemData;
       }
