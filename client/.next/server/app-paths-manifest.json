@@ -1,5 +1,5 @@
 {
+  "/cart/page": "app/cart/page.js",
   "/page": "app/page.js",
-  "/product/[itemNo]/page": "app/product/[itemNo]/page.js",
-  "/cart/page": "app/cart/page.js"
+  "/product/[itemNo]/page": "app/product/[itemNo]/page.js"
 }

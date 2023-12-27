@@ -1,5 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addToCartFunc, addSeveralToCart } from "../middlewares/cart";
+import {
+  addToCartFunc,
+  addSeveralToCart,
+  delFromCart,
+} from "../middlewares/cart";
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
@@ -13,7 +17,6 @@ const cartSlice = createSlice({
       state.loading = true;
       state.error = null;
     });
-
     builder.addCase(addToCartFunc.fulfilled, (state, action) => {
       const existingProductIndex = state.cart.findIndex(
         (prod) => prod.itemNo === action.payload.itemNo
@@ -27,16 +30,15 @@ const cartSlice = createSlice({
       state.error = null;
       state.totalInCart = state.cart.reduce((sum, item) => item.count + sum, 0);
     });
-
     builder.addCase(addToCartFunc.rejected, (state, action) => {
       state.loading = false;
       state.error = action.payload;
     });
+
     builder.addCase(addSeveralToCart.pending, (state) => {
       state.loading = true;
       state.error = null;
     });
-
     builder.addCase(addSeveralToCart.fulfilled, (state, action) => {
       const existingProductIndex = state.cart.findIndex(
         (prod) => prod.itemNo === action.payload.itemNo
@@ -50,8 +52,22 @@ const cartSlice = createSlice({
       state.error = null;
       state.totalInCart = state.cart.reduce((sum, item) => item.count + sum, 0);
     });
-
     builder.addCase(addSeveralToCart.rejected, (state, action) => {
+      state.loading = false;
+      state.error = action.payload;
+    });
+
+    builder.addCase(delFromCart.pending, (state) => {
+      state.loading = true;
+      state.error = null;
+    });
+    builder.addCase(delFromCart.fulfilled, (state, action) => {
+      state.cart = action.payload;
+      state.loading = false;
+      state.error = null;
+      state.totalInCart = state.cart.reduce((sum, item) => item.count + sum, 0);
+    });
+    builder.addCase(delFromCart.rejected, (state, action) => {
       state.loading = false;
       state.error = action.payload;
     });

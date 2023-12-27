@@ -1,5 +1,5 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-
+import { createSlice } from "@reduxjs/toolkit";
+import { setAllProducts } from "../middlewares/products";
 const productsSlice = createSlice({
   name: "allProducts",
   initialState: {
@@ -31,21 +31,6 @@ const productsSlice = createSlice({
     });
   },
 });
-export const setAllProducts = createAsyncThunk(
-  "allProducts/setAllProducts",
-  async (_, { dispatch, rejectWithValue }) => {
-    try {
-      const res = await fetch(`http://localhost:4000/api/products`);
-      if (!res.ok) {
-        throw new Error("Server error");
-      }
-      const data = await res.json();
-      return data;
-    } catch (error) {
-      return rejectWithValue(error.massage);
-    }
-  }
-);
 
 export default productsSlice.reducer;
 export const {} = productsSlice.actions;

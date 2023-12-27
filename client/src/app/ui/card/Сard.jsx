@@ -3,7 +3,11 @@ import styles from "./card.module.scss";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addToFavFunc } from "@/redux/middlewares/favourite";
-import { addToCartFunc } from "@/redux/middlewares/cart";
+import {
+  addToCartFunc,
+  addSeveralToCart,
+  delFromCart,
+} from "@/redux/middlewares/cart";
 
 export function Card({
   name,
@@ -70,6 +74,20 @@ export function Card({
           {!count ? `${currentPrice} грн` : `${currentPrice * count} грн`}
         </div>
       </Link>
+      {count && (
+        <button>
+          <Image
+            onClick={() => {
+              dispatch(delFromCart({ itemNo }));
+            }}
+            src="/imgs/bin.png"
+            width={25}
+            height={25}
+            alt="bin"
+            priority
+          />
+        </button>
+      )}
       {!count ? (
         <button className={styles[`card-wrapper__to-cart`]}>
           <Image
@@ -99,15 +117,52 @@ export function Card({
       ) : (
         <div className={styles[`card-wrapper__to-cart`]}>
           <button
+            disabled={count === 1}
             className={styles[`card-wrapper__decrease`]}
-            onClick={() => {}}
+            onClick={() => {
+              dispatch(
+                addSeveralToCart({
+                  name,
+                  currentPrice,
+                  imageUrls,
+                  itemNo,
+                  quantity,
+                  categories,
+                  date,
+                  hot,
+                  sale,
+                  count: -1,
+                })
+              );
+            }}
+            src="/imgs/add-to-cart.png"
+            width={25}
+            height={25}
+            alt="to-cart"
+            priority
           >
             -
           </button>
           <span className={styles[`card-wrapper__number`]}>{count}</span>
           <button
+            disabled={count === quantity}
             className={styles[`card-wrapper__increase`]}
-            onClick={() => {}}
+            onClick={() => {
+              dispatch(
+                addSeveralToCart({
+                  name,
+                  currentPrice,
+                  imageUrls,
+                  itemNo,
+                  quantity,
+                  categories,
+                  date,
+                  hot,
+                  sale,
+                  count: 1,
+                })
+              );
+            }}
           >
             +
           </button>

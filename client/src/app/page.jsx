@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./page.module.scss";
-import { setAllProducts } from "@/redux/slices/productsSlice";
+import { setAllProducts } from "@/redux/middlewares/products";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { ProductsBlock } from "./ui/productsBlock/ProductsBlock";

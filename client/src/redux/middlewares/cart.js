@@ -53,3 +53,17 @@ export const addSeveralToCart = createAsyncThunk(
     }
   }
 );
+export const delFromCart = createAsyncThunk(
+  "cart/delFromCart",
+  ({ itemNo }, { rejectWithValue, getState }) => {
+    try {
+      const state = getState();
+      const newArr = state.cart.cart.filter(
+        (product) => product.itemNo !== itemNo
+      );
+      return newArr;
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
