@@ -33,7 +33,7 @@
     scrollbar-width: 7px;
   }
   /* Для Edge та Internet Explorer */
-  &::-ms-scrollbar {
+  & {
     scrollbar-face-color: $main-color; /* колір "рукоятки" скроллбару */
     scrollbar-track-color: $text-color; /* колір фону скроллбару */
     scrollbar-arrow-color: $main-color; /* колір стрілок прокрутки */

@@ -547,7 +547,7 @@
   scrollbar-color: rgb(125, 193, 229) rgb(255, 255, 255); /* колір "рукоятки" та фону скроллбару */
   scrollbar-width: 7px;
 }
-.about_about__content__HQZqw::-ms-scrollbar {
+.about_about__content__HQZqw {
   scrollbar-face-color: rgb(125, 193, 229); /* колір "рукоятки" скроллбару */
   scrollbar-track-color: rgb(255, 255, 255); /* колір фону скроллбару */
   scrollbar-arrow-color: rgb(125, 193, 229); /* колір стрілок прокрутки */

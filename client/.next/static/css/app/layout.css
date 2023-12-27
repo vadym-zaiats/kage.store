@@ -502,6 +502,19 @@ a {
   border-radius: 10px 10px 0 0;
 }
 
+.footer_footer__logo__AIxe8 {
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_footer__logo--title__mrjld {
+  margin: 0 0 0 15px;
+  color: rgb(125, 193, 229);
+  font-weight: 700;
+  font-size: 26px;
+}
+
 .footer_footer__items__WANwL {
   margin: 20px;
 }
