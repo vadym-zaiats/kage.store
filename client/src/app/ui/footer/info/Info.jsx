@@ -3,6 +3,7 @@
 import styles from "../footer.module.scss";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 export function Info() {
   const [pagesIsOpen, setPagesIsOpen] = useState(false);
@@ -37,19 +38,35 @@ export function Info() {
             pagesIsOpen && styles["footer__pages-items--open"]
           }`}
         >
-          <li className={`${styles["footer__link"]}`}>Новини</li>
-          <li className={`${styles["footer__link"]}`}>Як зробити замовлення</li>
-          <li className={`${styles["footer__link"]}`}>Доставка та оплата</li>
-          <li className={`${styles["footer__link"]}`}>Обмін так повернення</li>
-          <li className={`${styles["footer__link"]}`}>Гарантії</li>
-          <li className={`${styles["footer__link"]}`}>Де моє замовлення</li>
           <li className={`${styles["footer__link"]}`}>
-            Договір піблічнох оферти
+            <Link href="/news">Новини</Link>
           </li>
-          <li className={`${styles["footer__link"]}`}>Розмірна сітка</li>
-          <li className={`${styles["footer__link"]}`}>Контакти</li>
           <li className={`${styles["footer__link"]}`}>
-            Згода на обробку персональних даних
+            <Link href="/order">Як зробити замовлення</Link>
+          </li>
+          <li className={`${styles["footer__link"]}`}>
+            <Link href="/delivery">Доставка та оплата</Link>
+          </li>
+          <li className={`${styles["footer__link"]}`}>
+            <Link href="/returning">Обмін так повернення</Link>
+          </li>
+          <li className={`${styles["footer__link"]}`}>
+            <Link href="/guarantee">Гарантії</Link>
+          </li>
+          <li className={`${styles["footer__link"]}`}>
+            <Link href="/my-order">Де моє замовлення</Link>
+          </li>
+          <li className={`${styles["footer__link"]}`}>
+            <Link href="/contract">Договір піблічнох оферти</Link>
+          </li>
+          <li className={`${styles["footer__link"]}`}>
+            <Link href="/dimensional-grid">Розмірна сітка</Link>
+          </li>
+          <li className={`${styles["footer__link"]}`}>
+            <Link href="/contacts">Контакти</Link>
+          </li>
+          <li className={`${styles["footer__link"]}`}>
+            <Link href="/agreement">Згода на обробку персональних даних</Link>
           </li>
         </ul>
       </li>
