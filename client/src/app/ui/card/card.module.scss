@@ -27,6 +27,14 @@
   border: none;
 }
 
+.card-wrapper__delete {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .card-wrapper__to-cart {
   position: absolute;
   bottom: 12px;

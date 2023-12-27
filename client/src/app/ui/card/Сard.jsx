@@ -3,11 +3,7 @@ import styles from "./card.module.scss";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { addToFavFunc } from "@/redux/middlewares/favourite";
-import {
-  addToCartFunc,
-  addSeveralToCart,
-  delFromCart,
-} from "@/redux/middlewares/cart";
+import { addToCart, delFromCart } from "@/redux/middlewares/cart";
 
 export function Card({
   name,
@@ -75,7 +71,7 @@ export function Card({
         </div>
       </Link>
       {count && (
-        <button>
+        <button className={styles[`card-wrapper__delete`]}>
           <Image
             onClick={() => {
               dispatch(delFromCart({ itemNo }));
@@ -93,7 +89,7 @@ export function Card({
           <Image
             onClick={() => {
               dispatch(
-                addToCartFunc({
+                addToCart({
                   name,
                   currentPrice,
                   imageUrls,
@@ -121,7 +117,7 @@ export function Card({
             className={styles[`card-wrapper__decrease`]}
             onClick={() => {
               dispatch(
-                addSeveralToCart({
+                addToCart({
                   name,
                   currentPrice,
                   imageUrls,
@@ -139,7 +135,6 @@ export function Card({
             width={25}
             height={25}
             alt="to-cart"
-            priority
           >
             -
           </button>
@@ -149,7 +144,7 @@ export function Card({
             className={styles[`card-wrapper__increase`]}
             onClick={() => {
               dispatch(
-                addSeveralToCart({
+                addToCart({
                   name,
                   currentPrice,
                   imageUrls,

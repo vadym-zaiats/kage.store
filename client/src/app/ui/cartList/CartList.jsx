@@ -8,10 +8,11 @@ import { Card } from "../card/Сard";
 
 export function CartList() {
   const prodsInCart = useSelector((state) => state.cart.cart);
+  const totalSum = useSelector((state) => state.cart.totalSum);
 
   return (
     <Provider store={store}>
-      <div>
+      <div className={styles["card-list"]}>
         {prodsInCart.map(
           ({
             name,
@@ -43,6 +44,7 @@ export function CartList() {
           }
         )}
       </div>
+      <button>Замовити {totalSum}</button>
     </Provider>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import styles from "./currentProd.module.scss";
 import Image from "next/image";
-import { addSeveralToCart } from "@/redux/middlewares/cart";
+import { addToCart } from "@/redux/middlewares/cart";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 
@@ -76,7 +76,7 @@ export function CurrentProduct({
       <button
         onClick={() => {
           dispatch(
-            addSeveralToCart({
+            addToCart({
               name,
               currentPrice,
               imageUrls,

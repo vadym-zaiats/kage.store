@@ -38,6 +38,14 @@
   border: none;
 }
 
+.card_card-wrapper__delete__S1xwS {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .card_card-wrapper__to-cart__fAjdC {
   position: absolute;
   bottom: 12px;
@@ -62,4 +70,14 @@
   background-color: rgb(125, 193, 229);
   width: 30px;
   height: 30px;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/cartList/cartList.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.cartList_card-list__s3IPp {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  gap: 10px;
 }

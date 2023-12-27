@@ -29,6 +29,14 @@
   border: none;
 }
 
+.card_card-wrapper__delete__S1xwS {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .card_card-wrapper__to-cart__fAjdC {
   position: absolute;
   bottom: 12px;

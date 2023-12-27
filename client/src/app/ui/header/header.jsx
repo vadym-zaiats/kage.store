@@ -10,7 +10,7 @@ import { setBurger } from "@/redux/slices/burgerSlice";
 export default function Header() {
   const dispatch = useDispatch();
   const burger = useSelector((state) => state.burger.isOpen);
-  const totalInCart = useSelector((state) => state.cart.totalInCart);
+  const totalCount = useSelector((state) => state.cart.totalCount);
   const totalInFav = useSelector((state) => state.favourite.favourite);
   return (
     <>
@@ -50,7 +50,7 @@ export default function Header() {
                 alt="cart"
                 priority
               />
-              <div className={`${styles["header__badge"]}`}>{totalInCart}</div>
+              <div className={`${styles["header__badge"]}`}>{totalCount}</div>
             </Link>
           </li>
           <li>

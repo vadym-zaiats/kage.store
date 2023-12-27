@@ -1,34 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-export const addToCartFunc = createAsyncThunk(
-  "cart/addToCartFunc",
-  (itemData, { rejectWithValue, getState }) => {
-    try {
-      const state = getState();
-      const existingProd = state.cart.cart.find(
-        (item) => item.itemNo === itemData.itemNo
-      );
-      if (existingProd) {
-        if (existingProd.count < itemData.quantity) {
-          const updatedItem = {
-            ...existingProd,
-            count: existingProd.count + 1,
-          };
-          return updatedItem;
-        } else {
-          return existingProd;
-        }
-      } else {
-        return itemData;
-      }
-    } catch (error) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
-
-export const addSeveralToCart = createAsyncThunk(
-  "cart/addSeveralToCart",
+export const addToCart = createAsyncThunk(
+  "cart/addToCart",
   (itemData, { rejectWithValue, getState }) => {
     try {
       const state = getState();
@@ -55,7 +28,7 @@ export const addSeveralToCart = createAsyncThunk(
 );
 export const delFromCart = createAsyncThunk(
   "cart/delFromCart",
-  ({ itemNo }, { rejectWithValue, getState }) => {
+  ({ itemNo }, { dispatch, rejectWithValue, getState }) => {
     try {
       const state = getState();
       const newArr = state.cart.cart.filter(
