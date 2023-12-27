@@ -1,6 +1,14 @@
+@import "@/scss/variables";
+@import "@/scss/mixines";
+
 .card-list {
   margin: 10px 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+}
+
+.card-list__buy-button {
+  @include button();
+  width: 100%;
 }

@@ -12,39 +12,48 @@ export function CartList() {
 
   return (
     <Provider store={store}>
-      <div className={styles["card-list"]}>
-        {prodsInCart.map(
-          ({
-            name,
-            currentPrice,
-            imageUrls,
-            itemNo,
-            quantity,
-            categories,
-            date,
-            hot,
-            sale,
-            count,
-          }) => {
-            return (
-              <Card
-                key={itemNo}
-                name={name}
-                currentPrice={currentPrice}
-                imageUrls={imageUrls}
-                itemNo={itemNo}
-                quantity={quantity}
-                categories={categories}
-                date={date}
-                hot={hot}
-                sale={sale}
-                count={count}
-              />
-            );
-          }
-        )}
-      </div>
-      <button>Замовити {totalSum}</button>
+      {prodsInCart.length > 0 && (
+        <>
+          <div className={styles["card-list"]}>
+            {prodsInCart.map(
+              ({
+                name,
+                currentPrice,
+                imageUrls,
+                itemNo,
+                quantity,
+                categories,
+                date,
+                hot,
+                sale,
+                count,
+              }) => {
+                return (
+                  <Card
+                    key={itemNo}
+                    name={name}
+                    currentPrice={currentPrice}
+                    imageUrls={imageUrls}
+                    itemNo={itemNo}
+                    quantity={quantity}
+                    categories={categories}
+                    date={date}
+                    hot={hot}
+                    sale={sale}
+                    count={count}
+                  />
+                );
+              }
+            )}
+          </div>
+          <button className={styles["card-list__buy-button"]}>
+            Замовити {totalSum}
+          </button>
+        </>
+      )}
+      {prodsInCart.length === 0 && (
+        <div className={styles["card-list"]}>No prods in cart</div>
+      )}
     </Provider>
   );
 }
