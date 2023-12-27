@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card } from "../card/Сard";
-import styles from "./productsBlock.module.scss";
+import styles from "./products-block.module.scss";
 
 export function ProductsBlock({ title, products }) {
   const [count, setCount] = useState(2);

@@ -1,0 +1,53 @@
+@import "@/scss/variables";
+@import "@/scss/mixines";
+
+.about {
+  background-color: $text-color;
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+}
+
+.about__title {
+  text-align: left;
+  margin: 0 0 10px 0;
+  font-size: 23px;
+  line-height: 30px;
+}
+
+.about__content {
+  margin: 20px 5px 0;
+  max-height: 450px;
+  overflow: scroll;
+  /* Для Chrome та Safari */
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    border-radius: 6px;
+  }
+  /* Для Firefox */
+  & {
+    scrollbar-color: $main-color $text-color; /* колір "рукоятки" та фону скроллбару */
+    scrollbar-width: 7px;
+  }
+  /* Для Edge та Internet Explorer */
+  &::-ms-scrollbar {
+    scrollbar-face-color: $main-color; /* колір "рукоятки" скроллбару */
+    scrollbar-track-color: $text-color; /* колір фону скроллбару */
+    scrollbar-arrow-color: $main-color; /* колір стрілок прокрутки */
+  }
+}
+
+.about__subtitle {
+  text-align: center;
+  margin: 0 20px 15px 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.about__text {
+  margin: 0 1% 10px 0;
+  line-height: 25px;
+}

@@ -6,7 +6,7 @@
   text-align: center;
   position: relative;
   background-color: rgb(178, 214, 234);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .card_card-wrapper__img__OeIwZ {
@@ -62,28 +62,28 @@
   width: 30px;
   height: 30px;
 }
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/productsBlock/productsBlock.module.scss ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.productsBlock_block__bJsBH {
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/productsBlock/products-block.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.products-block_block__p2E8q {
   margin: 25px 0;
   text-align: center;
 }
 
-.productsBlock_block__title__3Y05z {
+.products-block_block__title__QE_VX {
   margin-bottom: 20px;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
 
-.productsBlock_block__list__6lTLr {
+.products-block_block__list__GWEWG {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 4px;
   gap: 4px;
 }
 
-.productsBlock_block__show-more__oJJg3 {
+.products-block_block__show-more__euWTH {
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;
@@ -94,7 +94,7 @@
   border-radius: 30px;
   transition: all ease 0.35s;
 }
-.productsBlock_block__show-more__oJJg3:hover {
+.products-block_block__show-more__euWTH:hover {
   background-color: rgb(178, 214, 234);
   border: 2px solid rgb(125, 193, 229);
 }
@@ -509,6 +509,60 @@
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   color: rgb(255, 255, 255);
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/about/about.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+.about_about__LRnNZ {
+  background-color: rgb(255, 255, 255);
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+}
+
+.about_about__title__olBvr {
+  text-align: left;
+  margin: 0 0 10px 0;
+  font-size: 23px;
+  line-height: 30px;
+}
+
+.about_about__content__HQZqw {
+  margin: 20px 5px 0;
+  max-height: 450px;
+  overflow: scroll;
+  /* Для Chrome та Safari */
+  /* Для Firefox */
+  /* Для Edge та Internet Explorer */
+}
+.about_about__content__HQZqw::-webkit-scrollbar {
+  width: 7px;
+}
+.about_about__content__HQZqw::-webkit-scrollbar-thumb {
+  background-color: rgb(125, 193, 229);
+  border-radius: 6px;
+}
+.about_about__content__HQZqw {
+  scrollbar-color: rgb(125, 193, 229) rgb(255, 255, 255); /* колір "рукоятки" та фону скроллбару */
+  scrollbar-width: 7px;
+}
+.about_about__content__HQZqw::-ms-scrollbar {
+  scrollbar-face-color: rgb(125, 193, 229); /* колір "рукоятки" скроллбару */
+  scrollbar-track-color: rgb(255, 255, 255); /* колір фону скроллбару */
+  scrollbar-arrow-color: rgb(125, 193, 229); /* колір стрілок прокрутки */
+}
+
+.about_about__subtitle__uYgFq {
+  text-align: center;
+  margin: 0 20px 15px 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.about_about__text__ghi4r {
+  margin: 0 1% 10px 0;
+  line-height: 25px;
 }
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/instagram/instagram.module.scss ***!

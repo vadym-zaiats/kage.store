@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { ProductsBlock } from "./ui/productsBlock/ProductsBlock";
 import { Loader } from "./ui/loader/Loader";
 import { Slider } from "./ui/slider/Slider";
+import { About } from "./ui/about/About";
 import { Instagram } from "./ui/instagram/Instagram";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
       )}
       {!isLoading && <ProductsBlock title="Новинки" products={newProducts} />}
       {/* <Instagram /> */}
+      <About />
     </main>
   );
 }

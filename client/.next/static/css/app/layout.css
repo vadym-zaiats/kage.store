@@ -589,10 +589,10 @@ a {
 .layout_wrapper__L7TNG.layout_scroll-off__kYhMr {
   overflow: hidden;
 }
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/burgerMenu/burgerMenu.module.scss ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.burgerMenu_burger-menu__OcvGw {
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/burgerMenu/burger-menu.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.burger-menu_burger-menu__GOsXJ {
   position: fixed;
   top: 0;
   overflow: hidden;
@@ -602,14 +602,14 @@ a {
   z-index: 100;
 }
 
-.burgerMenu_burger-menu__head___vWua {
+.burger-menu_burger-menu__head__9MOuZ {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.burgerMenu_burger-menu__close__wBDKB {
+.burger-menu_burger-menu__close__o_xq9 {
   border: none;
   background-color: transparent;
   position: absolute;

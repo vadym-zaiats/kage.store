@@ -1,5 +1,5 @@
 "use client";
-import styles from "./currentProd.module.scss";
+import styles from "./current-prod.module.scss";
 import Image from "next/image";
 import { addToCart } from "@/redux/middlewares/cart";
 import { useState } from "react";

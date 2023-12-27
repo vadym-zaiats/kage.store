@@ -1,5 +1,5 @@
 import { CurrentProduct } from "@/app/ui/currentProd/currentProd";
-import styles from "./itemNo.module.scss";
+import styles from "./item-no.module.scss";
 
 export default function CurrentProductPage({ searchParams }) {
   const {
