@@ -1,5 +1,9 @@
 import styles from "./full-info.module.scss";
-
-export default function FullNewsInfo(params) {
-  return <div className={`${styles["full-info"]}`}>FullNewsInfo</div>;
+import { NewYearSchedule } from "@/app/ui/NewYearSchedule/NewYearSchedule";
+export default function FullNewsInfo() {
+  return (
+    <div className={`${styles["full-info"]}`}>
+      <NewYearSchedule />
+    </div>
+  );
 }
