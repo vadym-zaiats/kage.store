@@ -21,7 +21,7 @@ export default function Home() {
   }, [dispatch]);
 
   return (
-    <main className={styles[`main`]}>
+    <main className={styles.main}>
       {isLoading && <Loader />}
       <Slider products={saleProducts} />
       {!isLoading && (

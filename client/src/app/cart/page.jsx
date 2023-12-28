@@ -3,7 +3,7 @@ import { CartList } from "../ui/cartList/CartList";
 
 export default function CartPage() {
   return (
-    <div className={styles[`cart`]}>
+    <div className={styles.cart}>
       <CartList />
     </div>
   );
