@@ -47,7 +47,7 @@
 
 .card_card-wrapper__decrease__ruwsb {
   border: transparent;
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(255, 255, 255);
   width: 30px;
   height: 30px;
 }
@@ -58,7 +58,7 @@
 
 .card_card-wrapper__increase__lbsVc {
   border: transparent;
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(255, 255, 255);
   width: 30px;
   height: 30px;
 }
@@ -73,7 +73,7 @@
 .productsBlock_block__title__3Y05z {
   margin-bottom: 20px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: rgb(125, 193, 229);
 }
 
 .productsBlock_block__list__6lTLr {
@@ -87,16 +87,16 @@
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;
-  color: #fff;
+  color: rgb(178, 214, 234);
   text-align: center;
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(255, 255, 255);
   border: 2px solid rgb(178, 214, 234);
   border-radius: 30px;
   transition: all ease 0.35s;
 }
 .productsBlock_block__show-more__oJJg3:hover {
   background-color: rgb(178, 214, 234);
-  border: 2px solid rgb(125, 193, 229);
+  border: 2px solid rgb(255, 255, 255);
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/loader/loader.module.scss ***!
@@ -495,7 +495,7 @@
 .slider__title {
   margin: 15px 0 20px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: rgb(125, 193, 229);
 }
 
 .slider__img {
@@ -508,14 +508,14 @@
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(125, 193, 229);
 }
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/about/about.module.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 .about_about__LRnNZ {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(125, 193, 229);
   padding: 15px 10px;
   border-radius: 10px;
   margin: 0 0 80px 0;
@@ -540,17 +540,17 @@
   width: 7px;
 }
 .about_about__content__HQZqw::-webkit-scrollbar-thumb {
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(255, 255, 255);
   border-radius: 6px;
 }
 .about_about__content__HQZqw {
-  scrollbar-color: rgb(125, 193, 229) rgb(255, 255, 255); /* колір "рукоятки" та фону скроллбару */
+  scrollbar-color: rgb(255, 255, 255) rgb(125, 193, 229); /* колір "рукоятки" та фону скроллбару */
   scrollbar-width: 7px;
 }
 .about_about__content__HQZqw {
-  scrollbar-face-color: rgb(125, 193, 229); /* колір "рукоятки" скроллбару */
-  scrollbar-track-color: rgb(255, 255, 255); /* колір фону скроллбару */
-  scrollbar-arrow-color: rgb(125, 193, 229); /* колір стрілок прокрутки */
+  scrollbar-face-color: rgb(255, 255, 255); /* колір "рукоятки" скроллбару */
+  scrollbar-track-color: rgb(125, 193, 229); /* колір фону скроллбару */
+  scrollbar-arrow-color: rgb(255, 255, 255); /* колір стрілок прокрутки */
 }
 
 .about_about__subtitle__uYgFq {
@@ -569,7 +569,7 @@
   \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .instagram_about-instagram__qVDO4 {
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(125, 193, 229);
   margin-bottom: 15px;
 }
 
@@ -593,20 +593,20 @@
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;
-  color: #fff;
+  color: rgb(178, 214, 234);
   text-align: center;
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(255, 255, 255);
   border: 2px solid rgb(178, 214, 234);
   border-radius: 30px;
   transition: all ease 0.35s;
 }
 .instagram_about-instagram__button__9voXo:hover {
   background-color: rgb(178, 214, 234);
-  border: 2px solid rgb(125, 193, 229);
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .instagram_about-instagram__link__E0PCm {
-  color: rgb(255, 255, 255);
+  color: rgb(125, 193, 229);
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/page.module.scss ***!

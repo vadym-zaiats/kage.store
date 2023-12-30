@@ -68,14 +68,14 @@
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;
-  color: #fff;
+  color: rgb(178, 214, 234);
   text-align: center;
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(255, 255, 255);
   border: 2px solid rgb(178, 214, 234);
   border-radius: 30px;
   transition: all ease 0.35s;
 }
 .currentProd_current-product__add-to-cart__E5oZs:hover {
   background-color: rgb(178, 214, 234);
-  border: 2px solid rgb(125, 193, 229);
+  border: 2px solid rgb(255, 255, 255);
 }

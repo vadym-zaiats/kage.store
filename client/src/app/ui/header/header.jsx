@@ -19,7 +19,7 @@ export default function Header() {
           <li>
             <Link href="/">
               <Image
-                src="/imgs/logo.jpg"
+                src="/imgs/logo.png"
                 width={50}
                 height={50}
                 alt="logo"

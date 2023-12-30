@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footer__logo}>
         <Image
-          src="/imgs/logo.jpg"
+          src="/imgs/logo.png"
           width={70}
           height={70}
           alt="logo"

@@ -496,7 +496,7 @@ a {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/footer/footer.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .footer_footer__vvrAC {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(125, 193, 229);
   color: black;
   font-weight: 100;
   border-radius: 10px 10px 0 0;
@@ -510,7 +510,7 @@ a {
 }
 .footer_footer__logo--title__mrjld {
   margin: 0 0 0 15px;
-  color: rgb(125, 193, 229);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 26px;
 }
@@ -588,7 +588,7 @@ a {
   background-color: rgb(52, 142, 218);
   text-align: center;
   padding: 10px 0;
-  color: rgb(255, 255, 255);
+  color: rgb(125, 193, 229);
   font-weight: 300;
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -598,7 +598,7 @@ a {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(255, 255, 255);
 }
 
 .layout_wrapper__L7TNG.layout_scroll-off__kYhMr {
@@ -640,7 +640,7 @@ a {
   top: 0;
   z-index: 100;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(125, 193, 229);
   border-radius: 0 0 10px 10px;
 }
 
@@ -664,7 +664,7 @@ a {
   justify-content: center;
   align-items: center;
   color: black;
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(255, 255, 255);
   font-size: 10px;
   position: absolute;
   top: -10px;
