@@ -1,7 +1,3 @@
 {
-  "/delivery/page": "app/delivery/page.js",
-  "/news/page": "app/news/page.js",
-  "/returning/page": "app/returning/page.js",
-  "/my-order/page": "app/my-order/page.js",
-  "/page": "app/page.js"
+  "/my-order/page": "app/my-order/page.js"
 }

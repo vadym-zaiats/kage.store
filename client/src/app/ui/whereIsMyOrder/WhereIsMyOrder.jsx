@@ -1,4 +1,5 @@
-import styles from "./WhereIsMyOrder.module.scss";
+import styles from "./whereIsMyOrder.module.scss";
+import { WhereIsMyOrderForm } from "./whereIsMyOrderForm/WhereIsMyOrderForm";
 
 export function WhereIsMyOrder() {
   return (
@@ -15,6 +16,7 @@ export function WhereIsMyOrder() {
         а також номер телефону, який Ви вказали при оформленні замовлення.
       </p>
       <p>І натисніть кнопку "Надіслати".</p>
+      <WhereIsMyOrderForm />
     </div>
   );
 }

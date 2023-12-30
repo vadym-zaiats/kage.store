@@ -17,53 +17,17 @@
       "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
-    "/product/[itemNo]/page": [
+    "/my-order/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/product/[itemNo]/page.css",
-      "static/chunks/app/product/[itemNo]/page.js"
-    ],
-    "/news/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/news/page.css",
-      "static/chunks/app/news/page.js"
-    ],
-    "/news/[full-info]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/news/[full-info]/page.css",
-      "static/chunks/app/news/[full-info]/page.js"
-    ],
-    "/returning/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/returning/page.css",
-      "static/chunks/app/returning/page.js"
+      "static/css/app/my-order/page.css",
+      "static/chunks/app/my-order/page.js"
     ],
     "/delivery/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/delivery/page.css",
       "static/chunks/app/delivery/page.js"
-    ],
-    "/cart/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/cart/page.css",
-      "static/chunks/app/cart/page.js"
-    ],
-    "/fav/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/fav/page.css",
-      "static/chunks/app/fav/page.js"
-    ],
-    "/my-order/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/my-order/page.css",
-      "static/chunks/app/my-order/page.js"
     ]
   }
 }
