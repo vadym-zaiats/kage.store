@@ -7,9 +7,9 @@
   position: relative;
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/NewYearSchedule/new-year-schedule.module.scss ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/newYearSchedule/new-year-schedule.module.scss ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.new-year-schedule_news__item__5qlb1 {
+.new-year-schedule_news__item__HBWyC {
   margin: 15px 0px;
   display: flex;
   flex-direction: column;
@@ -18,22 +18,23 @@
   border-radius: 10px;
 }
 
-.new-year-schedule_news__img__g2VmG {
+.new-year-schedule_news__img__Pdy8s {
   border-radius: 10px 10px 0 0;
   width: 100%;
+  height: auto;
 }
 
-.new-year-schedule_news__content__PEpKE {
+.new-year-schedule_news__content__dKSVV {
   padding: 25px;
 }
 
-.new-year-schedule_news__title__sq_Do {
+.new-year-schedule_news__title__kkuF9 {
   margin: 0 0 15px 0;
   font-size: 18px;
   line-height: 22px;
 }
 
-.new-year-schedule_news__text__Rn2W5 {
+.new-year-schedule_news__text__U_nZh {
   margin: 0 0 30px 0;
   line-height: 20px;
 }

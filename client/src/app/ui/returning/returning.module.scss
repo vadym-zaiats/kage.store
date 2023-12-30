@@ -1,0 +1,30 @@
+@import "@/scss/variables";
+@import "@/scss/mixines";
+
+.returning {
+  margin: 15px 10px;
+  line-height: 20px;
+  & p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+.returning__title {
+  margin: 10px 0 30px 0;
+  &:not(:first-child) {
+    margin-top: 50px;
+  }
+}
+
+.returning__subtitle {
+  margin-bottom: 20px;
+}
+.returning__item {
+  font-weight: 800;
+}
+
+.returning__technologies {
+  font-weight: 700;
+  margin-bottom: 50px;
+}

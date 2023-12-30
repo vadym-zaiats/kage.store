@@ -7,3 +7,34 @@
   padding: 0 5px;
   position: relative;
 }
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/returning/returning.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.returning_returning__xRzQf {
+  margin: 15px 10px;
+  line-height: 20px;
+}
+.returning_returning__xRzQf p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.returning_returning__title__l3wgm {
+  margin: 10px 0 30px 0;
+}
+.returning_returning__title__l3wgm:not(:first-child) {
+  margin-top: 50px;
+}
+
+.returning_returning__subtitle__89Oot {
+  margin-bottom: 20px;
+}
+
+.returning_returning__item__RE0ty {
+  font-weight: 800;
+}
+
+.returning_returning__technologies__MINdb {
+  font-weight: 700;
+  margin-bottom: 50px;
+}
