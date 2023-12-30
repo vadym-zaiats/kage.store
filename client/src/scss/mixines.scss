@@ -1,6 +1,6 @@
 @import "@/scss/variables";
 
-@mixin button($bc: $main-color, $brdrclr: $card-color) {
+@mixin button($bc: $main-color, $brdrclr: $text-color) {
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;
@@ -13,8 +13,9 @@
   -o-transition: all ease 0.35s;
   transition: all ease 0.35s;
   &:hover {
+    cursor: pointer;
     background-color: $brdrclr;
-    border: 2px solid $bc;
+    color: $main-color;
   }
 }
 

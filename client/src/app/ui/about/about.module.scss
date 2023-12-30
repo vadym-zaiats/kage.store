@@ -2,7 +2,7 @@
 @import "@/scss/mixines";
 
 .about {
-  background-color: $text-color;
+  background-color: $card-color;
   padding: 15px 10px;
   border-radius: 10px;
   margin: 0 0 80px 0;
@@ -22,9 +22,10 @@
   /* Для Chrome та Safari */
   &::-webkit-scrollbar {
     width: 7px;
+    height: 0px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: $main-color;
+    background-color: $text-color;
     border-radius: 6px;
   }
   /* Для Firefox */

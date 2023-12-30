@@ -90,13 +90,14 @@
   color: rgb(178, 214, 234);
   text-align: center;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(178, 214, 234);
+  border: 2px solid rgb(125, 193, 229);
   border-radius: 30px;
   transition: all ease 0.35s;
 }
 .productsBlock_block__show-more__oJJg3:hover {
-  background-color: rgb(178, 214, 234);
-  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(125, 193, 229);
+  color: rgb(255, 255, 255);
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/loader/loader.module.scss ***!
@@ -515,7 +516,7 @@
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 .about_about__LRnNZ {
-  background-color: rgb(125, 193, 229);
+  background-color: rgb(178, 214, 234);
   padding: 15px 10px;
   border-radius: 10px;
   margin: 0 0 80px 0;
@@ -538,9 +539,10 @@
 }
 .about_about__content__HQZqw::-webkit-scrollbar {
   width: 7px;
+  height: 0px;
 }
 .about_about__content__HQZqw::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(125, 193, 229);
   border-radius: 6px;
 }
 .about_about__content__HQZqw {
@@ -596,13 +598,14 @@
   color: rgb(178, 214, 234);
   text-align: center;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(178, 214, 234);
+  border: 2px solid rgb(125, 193, 229);
   border-radius: 30px;
   transition: all ease 0.35s;
 }
 .instagram_about-instagram__button__9voXo:hover {
-  background-color: rgb(178, 214, 234);
-  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(125, 193, 229);
+  color: rgb(255, 255, 255);
 }
 
 .instagram_about-instagram__link__E0PCm {

@@ -88,12 +88,13 @@
   color: rgb(178, 214, 234);
   text-align: center;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(178, 214, 234);
+  border: 2px solid rgb(125, 193, 229);
   border-radius: 30px;
   transition: all ease 0.35s;
   width: 100%;
 }
 .cartList_card-list__buy-button__txS7a:hover {
-  background-color: rgb(178, 214, 234);
-  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(125, 193, 229);
+  color: rgb(255, 255, 255);
 }
