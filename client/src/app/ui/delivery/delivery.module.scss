@@ -1,36 +1,29 @@
 @import "@/scss/variables";
 @import "@/scss/mixines";
 
-.delivery {
-}
 .delivery__types {
+  margin-top: 10px;
   display: flex;
+  gap: 10px;
+  & li {
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 .delivery__type {
   border: 1px solid $text-color;
+  border-radius: 5px;
   padding: 10px;
-  &--new-post {
-  }
-  &--new-post-delivery {
-  }
-  &--ukr-post {
-  }
   &--active {
     background-color: $card-color;
   }
 }
 
-.delivery__types-content {
-}
-
 .delivery__type-content {
   display: none;
-  &--new-post {
-  }
-  &--new-post-delivery {
-  }
-  &--ukr-post {
-  }
   &--active {
     display: block;
   }

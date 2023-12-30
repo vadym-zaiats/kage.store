@@ -10,15 +10,61 @@
 .deliveryPayment_delivery-payment__title__ar3wK {
   margin: 25px 0 50px 0;
 }
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/delivery/deliveryType/deliveryType.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.deliveryType_delivery__type__kbjf0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 21px;
+  margin: 20px 10px;
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+.deliveryType_delivery__left-side__HECes {
+  margin-right: 30px;
+}
+.deliveryType_delivery__left-side__HECes p {
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+.deliveryType_delivery__left-side__HECes p:last-child {
+  font-weight: 100;
+  font-size: 12px;
+}
+.deliveryType_delivery__left-side__HECes p span {
+  font-weight: 200;
+}
+
+.deliveryType_delivery__right-side__ezbQB p {
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+.deliveryType_delivery__right-side__ezbQB p span {
+  display: block;
+  margin: 10px 0 0 0;
+  font-weight: 200;
+}
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/delivery/delivery.module.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .delivery_delivery__types__5c6Qu {
+  margin-top: 10px;
   display: flex;
+  gap: 10px;
+}
+.delivery_delivery__types__5c6Qu li {
+  display: flex;
+  align-items: center;
+}
+.delivery_delivery__types__5c6Qu li:hover {
+  cursor: pointer;
 }
 
 .delivery_delivery__type__GTKuG {
   border: 1px solid rgb(125, 193, 229);
+  border-radius: 5px;
   padding: 10px;
 }
 .delivery_delivery__type--active__JUlbZ {
