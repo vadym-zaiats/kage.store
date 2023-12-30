@@ -4,12 +4,34 @@
 .delivery {
 }
 .delivery__types {
+  display: flex;
 }
 .delivery__type {
+  border: 1px solid $text-color;
+  padding: 10px;
   &--new-post {
   }
-  &--delivery__type--new-post-delivery {
+  &--new-post-delivery {
   }
-  &--delivery__type--ukr-post {
+  &--ukr-post {
+  }
+  &--active {
+    background-color: $card-color;
+  }
+}
+
+.delivery__types-content {
+}
+
+.delivery__type-content {
+  display: none;
+  &--new-post {
+  }
+  &--new-post-delivery {
+  }
+  &--ukr-post {
+  }
+  &--active {
+    display: block;
   }
 }
