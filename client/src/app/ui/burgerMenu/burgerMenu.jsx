@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./burger-menu.module.scss";
+import styles from "./burgerMenu.module.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { setBurger } from "@/redux/slices/burgerSlice";
 import Image from "next/image";

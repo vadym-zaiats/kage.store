@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./fav-list.module.scss";
+import styles from "./favList.module.scss";
 import { store } from "@/redux/store";
 import { Provider } from "react-redux";
 import { useSelector } from "react-redux";

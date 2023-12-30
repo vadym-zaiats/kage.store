@@ -6,10 +6,10 @@
   margin: 67px 20px 30px;
   position: relative;
 }
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/newYearSchedule/new-year-schedule.module.scss ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.new-year-schedule_news__item__HBWyC {
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/newYearSchedule/newYearSchedule.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.newYearSchedule_news__item__LnWKl {
   margin: 15px 0px;
   display: flex;
   flex-direction: column;
@@ -18,23 +18,23 @@
   border-radius: 10px;
 }
 
-.new-year-schedule_news__img__Pdy8s {
+.newYearSchedule_news__img__V1u_C {
   border-radius: 10px 10px 0 0;
   width: 100%;
   height: auto;
 }
 
-.new-year-schedule_news__content__dKSVV {
+.newYearSchedule_news__content__fKhgc {
   padding: 25px;
 }
 
-.new-year-schedule_news__title__kkuF9 {
+.newYearSchedule_news__title__0bpgE {
   margin: 0 0 15px 0;
   font-size: 18px;
   line-height: 22px;
 }
 
-.new-year-schedule_news__text__U_nZh {
+.newYearSchedule_news__text__Qxj33 {
   margin: 0 0 30px 0;
   line-height: 20px;
 }

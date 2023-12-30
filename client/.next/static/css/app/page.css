@@ -62,28 +62,28 @@
   width: 30px;
   height: 30px;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/productsBlock/products-block.module.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.products-block_block__p2E8q {
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/productsBlock/productsBlock.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.productsBlock_block__bJsBH {
   margin: 25px 0;
   text-align: center;
 }
 
-.products-block_block__title__QE_VX {
+.productsBlock_block__title__3Y05z {
   margin-bottom: 20px;
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
 
-.products-block_block__list__GWEWG {
+.productsBlock_block__list__6lTLr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 4px;
   gap: 4px;
 }
 
-.products-block_block__show-more__euWTH {
+.productsBlock_block__show-more__oJJg3 {
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;
@@ -94,7 +94,7 @@
   border-radius: 30px;
   transition: all ease 0.35s;
 }
-.products-block_block__show-more__euWTH:hover {
+.productsBlock_block__show-more__oJJg3:hover {
   background-color: rgb(178, 214, 234);
   border: 2px solid rgb(125, 193, 229);
 }

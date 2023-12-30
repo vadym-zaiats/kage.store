@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./new-year-schedule.module.scss";
+import styles from "./newYearSchedule.module.scss";
 import Image from "next/image";
 
 export function NewYearSchedule() {
