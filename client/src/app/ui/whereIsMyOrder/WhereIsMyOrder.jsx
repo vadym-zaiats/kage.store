@@ -5,7 +5,7 @@ export function WhereIsMyOrder() {
   return (
     <div className={styles[`where-is-my-order`]}>
       <h2 className={styles[`where-is-my-order__title`]}>
-        ДІЗНАТИСЬ ПРОСТАТУС ВИКОНАННЯ ЗАМОВЛЕННЯ
+        ДІЗНАТИСЬ ПРО СТАТУС ВИКОНАННЯ ЗАМОВЛЕННЯ
       </h2>
       <p>
         Ви можете переглянути статус замовлення або сплатити Ваше замовлення,

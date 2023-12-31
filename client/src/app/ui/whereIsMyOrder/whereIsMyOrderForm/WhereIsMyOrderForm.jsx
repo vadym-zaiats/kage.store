@@ -1,45 +1,163 @@
 "use client";
+
 import styles from "./whereIsMyOrderForm.module.scss";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 
 export function WhereIsMyOrderForm() {
-  const [orderNumber, setOrderNumber] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [nameIsFocused, setNameIsFocused] = useState(false);
+  const [phoneIsFocused, setPhoneIsFocused] = useState(false);
+  const nameFocus = useRef(null);
+  const phoneFocus = useRef(null);
 
-  const handleOrderNumberChange = (e) => {
-    setOrderNumber(e.target.value);
+  const handleSelectedName = () => {
+    nameFocus.current.focus();
+  };
+  const handleSelectedPhone = () => {
+    phoneFocus.current.focus();
+  };
+  const handleNameFocus = () => {
+    setNameIsFocused(true);
+  };
+  const handleNameBlur = () => {
+    setNameIsFocused(false);
+  };
+  const handlePhoneFocus = () => {
+    setPhoneIsFocused(true);
+  };
+  const handlePhoneBlur = () => {
+    setPhoneIsFocused(false);
   };
 
-  const handlePhoneNumberChange = (e) => {
-    setPhoneNumber(e.target.value);
-  };
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+  });
+  const { name, phone } = formData;
 
-  const handleSearch = () => {
-    console.log("Order Number:", orderNumber);
-    console.log("Phone Number:", phoneNumber);
+  const [validationErrors, setValidationErrors] = useState({
+    name: null,
+    phone: null,
+  });
+  const validateForm = () => {
+    const phoneRegex = /^[\+]{0,1}380([0-9]{9})$/;
+    let errors = {};
+    if (name.length < 2 || name.length > 60) {
+      errors.name = "Name must be between 2 and 60 characters";
+    }
+    if (!phoneRegex.test(phone)) {
+      errors.phone = "Формат повинен бути +380ХХХХХХХХХ";
+    }
+    setValidationErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+
+    setValidationErrors({
+      ...validationErrors,
+      [name]: "",
+    });
+  };
+  const isFormFilled = () => {
+    const isFormValid = name.length > 0 && phone.length > 0;
+    return isFormValid;
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      console.log(formData);
+      // const validFormData = new FormData();
+      // Object.entries(formData).forEach(([key, value]) => {
+      //   validFormData.set(key, value);
+      // });
+      // dispatch(postCard({ validFormData, token }));
+    } else {
+      console.log("Form has validation errors");
+    }
   };
 
   return (
-    <div>
-      <label>
-        Номер замовлення:
-        <input
-          type="text"
-          value={orderNumber}
-          onChange={handleOrderNumberChange}
-        />
-      </label>
-      <br />
-      <label>
-        Номер телефону:
-        <input
-          type="text"
-          value={phoneNumber}
-          onChange={handlePhoneNumberChange}
-        />
-      </label>
-      <br />
-      <button onClick={handleSearch}>Знайти замовлення</button>
+    <div className={styles[`form`]}>
+      <form className={styles[`form__body`]} onSubmit={handleSubmit}>
+        <div
+          className={`${styles["form__name"]} ${
+            validationErrors.name && styles["data__invalid"]
+          }`}
+        >
+          <input
+            className={styles[`form__name-input`]}
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            onBlur={name ? null : handleNameBlur}
+            onFocus={handleNameFocus}
+            ref={nameFocus}
+          />
+          <label
+            onClick={handleSelectedName}
+            className={`${styles["form__name-label"]} ${
+              nameIsFocused && styles["input-focused"]
+            } ${validationErrors.name && styles["data__invalid"]}`}
+          >
+            Номер замовлення
+          </label>
+        </div>
+        <div
+          className={`${styles["form__validation"]} ${
+            validationErrors.name && styles["data__invalid"]
+          }`}
+        >
+          {validationErrors.name && `${validationErrors.name}`}
+        </div>
+        <div
+          className={`${styles["form__phone"]} ${
+            validationErrors.phone && styles["data__invalid"]
+          }`}
+        >
+          <input
+            className={styles[`form__phone-input`]}
+            type="tel"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            onBlur={phone ? null : handlePhoneBlur}
+            onFocus={handlePhoneFocus}
+            ref={phoneFocus}
+          />
+          <label
+            onClick={handleSelectedPhone}
+            className={`${styles["form__phone-label"]} ${
+              phoneIsFocused && styles["input-focused"]
+            } ${validationErrors.phone && styles["data__invalid"]}`}
+          >
+            Номер телефону
+          </label>
+        </div>
+        <div
+          className={`${styles["form__validation"]} ${
+            validationErrors.phone && styles["data__invalid"]
+          }`}
+        >
+          {validationErrors.phone && "Номер має бути у форматі +380ХХХХХХХХХ"}
+        </div>
+        <button
+          className={`${styles["form__button"]} ${
+            isFormFilled() && styles["enabled"]
+          }`}
+          type="submit"
+          disabled={!isFormFilled()}
+        >
+          Знайти замовлення
+        </button>
+      </form>
     </div>
   );
 }
