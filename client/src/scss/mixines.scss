@@ -1,6 +1,6 @@
 @import "@/scss/variables";
 
-@mixin button($bc: $main-color, $brdrclr: $text-color) {
+@mixin button($bc: $main-color, $brdrclr: $card-color) {
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;

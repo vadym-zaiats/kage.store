@@ -1,0 +1,45 @@
+@import "@/scss/variables";
+@import "@/scss/mixines";
+
+.contacts__content {
+  line-height: 20px;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "left right"
+    "map map";
+  gap: 10px;
+}
+
+.contacts__left {
+  grid-area: left;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.contacts__right {
+  grid-area: right;
+  & p {
+    margin: 10px 0;
+  }
+}
+
+.contacts__type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+.contacts__info {
+  margin-top: 10px;
+}
+
+.contacts__map {
+  border: 1px solid black;
+  grid-area: map;
+}
