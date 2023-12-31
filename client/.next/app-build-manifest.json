@@ -1,9 +1,10 @@
 {
   "pages": {
-    "/not-found": [
+    "/contacts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/css/app/contacts/page.css",
+      "static/chunks/app/contacts/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,35 +12,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/my-order/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/my-order/page.css",
-      "static/chunks/app/my-order/page.js"
-    ],
-    "/delivery/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/delivery/page.css",
-      "static/chunks/app/delivery/page.js"
-    ],
-    "/contract/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contract/page.css",
-      "static/chunks/app/contract/page.js"
-    ],
-    "/contacts/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contacts/page.css",
-      "static/chunks/app/contacts/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }
