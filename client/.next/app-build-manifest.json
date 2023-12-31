@@ -16,6 +16,42 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
+    ],
+    "/agreement/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/agreement/page.css",
+      "static/chunks/app/agreement/page.js"
+    ],
+    "/news/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/news/page.css",
+      "static/chunks/app/news/page.js"
+    ],
+    "/delivery/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/delivery/page.css",
+      "static/chunks/app/delivery/page.js"
+    ],
+    "/returning/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/returning/page.css",
+      "static/chunks/app/returning/page.js"
+    ],
+    "/my-order/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/my-order/page.css",
+      "static/chunks/app/my-order/page.js"
+    ],
+    "/contract/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contract/page.css",
+      "static/chunks/app/contract/page.js"
     ]
   }
 }

@@ -1,3 +1,9 @@
 {
-  "/contacts/page": "app/contacts/page.js"
+  "/not-found": "app/not-found.js",
+  "/delivery/page": "app/delivery/page.js",
+  "/returning/page": "app/returning/page.js",
+  "/my-order/page": "app/my-order/page.js",
+  "/contract/page": "app/contract/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/agreement/page": "app/agreement/page.js"
 }
