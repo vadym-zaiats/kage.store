@@ -3,7 +3,7 @@
 
 .about-instagram {
   text-align: center;
-  color: $text-color;
+  color: $second-color;
   margin-bottom: 15px;
 }
 
@@ -26,5 +26,5 @@
   @include button();
 }
 .about-instagram__link {
-  color: $text-color;
+  color: $second-color;
 }

@@ -6,7 +6,7 @@
 .slider__title {
   margin: 15px 0 20px;
   font-weight: 700;
-  color: $text-color;
+  color: $second-color;
 }
 
 .slider__img {
@@ -17,6 +17,6 @@
 .swiper-button-next {
   color: $card-color;
   &:hover {
-    color: $text-color;
+    color: $second-color;
   }
 }
