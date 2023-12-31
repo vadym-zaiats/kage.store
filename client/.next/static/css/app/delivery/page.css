@@ -23,9 +23,12 @@
 }
 
 .deliveryType_delivery__left-side__HECes {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .deliveryType_delivery__left-side__HECes p {
+  padding: 8px;
+  border: 1px solid rgba(178, 214, 234, 0.4);
+  border-radius: 5px;
   margin-bottom: 25px;
   font-weight: 800;
 }
@@ -34,16 +37,21 @@
   font-size: 12px;
 }
 .deliveryType_delivery__left-side__HECes p span {
+  display: block;
+  margin-top: 10px;
   font-weight: 200;
 }
 
 .deliveryType_delivery__right-side__ezbQB p {
+  padding: 8px;
+  border: 1px solid rgba(178, 214, 234, 0.4);
+  border-radius: 5px;
   margin-bottom: 25px;
   font-weight: 800;
 }
 .deliveryType_delivery__right-side__ezbQB p span {
   display: block;
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
   font-weight: 200;
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\

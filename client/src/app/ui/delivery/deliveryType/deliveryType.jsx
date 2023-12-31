@@ -8,7 +8,12 @@ export function DeliveryType({
   type,
   typeHow,
   receiving,
-  receivingHow,
+  receivingHow1,
+  receivingHow2,
+  receivingHow3,
+  receivingHow4,
+  receivingHow5,
+  receivingHow6,
 }) {
   return (
     <div className={styles.delivery__type}>
@@ -47,7 +52,12 @@ export function DeliveryType({
         <p>
           {receiving}
           <br />
-          <span>{receivingHow}</span>
+          <span>{receivingHow1}</span>
+          <span>{receivingHow2}</span>
+          <span>{receivingHow3}</span>
+          <span>{receivingHow4}</span>
+          <span>{receivingHow5}</span>
+          <span>{receivingHow6}</span>
         </p>
         <p>
           Увага !!! Доставка крісла мішка можлива тільки Укрпоштою на
