@@ -22,6 +22,12 @@
       "static/chunks/main-app.js",
       "static/css/app/delivery/page.css",
       "static/chunks/app/delivery/page.js"
+    ],
+    "/contract/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contract/page.css",
+      "static/chunks/app/contract/page.js"
     ]
   }
 }
