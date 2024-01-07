@@ -78,6 +78,17 @@ module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js
 
 /***/ }),
 
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -89,6 +100,17 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
 /***/ "util":
 /*!***********************!*\
   !*** external "util" ***!
@@ -97,6 +119,17 @@ module.exports = require("path");
 
 "use strict";
 module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -356,7 +389,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   store: () => (/* binding */ store)\n/* harmony export */ });\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @reduxjs/toolkit */ \"(ssr)/./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js\");\n/* harmony import */ var _slices_burgerSlice__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slices/burgerSlice */ \"(ssr)/./src/redux/slices/burgerSlice.js\");\n/* harmony import */ var _slices_productsSlice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slices/productsSlice */ \"(ssr)/./src/redux/slices/productsSlice.js\");\n/* harmony import */ var _slices_cartSlice__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slices/cartSlice */ \"(ssr)/./src/redux/slices/cartSlice.js\");\n/* harmony import */ var _slices_favouriteSlice__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slices/favouriteSlice */ \"(ssr)/./src/redux/slices/favouriteSlice.js\");\n\n\n\n\n\nconst store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_4__.configureStore)({\n    reducer: {\n        burger: _slices_burgerSlice__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\n        allProducts: _slices_productsSlice__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n        cart: _slices_cartSlice__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n        favourite: _slices_favouriteSlice__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n    }\n});\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvcmVkdXgvc3RvcmUuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQWtEO0FBQ0g7QUFDSTtBQUNSO0FBQ1U7QUFFOUMsTUFBTUssUUFBUUwsZ0VBQWNBLENBQUM7SUFDbENNLFNBQVM7UUFDUEMsUUFBUU4sMkRBQVdBO1FBQ25CTyxhQUFhTiw2REFBYUE7UUFDMUJPLE1BQU1OLHlEQUFTQTtRQUNmTyxXQUFXTiw4REFBY0E7SUFFM0I7QUFDRixHQUFHIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8va2FnZS5zdG9yZS8uL3NyYy9yZWR1eC9zdG9yZS5qcz9kZDQ5Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNvbmZpZ3VyZVN0b3JlIH0gZnJvbSBcIkByZWR1eGpzL3Rvb2xraXRcIjtcbmltcG9ydCBidXJnZXJTbGljZSBmcm9tIFwiLi9zbGljZXMvYnVyZ2VyU2xpY2VcIjtcbmltcG9ydCBwcm9kdWN0c1NsaWNlIGZyb20gXCIuL3NsaWNlcy9wcm9kdWN0c1NsaWNlXCI7XG5pbXBvcnQgY2FydFNsaWNlIGZyb20gXCIuL3NsaWNlcy9jYXJ0U2xpY2VcIjtcbmltcG9ydCBmYXZvdXJpdGVTbGljZSBmcm9tIFwiLi9zbGljZXMvZmF2b3VyaXRlU2xpY2VcIjtcblxuZXhwb3J0IGNvbnN0IHN0b3JlID0gY29uZmlndXJlU3RvcmUoe1xuICByZWR1Y2VyOiB7XG4gICAgYnVyZ2VyOiBidXJnZXJTbGljZSxcbiAgICBhbGxQcm9kdWN0czogcHJvZHVjdHNTbGljZSxcbiAgICBjYXJ0OiBjYXJ0U2xpY2UsXG4gICAgZmF2b3VyaXRlOiBmYXZvdXJpdGVTbGljZSxcbiAgICAvLyBtaWRkbGV3YXJlOiBbdGh1bmtdLFxuICB9LFxufSk7XG4iXSwibmFtZXMiOlsiY29uZmlndXJlU3RvcmUiLCJidXJnZXJTbGljZSIsInByb2R1Y3RzU2xpY2UiLCJjYXJ0U2xpY2UiLCJmYXZvdXJpdGVTbGljZSIsInN0b3JlIiwicmVkdWNlciIsImJ1cmdlciIsImFsbFByb2R1Y3RzIiwiY2FydCIsImZhdm91cml0ZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/redux/store.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   store: () => (/* binding */ store),\n/* harmony export */   wrapper: () => (/* binding */ wrapper)\n/* harmony export */ });\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @reduxjs/toolkit */ \"(ssr)/./node_modules/@reduxjs/toolkit/dist/redux-toolkit.esm.js\");\n/* harmony import */ var next_redux_wrapper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next-redux-wrapper */ \"(ssr)/./node_modules/next-redux-wrapper/es6/index.js\");\n/* harmony import */ var _slices_burgerSlice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slices/burgerSlice */ \"(ssr)/./src/redux/slices/burgerSlice.js\");\n/* harmony import */ var _slices_productsSlice__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slices/productsSlice */ \"(ssr)/./src/redux/slices/productsSlice.js\");\n/* harmony import */ var _slices_cartSlice__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slices/cartSlice */ \"(ssr)/./src/redux/slices/cartSlice.js\");\n/* harmony import */ var _slices_favouriteSlice__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slices/favouriteSlice */ \"(ssr)/./src/redux/slices/favouriteSlice.js\");\n\n\n\n\n\n\nconst store = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_5__.configureStore)({\n    reducer: {\n        burger: _slices_burgerSlice__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n        allProducts: _slices_productsSlice__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n        cart: _slices_cartSlice__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n        favourite: _slices_favouriteSlice__WEBPACK_IMPORTED_MODULE_4__[\"default\"]\n    }\n});\nconst wrapper = (0,next_redux_wrapper__WEBPACK_IMPORTED_MODULE_0__.createWrapper)(store);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvcmVkdXgvc3RvcmUuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBa0Q7QUFDQztBQUNKO0FBQ0k7QUFDUjtBQUNVO0FBRTlDLE1BQU1NLFFBQVFOLGdFQUFjQSxDQUFDO0lBQ2xDTyxTQUFTO1FBQ1BDLFFBQVFOLDJEQUFXQTtRQUNuQk8sYUFBYU4sNkRBQWFBO1FBQzFCTyxNQUFNTix5REFBU0E7UUFDZk8sV0FBV04sOERBQWNBO0lBRTNCO0FBQ0YsR0FBRztBQUVJLE1BQU1PLFVBQVVYLGlFQUFhQSxDQUFDSyxPQUFPIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8va2FnZS5zdG9yZS8uL3NyYy9yZWR1eC9zdG9yZS5qcz9kZDQ5Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNvbmZpZ3VyZVN0b3JlIH0gZnJvbSBcIkByZWR1eGpzL3Rvb2xraXRcIjtcbmltcG9ydCB7IGNyZWF0ZVdyYXBwZXIgfSBmcm9tIFwibmV4dC1yZWR1eC13cmFwcGVyXCI7XG5pbXBvcnQgYnVyZ2VyU2xpY2UgZnJvbSBcIi4vc2xpY2VzL2J1cmdlclNsaWNlXCI7XG5pbXBvcnQgcHJvZHVjdHNTbGljZSBmcm9tIFwiLi9zbGljZXMvcHJvZHVjdHNTbGljZVwiO1xuaW1wb3J0IGNhcnRTbGljZSBmcm9tIFwiLi9zbGljZXMvY2FydFNsaWNlXCI7XG5pbXBvcnQgZmF2b3VyaXRlU2xpY2UgZnJvbSBcIi4vc2xpY2VzL2Zhdm91cml0ZVNsaWNlXCI7XG5cbmV4cG9ydCBjb25zdCBzdG9yZSA9IGNvbmZpZ3VyZVN0b3JlKHtcbiAgcmVkdWNlcjoge1xuICAgIGJ1cmdlcjogYnVyZ2VyU2xpY2UsXG4gICAgYWxsUHJvZHVjdHM6IHByb2R1Y3RzU2xpY2UsXG4gICAgY2FydDogY2FydFNsaWNlLFxuICAgIGZhdm91cml0ZTogZmF2b3VyaXRlU2xpY2UsXG4gICAgLy8gbWlkZGxld2FyZTogW3RodW5rXSxcbiAgfSxcbn0pO1xuXG5leHBvcnQgY29uc3Qgd3JhcHBlciA9IGNyZWF0ZVdyYXBwZXIoc3RvcmUpO1xuIl0sIm5hbWVzIjpbImNvbmZpZ3VyZVN0b3JlIiwiY3JlYXRlV3JhcHBlciIsImJ1cmdlclNsaWNlIiwicHJvZHVjdHNTbGljZSIsImNhcnRTbGljZSIsImZhdm91cml0ZVNsaWNlIiwic3RvcmUiLCJyZWR1Y2VyIiwiYnVyZ2VyIiwiYWxsUHJvZHVjdHMiLCJjYXJ0IiwiZmF2b3VyaXRlIiwid3JhcHBlciJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./src/redux/store.js\n");
 
 /***/ }),
 
@@ -644,7 +677,7 @@ const e0 = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__W
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/@reduxjs","vendor-chunks/react-redux","vendor-chunks/immer","vendor-chunks/use-sync-external-store","vendor-chunks/hoist-non-react-statics","vendor-chunks/reselect","vendor-chunks/react-is","vendor-chunks/@babel","vendor-chunks/swiper"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.jsx&appDir=%2FUsers%2Fvadym%2Fdev%2Fkage.store%2Fclient%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fvadym%2Fdev%2Fkage.store%2Fclient&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/@reduxjs","vendor-chunks/react-redux","vendor-chunks/immer","vendor-chunks/next-redux-wrapper","vendor-chunks/use-sync-external-store","vendor-chunks/hoist-non-react-statics","vendor-chunks/reselect","vendor-chunks/react-is","vendor-chunks/@babel","vendor-chunks/swiper"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.jsx&appDir=%2FUsers%2Fvadym%2Fdev%2Fkage.store%2Fclient%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fvadym%2Fdev%2Fkage.store%2Fclient&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
