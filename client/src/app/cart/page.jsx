@@ -1,9 +1,9 @@
-import styles from "./cart.module.scss";
+import styles from "@/scss/pageMarkup.scss";
 import { CartList } from "../ui/cartList/CartList";
 
 export default function CartPage() {
   return (
-    <div className={styles.cart}>
+    <div className="page-markup">
       <CartList />
     </div>
   );

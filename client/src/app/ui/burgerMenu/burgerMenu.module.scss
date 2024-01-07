@@ -25,3 +25,9 @@
   top: 50%;
   transform: translate(0, -50%);
 }
+
+.burger-menu__item {
+  &:hover {
+    cursor: pointer;
+  }
+}

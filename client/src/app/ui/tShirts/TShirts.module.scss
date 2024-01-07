@@ -1,0 +1,21 @@
+@import "@/scss/variables";
+@import "@/scss/mixines";
+
+.block {
+  margin: 25px 0;
+  text-align: center;
+}
+.block__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: $second-color;
+}
+.block__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.block__show-more {
+  @include button();
+}

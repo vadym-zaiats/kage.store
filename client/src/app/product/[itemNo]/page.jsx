@@ -13,6 +13,7 @@ export default function CurrentProductPage({ searchParams }) {
     hot,
     sale,
   } = searchParams;
+
   return (
     <div className={styles[`current-product`]}>
       <CurrentProduct

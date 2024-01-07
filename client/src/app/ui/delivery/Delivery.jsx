@@ -10,6 +10,7 @@ export function Delivery() {
 
   return (
     <div className={styles.delivery}>
+      <h2 className={styles[`delivery-payment__title`]}>ДОСТАВКА ТА ОПЛАТА</h2>
       <h3>ДОСТАВКА</h3>
       <ul className={styles.delivery__types}>
         <li

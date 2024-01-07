@@ -1,14 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { setAllProducts } from "../middlewares/products";
+
+const initialState = {
+  allProducts: [],
+  hotProducts: [],
+  newProducts: [],
+  saleProducts: [],
+  isLoading: true,
+};
+
 const productsSlice = createSlice({
   name: "allProducts",
-  initialState: {
-    allProducts: [],
-    hotProducts: [],
-    newProducts: [],
-    saleProducts: [],
-    isLoading: true,
-  },
+  initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(setAllProducts.pending, (state) => {});

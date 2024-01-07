@@ -26,7 +26,15 @@ export function Slider({ products }) {
           Array.isArray(products) &&
           products.length > 0 &&
           products.map(
-            ({ name, currentPrice, imageUrls, itemNo, quantity, _id }) => (
+            ({
+              name,
+              currentPrice,
+              imageUrls,
+              itemNo,
+              quantity,
+              _id,
+              categories,
+            }) => (
               <SwiperSlide
                 style={{
                   display: "flex",
@@ -37,7 +45,7 @@ export function Slider({ products }) {
               >
                 <Link
                   href={{
-                    pathname: `/product/${itemNo}`,
+                    pathname: `/products/${itemNo}`,
                     query: {
                       name,
                       currentPrice,

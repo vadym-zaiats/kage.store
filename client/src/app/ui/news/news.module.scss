@@ -1,6 +1,11 @@
 @import "@/scss/variables";
 @import "@/scss/mixines";
 
+.news__title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .news__item {
   margin: 15px 0px;
   display: flex;

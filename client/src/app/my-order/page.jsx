@@ -1,9 +1,9 @@
-import styles from "./myOrder.module.scss";
+import styles from "@/scss/pageMarkup.scss";
 import { WhereIsMyOrder } from "../ui/whereIsMyOrder/WhereIsMyOrder";
 
 export default function MyOrderPage() {
   return (
-    <div className={styles[`where-is-my-order`]}>
+    <div className="page-markup">
       <WhereIsMyOrder />
     </div>
   );

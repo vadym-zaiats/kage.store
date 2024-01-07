@@ -1,9 +1,9 @@
 {
-  "/not-found": "app/not-found.js",
-  "/delivery/page": "app/delivery/page.js",
+  "/news/page": "app/news/page.js",
+  "/news/[full-info]/page": "app/news/[full-info]/page.js",
+  "/page": "app/page.js",
+  "/product/[itemNo]/page": "app/product/[itemNo]/page.js",
   "/returning/page": "app/returning/page.js",
-  "/my-order/page": "app/my-order/page.js",
-  "/contract/page": "app/contract/page.js",
-  "/contacts/page": "app/contacts/page.js",
-  "/agreement/page": "app/agreement/page.js"
+  "/not-found": "app/not-found.js",
+  "/t-shirts/page": "app/t-shirts/page.js"
 }

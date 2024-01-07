@@ -1,8 +1,8 @@
-import styles from "./full-info.module.scss";
+import styles from "@/scss/pageMarkup.scss";
 import { NewYearSchedule } from "@/app/ui/newYearSchedule/NewYearSchedule";
 export default function FullNewsInfoPage() {
   return (
-    <div className={`${styles["full-info"]}`}>
+    <div className="page-markup">
       <NewYearSchedule />
     </div>
   );

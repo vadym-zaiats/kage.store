@@ -4,13 +4,16 @@ import styles from "./burgerMenu.module.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { setBurger } from "@/redux/slices/burgerSlice";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BurgerMenu() {
   const dispatch = useDispatch();
   const burger = useSelector((state) => state.burger.isOpen);
+  const products = useSelector((state) => state.allProducts.allProducts);
+
   return (
-    <div className={`${styles["burger-menu"]} ${styles["qwe"]}`}>
-      <ul className={`${styles["burger-menu__head"]} ${styles["qwe"]}`}>
+    <div className={`${styles["burger-menu"]}`}>
+      <ul className={`${styles["burger-menu__head"]}`}>
         <li>
           <button
             className={`${styles["burger-menu__close"]}`}
@@ -37,6 +40,44 @@ export default function BurgerMenu() {
           />
         </li>
       </ul>
+      <div className={`${styles["burger-menu__content"]}`}>
+        <h3 className={`${styles["burger-menu__title"]}`}>Каталог</h3>
+        <ul className={`${styles["burger-menu__list"]}`}>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link href="/products">Усі товари</Link>
+          </li>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link
+              href="/t-shirts"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Футболки
+            </Link>
+          </li>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link
+              href="/hoodie"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Худі
+            </Link>
+          </li>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link
+              href="/pillows"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Подушки
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
