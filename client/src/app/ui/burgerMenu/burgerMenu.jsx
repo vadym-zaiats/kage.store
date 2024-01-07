@@ -44,7 +44,14 @@ export default function BurgerMenu() {
         <h3 className={`${styles["burger-menu__title"]}`}>Каталог</h3>
         <ul className={`${styles["burger-menu__list"]}`}>
           <li className={`${styles["burger-menu__item"]}`}>
-            <Link href="/products">Усі товари</Link>
+            <Link
+              href="/products"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Усі товари
+            </Link>
           </li>
           <li className={`${styles["burger-menu__item"]}`}>
             <Link

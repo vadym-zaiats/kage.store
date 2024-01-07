@@ -47,7 +47,7 @@ export function Card({
       </button>
       <Link
         href={{
-          pathname: `/products/${itemNo}`,
+          pathname: `/products/${categories}/${itemNo}`,
           query: {
             name,
             currentPrice,

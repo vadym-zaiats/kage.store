@@ -1,9 +1,9 @@
 {
   "/page": "app/page.js",
-  "/products/[itemNo]/page": "app/products/[itemNo]/page.js",
-  "/cart/page": "app/cart/page.js",
+  "/products/pillows/[itemNo]/page": "app/products/pillows/[itemNo]/page.js",
+  "/products/hoodies/[itemNo]/page": "app/products/hoodies/[itemNo]/page.js",
   "/products/t-shirts/page": "app/products/t-shirts/page.js",
+  "/products/page": "app/products/page.js",
   "/not-found": "app/not-found.js",
-  "/products/hoodies/page": "app/products/hoodies/page.js",
   "/products/pillows/page": "app/products/pillows/page.js"
 }
