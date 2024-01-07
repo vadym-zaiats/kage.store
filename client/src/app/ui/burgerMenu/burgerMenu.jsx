@@ -58,7 +58,7 @@ export default function BurgerMenu() {
           </li>
           <li className={`${styles["burger-menu__item"]}`}>
             <Link
-              href="/products/hoodie"
+              href="/products/hoodies"
               onClick={() => {
                 dispatch(setBurger());
               }}

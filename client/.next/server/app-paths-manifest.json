@@ -2,8 +2,8 @@
   "/page": "app/page.js",
   "/products/[itemNo]/page": "app/products/[itemNo]/page.js",
   "/cart/page": "app/cart/page.js",
-  "/not-found": "app/not-found.js",
   "/products/t-shirts/page": "app/products/t-shirts/page.js",
-  "/products/hoodie/page": "app/products/hoodie/page.js",
+  "/not-found": "app/not-found.js",
+  "/products/hoodies/page": "app/products/hoodies/page.js",
   "/products/pillows/page": "app/products/pillows/page.js"
 }

@@ -1,5 +1,5 @@
 import styles from "@/scss/pageMarkup.scss";
-import { Hoodie } from "@/app/ui/hoodie/Hoodie";
+import { Hoodie } from "@/app/ui/hoodies/Hoodie";
 
 export default function HoodiePage() {
   return (

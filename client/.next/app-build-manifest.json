@@ -71,17 +71,17 @@
       "static/css/app/products/t-shirts/page.css",
       "static/chunks/app/products/t-shirts/page.js"
     ],
-    "/products/hoodie/page": [
+    "/products/hoodies/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/products/hoodie/page.css",
-      "static/chunks/app/products/hoodie/page.js"
+      "static/css/app/products/hoodies/page.css",
+      "static/chunks/app/products/hoodies/page.js"
     ],
     "/products/pillows/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/products/pillows/page.css",
-      "static/chunks/app/products/pillows/page.js"
+      "static/chunks/app/products/pillows/page.js",
+      "static/css/app/products/pillows/page.css"
     ]
   }
 }
