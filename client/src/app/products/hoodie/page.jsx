@@ -1,10 +1,10 @@
 import styles from "@/scss/pageMarkup.scss";
-import { TShirts } from "../ui/tShirts/TShirts";
+import { Hoodie } from "@/app/ui/hoodie/Hoodie";
 
-export default function TShirtPage() {
+export default function HoodiePage() {
   return (
     <div className="page-markup">
-      <TShirts />
+      <Hoodie />
     </div>
   );
 }

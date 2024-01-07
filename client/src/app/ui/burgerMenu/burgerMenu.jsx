@@ -48,7 +48,7 @@ export default function BurgerMenu() {
           </li>
           <li className={`${styles["burger-menu__item"]}`}>
             <Link
-              href="/t-shirts"
+              href="/products/t-shirts"
               onClick={() => {
                 dispatch(setBurger());
               }}
@@ -58,7 +58,7 @@ export default function BurgerMenu() {
           </li>
           <li className={`${styles["burger-menu__item"]}`}>
             <Link
-              href="/hoodie"
+              href="/products/hoodie"
               onClick={() => {
                 dispatch(setBurger());
               }}
@@ -68,7 +68,7 @@ export default function BurgerMenu() {
           </li>
           <li className={`${styles["burger-menu__item"]}`}>
             <Link
-              href="/pillows"
+              href="/products/pillows"
               onClick={() => {
                 dispatch(setBurger());
               }}

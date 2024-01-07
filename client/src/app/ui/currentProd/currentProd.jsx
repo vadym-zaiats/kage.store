@@ -4,6 +4,7 @@ import Image from "next/image";
 import { addToCart } from "@/redux/middlewares/cart";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { addToFavFunc } from "@/redux/middlewares/favourite";
 
 export function CurrentProduct({
   name,
@@ -41,6 +42,21 @@ export function CurrentProduct({
           height={45}
           alt="to-fav"
           priority
+          onClick={() => {
+            dispatch(
+              addToFavFunc({
+                name,
+                currentPrice,
+                imageUrls,
+                itemNo,
+                quantity,
+                categories,
+                date,
+                hot,
+                sale,
+              })
+            );
+          }}
         />
         <Image
           className={styles[`current-product__img`]}

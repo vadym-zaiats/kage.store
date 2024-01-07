@@ -1,9 +1,9 @@
 {
-  "/news/page": "app/news/page.js",
-  "/news/[full-info]/page": "app/news/[full-info]/page.js",
   "/page": "app/page.js",
-  "/product/[itemNo]/page": "app/product/[itemNo]/page.js",
-  "/returning/page": "app/returning/page.js",
+  "/products/[itemNo]/page": "app/products/[itemNo]/page.js",
+  "/cart/page": "app/cart/page.js",
   "/not-found": "app/not-found.js",
-  "/t-shirts/page": "app/t-shirts/page.js"
+  "/products/t-shirts/page": "app/products/t-shirts/page.js",
+  "/products/hoodie/page": "app/products/hoodie/page.js",
+  "/products/pillows/page": "app/products/pillows/page.js"
 }
