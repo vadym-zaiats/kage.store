@@ -1,7 +1,8 @@
 {
-  "/products/page": "app/products/page.js",
   "/fav/page": "app/fav/page.js",
+  "/page": "app/page.js",
+  "/products/t-shirts/page": "app/products/t-shirts/page.js",
+  "/products/page": "app/products/page.js",
   "/cart/page": "app/cart/page.js",
-  "/products/pillows/[itemNo]/page": "app/products/pillows/[itemNo]/page.js",
-  "/products/t-shirts/[itemNo]/page": "app/products/t-shirts/[itemNo]/page.js"
+  "/not-found": "app/not-found.js"
 }

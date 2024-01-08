@@ -1,8 +1,6 @@
 "use client";
 
 import styles from "./cartList.module.scss";
-import { store } from "@/redux/store";
-import { Provider } from "react-redux";
 import { useSelector } from "react-redux";
 import { Card } from "../card/Сard";
 
@@ -11,7 +9,7 @@ export function CartList() {
   const totalSum = useSelector((state) => state.cart.totalSum);
 
   return (
-    <Provider store={store}>
+    <>
       {prodsInCart.length > 0 && (
         <>
           <div className={styles["card-list"]}>
@@ -54,6 +52,6 @@ export function CartList() {
       {prodsInCart.length === 0 && (
         <div className={styles["card-list"]}>No prods in cart</div>
       )}
-    </Provider>
+    </>
   );
 }

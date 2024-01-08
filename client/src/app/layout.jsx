@@ -2,7 +2,7 @@ import "./global.css";
 import { Nunito } from "next/font/google";
 import Header from "./ui/header/Header.jsx";
 import Footer from "./ui/footer/Footer.jsx";
-import { StoreProvider } from "@/redux/slices/StoreProvider";
+import { StoreProvider } from "./StoreProvider";
 import styles from "./layout.module.scss";
 
 export const nunito = Nunito({
