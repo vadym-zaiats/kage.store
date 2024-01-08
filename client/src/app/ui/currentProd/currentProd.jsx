@@ -27,6 +27,7 @@ export function CurrentProduct({
       ? setNumber((prevState) => prevState + 1)
       : null;
   };
+
   return (
     <div>
       <h3 className={styles[`current-product__title`]}>{name}</h3>

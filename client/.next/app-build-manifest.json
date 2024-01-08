@@ -1,5 +1,11 @@
 {
   "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -11,41 +17,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/page": [
+    "/products/t-shirts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
-    "/fav/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/fav/page.css",
-      "static/chunks/app/fav/page.js"
-    ],
-    "/my-order/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/my-order/page.css",
-      "static/chunks/app/my-order/page.js"
-    ],
-    "/news/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/news/page.css",
-      "static/chunks/app/news/page.js"
-    ],
-    "/news/[full-info]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/news/[full-info]/page.css",
-      "static/chunks/app/news/[full-info]/page.js"
-    ],
-    "/returning/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/returning/page.css",
-      "static/chunks/app/returning/page.js"
+      "static/css/app/products/t-shirts/page.css",
+      "static/chunks/app/products/t-shirts/page.js"
     ],
     "/products/page": [
       "static/chunks/webpack.js",
@@ -53,29 +29,17 @@
       "static/css/app/products/page.css",
       "static/chunks/app/products/page.js"
     ],
+    "/products/pillows/[itemNo]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/products/pillows/[itemNo]/page.css",
+      "static/chunks/app/products/pillows/[itemNo]/page.js"
+    ],
     "/cart/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/cart/page.css",
       "static/chunks/app/cart/page.js"
-    ],
-    "/products/t-shirts/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/products/t-shirts/page.css",
-      "static/chunks/app/products/t-shirts/page.js"
-    ],
-    "/products/hoodies/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/products/hoodies/page.css",
-      "static/chunks/app/products/hoodies/page.js"
-    ],
-    "/products/pillows/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/products/pillows/page.css",
-      "static/chunks/app/products/pillows/page.js"
     ],
     "/products/t-shirts/[itemNo]/page": [
       "static/chunks/webpack.js",
@@ -83,17 +47,11 @@
       "static/css/app/products/t-shirts/[itemNo]/page.css",
       "static/chunks/app/products/t-shirts/[itemNo]/page.js"
     ],
-    "/products/pillows/[itemNo]/page": [
+    "/fav/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/products/pillows/[itemNo]/page.css",
-      "static/chunks/app/products/pillows/[itemNo]/page.js"
-    ],
-    "/products/hoodies/[itemNo]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/products/hoodies/[itemNo]/page.css",
-      "static/chunks/app/products/hoodies/[itemNo]/page.js"
+      "static/css/app/fav/page.css",
+      "static/chunks/app/fav/page.js"
     ]
   }
 }
