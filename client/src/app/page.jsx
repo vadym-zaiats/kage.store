@@ -34,9 +34,9 @@ export default function Home() {
   const newProducts = useSelector((state) => state.allProducts.newProducts);
   const saleProducts = useSelector((state) => state.allProducts.saleProducts);
 
-  useEffect(() => {
-    dispatch(setAllProducts());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(setAllProducts());
+  // }, [dispatch]);
 
   // const { data, error, isLoading } = useGetProductsQuery();
   // console.log(data);

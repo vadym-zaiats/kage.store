@@ -12,10 +12,8 @@ const initialState = {
 const productsSlice = createSlice({
   name: "allProducts",
   initialState,
-  reducers: {},
-  extraReducers: (builder) => {
-    builder.addCase(setAllProducts.pending, (state) => {});
-    builder.addCase(setAllProducts.fulfilled, (state, action) => {
+  reducers: {
+    setProducts: (state, action) => {
       state.isLoading = false;
       state.allProducts = action.payload;
       state.hotProducts = action.payload.filter((obj) => {
@@ -27,13 +25,29 @@ const productsSlice = createSlice({
       state.saleProducts = action.payload.filter((obj) => {
         return obj.sale === true;
       });
-    });
-    builder.addCase(setAllProducts.rejected, (state, action) => {
-      state.isLoading = false;
-      state.error = action.error;
-    });
+    },
   },
+  // extraReducers: (builder) => {
+  //   builder.addCase(setAllProducts.pending, (state) => {});
+  //   builder.addCase(setAllProducts.fulfilled, (state, action) => {
+  //     state.isLoading = false;
+  //     state.allProducts = action.payload;
+  //     state.hotProducts = action.payload.filter((obj) => {
+  //       return obj.hot === true;
+  //     });
+  //     state.newProducts = action.payload.filter((obj) => {
+  //       return new Date(obj.date) > new Date("2023-12-10T12:47:48.042Z");
+  //     });
+  //     state.saleProducts = action.payload.filter((obj) => {
+  //       return obj.sale === true;
+  //     });
+  //   });
+  //   builder.addCase(setAllProducts.rejected, (state, action) => {
+  //     state.isLoading = false;
+  //     state.error = action.error;
+  //   });
+  // },
 });
 
 export default productsSlice.reducer;
-export const {} = productsSlice.actions;
+export const { setProducts } = productsSlice.actions;
