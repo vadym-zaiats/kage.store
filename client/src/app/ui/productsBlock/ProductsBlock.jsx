@@ -4,10 +4,10 @@ import { useState } from "react";
 import { Card } from "../card/Сard";
 import styles from "./productsBlock.module.scss";
 
-export function ProductsBlock({ title, products }) {
-  const [count, setCount] = useState(2);
+export function ProductsBlock({ title, products, num }) {
+  const [count, setCount] = useState(num);
   const handleLoadMore = () => {
-    setCount((prevState) => prevState + 2);
+    setCount((prevState) => prevState + num);
   };
 
   return (
