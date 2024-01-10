@@ -8,8 +8,6 @@ import Link from "next/link";
 
 export default function BurgerMenu() {
   const dispatch = useDispatch();
-  const burger = useSelector((state) => state.burger.isOpen);
-  const products = useSelector((state) => state.allProducts.allProducts);
 
   return (
     <div className={`${styles["burger-menu"]}`}>

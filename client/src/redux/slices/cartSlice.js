@@ -1,6 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { addToCart, delFromCart } from "../middlewares/cart";
 
+const initialState = {
+  cart: [],
+  loading: false,
+  error: null,
+  totalCount: 0,
+  totalSum: 0,
+};
+
+const selectors = {
+  cartSelector: (state) => state.cart,
+  errorCartSelector: (state) => state.error,
+  cartTotalCountSelector: (state) => state.totalCount,
+  cartTotalSumSelector: (state) => state.totalSum,
+};
+
 const calcCartPriceSum = (productsInCart) => {
   const arrOfSums = [];
   productsInCart.map((prod) => {
@@ -10,17 +25,10 @@ const calcCartPriceSum = (productsInCart) => {
   return totalSum;
 };
 
-const initialState = {
-  cart: [],
-  loading: false,
-  error: null,
-  totalCount: 0,
-  totalSum: 0,
-};
-
 const cartSlice = createSlice({
   name: "cart",
   initialState,
+  selectors,
   extraReducers: (builder) => {
     builder.addCase(addToCart.pending, (state) => {
       state.loading = true;
@@ -64,4 +72,9 @@ const cartSlice = createSlice({
 });
 
 export default cartSlice.reducer;
-export const {} = cartSlice.actions;
+export const {
+  cartSelector,
+  errorCartSelector,
+  cartTotalCountSelector,
+  cartTotalSumSelector,
+} = cartSlice.selectors;

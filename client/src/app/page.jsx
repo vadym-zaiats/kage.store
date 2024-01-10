@@ -6,16 +6,18 @@ import { ProductsBlock } from "./ui/productsBlock/ProductsBlock";
 import { Loader } from "./ui/loader/Loader";
 import { Slider } from "./ui/slider/Slider";
 import { About } from "./ui/about/About";
-// import { useGetProductsQuery } from "@/redux/api/productsApi";
+import {
+  hotProductsSelector,
+  newProductsSelector,
+  saleProductsSelector,
+  isLoadingSelector,
+} from "@/redux/slices/productsSlice";
 
 export default function Home() {
-  const isLoading = useSelector((state) => state.allProducts.isLoading);
-  const hotProducts = useSelector((state) => state.allProducts.hotProducts);
-  const newProducts = useSelector((state) => state.allProducts.newProducts);
-  const saleProducts = useSelector((state) => state.allProducts.saleProducts);
-
-  // const { data, error, isLoading } = useGetProductsQuery();
-  // console.log(data);
+  const isLoading = useSelector(isLoadingSelector);
+  const hotProducts = useSelector(hotProductsSelector);
+  const newProducts = useSelector(newProductsSelector);
+  const saleProducts = useSelector(saleProductsSelector);
 
   return (
     <main className={styles.main}>

@@ -2,8 +2,9 @@ import "./global.css";
 import { Nunito } from "next/font/google";
 import Header from "./ui/header/Header.jsx";
 import Footer from "./ui/footer/Footer.jsx";
-import { StoreProvider } from "./StoreProvider";
+import { StoreProvider } from "../redux/StoreProvider";
 import styles from "./layout.module.scss";
+import { getAllProducts } from "@/api/getProducts";
 
 export const nunito = Nunito({
   subsets: ["latin"],
@@ -15,23 +16,8 @@ export const metadata = {
   // description: "tviy.buyeer",
 };
 
-async function getData() {
-  try {
-    const res = await fetch(`http://localhost:4000/api/products`);
-
-    if (!res.ok) {
-      throw new Error("Server error");
-    }
-
-    const data = await res.json();
-    return data;
-  } catch (error) {
-    return console.log(error.massage);
-  }
-}
-
 export default async function RootLayout({ children }) {
-  const data = await getData();
+  const data = await getAllProducts();
   return (
     <html lang="en">
       <body className={nunito.className}>
