@@ -6,12 +6,15 @@ import Image from "next/image";
 import BurgerMenu from "../burgerMenu/BurgerMenu.jsx";
 import { useSelector, useDispatch } from "react-redux";
 import { setBurger } from "@/redux/slices/burgerSlice";
+import { cartTotalCountSelector } from "@/redux/slices/cartSlice";
+import { favouriteSelector } from "@/redux/slices/favouriteSlice";
+import { burgerIsOpenSelector } from "@/redux/slices/burgerSlice";
 
 export default function Header() {
   const dispatch = useDispatch();
-  const burger = useSelector((state) => state.burger.isOpen);
-  const totalCount = useSelector((state) => state.cart.totalCount);
-  const totalInFav = useSelector((state) => state.favourite.favourite);
+  const burger = useSelector(burgerIsOpenSelector);
+  const totalCount = useSelector(cartTotalCountSelector);
+  const totalInFav = useSelector(favouriteSelector);
   return (
     <>
       <header className={`${styles["header"]} ${styles["header--find"]}`}>

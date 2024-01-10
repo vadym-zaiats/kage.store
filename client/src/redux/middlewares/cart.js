@@ -26,6 +26,7 @@ export const addToCart = createAsyncThunk(
     }
   }
 );
+
 export const delFromCart = createAsyncThunk(
   "cart/delFromCart",
   ({ itemNo }, { dispatch, rejectWithValue, getState }) => {

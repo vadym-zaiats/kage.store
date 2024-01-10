@@ -3,10 +3,11 @@
 import styles from "./cartList.module.scss";
 import { useSelector } from "react-redux";
 import { Card } from "../card/Сard";
+import { cartSelector, cartTotalSumSelector } from "@/redux/slices/cartSlice";
 
 export function CartList() {
-  const prodsInCart = useSelector((state) => state.cart.cart);
-  const totalSum = useSelector((state) => state.cart.totalSum);
+  const prodsInCart = useSelector(cartSelector);
+  const totalSum = useSelector(cartTotalSumSelector);
 
   return (
     <>

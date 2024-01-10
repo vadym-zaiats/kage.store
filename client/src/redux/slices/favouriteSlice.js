@@ -1,11 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { addToFavFunc } from "../middlewares/favourite";
 
+const initialState = {
+  favourite: [],
+};
+const selectors = {
+  favouriteSelector: (state) => state.favourite,
+};
+
 const favouriteSlice = createSlice({
   name: "favourite",
-  initialState: {
-    favourite: [],
-  },
+  initialState,
+  selectors,
   extraReducers: (builder) => {
     builder.addCase(addToFavFunc.fulfilled, (state, action) => {
       state.favourite = action.payload;
@@ -17,4 +23,4 @@ const favouriteSlice = createSlice({
 });
 
 export default favouriteSlice.reducer;
-export const {} = favouriteSlice.actions;
+export const { favouriteSelector } = favouriteSlice.selectors;
