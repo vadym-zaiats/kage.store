@@ -1,0 +1,128 @@
+[
+  {
+    "enabled": true,
+    "name": "Hduygnd",
+    "currentPrice": 500,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/1.png"],
+    "itemNo": 123456,
+    "quantity": 7,
+    "sale": true,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:47.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Qwiurfgch",
+    "currentPrice": 500,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/2.png"],
+    "itemNo": 123457,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:48.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Wgfvhdt",
+    "currentPrice": 500,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/3.png"],
+    "itemNo": 1233458,
+    "quantity": 7,
+    "sale": true,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Oirjanf",
+    "currentPrice": 31,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/1.png"],
+    "itemNo": 123459,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:48:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Klsdhjf",
+    "currentPrice": 234,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/2.png"],
+    "itemNo": 123450,
+    "quantity": 7,
+    "sale": true,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:49:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kqncvdh",
+    "currentPrice": 200,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/3.png"],
+    "itemNo": 123567,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:50:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kqncvdh",
+    "currentPrice": 873,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/1.png"],
+    "itemNo": 123568,
+    "quantity": 7,
+    "sale": true,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:51:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kqncvdh",
+    "currentPrice": 765,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/2.png"],
+    "itemNo": 123569,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:52:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kqncvdh",
+    "currentPrice": 678,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/3.png"],
+    "itemNo": 123560,
+    "quantity": 7,
+    "sale": true,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:53:49.042Z"
+    }
+  }
+]
