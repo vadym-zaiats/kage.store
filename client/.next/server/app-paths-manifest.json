@@ -1,6 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/not-found": "app/not-found.js",
-  "/products/t-shirts/[itemNo]/page": "app/products/t-shirts/[itemNo]/page.js",
-  "/products/page": "app/products/page.js"
-}
