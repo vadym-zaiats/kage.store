@@ -17,23 +17,23 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
+    "/products/pillows/[itemNo]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/products/pillows/[itemNo]/page.css",
+      "static/chunks/app/products/pillows/[itemNo]/page.js"
+    ],
     "/cart/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/cart/page.css",
       "static/chunks/app/cart/page.js"
     ],
-    "/products/page": [
+    "/products/t-shirts/[itemNo]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/products/page.css",
-      "static/chunks/app/products/page.js"
-    ],
-    "/products/t-shirts/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/products/t-shirts/page.css",
-      "static/chunks/app/products/t-shirts/page.js"
+      "static/css/app/products/t-shirts/[itemNo]/page.css",
+      "static/chunks/app/products/t-shirts/[itemNo]/page.js"
     ]
   }
 }

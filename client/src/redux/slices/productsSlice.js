@@ -20,8 +20,8 @@ const productsSlice = createSlice({
   name: "allProducts",
   initialState,
   selectors,
-  reducers: {
-    setProducts: (state, action) => {
+  reducers: (create) => ({
+    setProducts: create.reducer((state, action) => {
       state.isLoading = false;
       state.allProducts = action.payload;
       state.hotProducts = action.payload.filter((obj) => {
@@ -33,8 +33,8 @@ const productsSlice = createSlice({
       state.saleProducts = action.payload.filter((obj) => {
         return obj.sale === true;
       });
-    },
-  },
+    }),
+  }),
 });
 
 export default productsSlice.reducer;

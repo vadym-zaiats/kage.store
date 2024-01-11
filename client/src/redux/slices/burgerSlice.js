@@ -12,11 +12,11 @@ const burgerSlice = createSlice({
   name: "burger",
   initialState,
   selectors,
-  reducers: {
-    setBurger: (state, action) => {
+  reducers: (create) => ({
+    setBurger: create.reducer((state) => {
       state.isOpen = !state.isOpen;
-    },
-  },
+    }),
+  }),
 });
 
 export default burgerSlice.reducer;
