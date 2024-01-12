@@ -1,8 +1,8 @@
 [
   {
     "enabled": true,
-    "name": "Hduygnd",
-    "currentPrice": 500,
+    "name": "Anime",
+    "currentPrice": 562,
     "categories": "t-shirts",
     "imageUrls": ["/imgs/products/t-shirt/1.png"],
     "itemNo": 123456,
@@ -15,8 +15,8 @@
   },
   {
     "enabled": true,
-    "name": "Qwiurfgch",
-    "currentPrice": 500,
+    "name": "Manga",
+    "currentPrice": 452,
     "categories": "t-shirts",
     "imageUrls": ["/imgs/products/t-shirt/2.png"],
     "itemNo": 123457,
@@ -29,13 +29,13 @@
   },
   {
     "enabled": true,
-    "name": "Wgfvhdt",
-    "currentPrice": 500,
+    "name": "Otaku",
+    "currentPrice": 523,
     "categories": "t-shirts",
     "imageUrls": ["/imgs/products/t-shirt/3.png"],
     "itemNo": 1233458,
     "quantity": 7,
-    "sale": true,
+    "sale": false,
     "hot": true,
     "date": {
       "$date": "2023-12-10T12:47:49.042Z"
@@ -43,41 +43,55 @@
   },
   {
     "enabled": true,
-    "name": "Oirjanf",
-    "currentPrice": 31,
-    "categories": "pillows",
-    "imageUrls": ["/imgs/products/pillows/1.png"],
-    "itemNo": 123459,
-    "quantity": 7,
+    "name": "Kawaii",
+    "currentPrice": 452,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/4.png"],
+    "itemNo": 835593,
+    "quantity": 10,
     "sale": false,
-    "hot": false,
+    "hot": true,
     "date": {
       "$date": "2023-12-10T12:48:49.042Z"
     }
   },
   {
     "enabled": true,
-    "name": "Klsdhjf",
-    "currentPrice": 234,
-    "categories": "pillows",
-    "imageUrls": ["/imgs/products/pillows/2.png"],
-    "itemNo": 123450,
-    "quantity": 7,
-    "sale": true,
-    "hot": true,
+    "name": "Senpai",
+    "currentPrice": 624,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/5.png"],
+    "itemNo": 714549,
+    "quantity": 17,
+    "sale": false,
+    "hot": false,
     "date": {
       "$date": "2023-12-10T12:49:49.042Z"
     }
   },
   {
     "enabled": true,
-    "name": "Kqncvdh",
-    "currentPrice": 200,
-    "categories": "pillows",
-    "imageUrls": ["/imgs/products/pillows/3.png"],
-    "itemNo": 123567,
-    "quantity": 7,
+    "name": "Kouhai",
+    "currentPrice": 865,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/6.png"],
+    "itemNo": 451845,
+    "quantity": 37,
     "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:59.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Baka",
+    "currentPrice": 451,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/7.png"],
+    "itemNo": 823534,
+    "quantity": 27,
+    "sale": true,
     "hot": false,
     "date": {
       "$date": "2023-12-10T12:50:49.042Z"
@@ -85,7 +99,315 @@
   },
   {
     "enabled": true,
-    "name": "Kqncvdh",
+    "name": "Nakama",
+    "currentPrice": 825,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/8.png"],
+    "itemNo": 616745,
+    "quantity": 71,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:49.022Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Hikikomori",
+    "currentPrice": 456,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/9.png"],
+    "itemNo": 614384,
+    "quantity": 5,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:29.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Sugoi",
+    "currentPrice": 275,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/10.png"],
+    "itemNo": 936465,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:39.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kakkoii",
+    "currentPrice": 462,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/11.png"],
+    "itemNo": 174563,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:19.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Chibi",
+    "currentPrice": 947,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/12.png"],
+    "itemNo": 234513,
+    "quantity": 7,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:23.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Moe",
+    "currentPrice": 654,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/13.png"],
+    "itemNo": 234521,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:28.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Cosplay",
+    "currentPrice": 472,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/14.png"],
+    "itemNo": 3452123,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:41.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Itadakimasu",
+    "currentPrice": 745,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/15.png"],
+    "itemNo": 813745,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:35.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Sayonara",
+    "currentPrice": 376,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/16.png"],
+    "itemNo": 245672,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:11.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Arigatou",
+    "currentPrice": 523,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/17.png"],
+    "itemNo": 235422,
+    "quantity": 7,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:12.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Konnichiwa",
+    "currentPrice": 624,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/18.png"],
+    "itemNo": 2454111,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:13.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kawaii",
+    "currentPrice": 154,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/19.png"],
+    "itemNo": 425378,
+    "quantity": 7,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:14.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Nani",
+    "currentPrice": 527,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/20.png"],
+    "itemNo": 235221,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:15.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Sakura",
+    "currentPrice": 457,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/21.png"],
+    "itemNo": 928452,
+    "quantity": 7,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T12:47:17.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Sensei",
+    "currentPrice": 826,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/22.png"],
+    "itemNo": 2634523,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:18.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Yandere",
+    "currentPrice": 423,
+    "categories": "t-shirts",
+    "imageUrls": ["/imgs/products/t-shirt/23.png"],
+    "itemNo": 235217,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T12:47:01.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Isekai",
+    "currentPrice": 423,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/1.png"],
+    "itemNo": 123459,
+    "quantity": 7,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T13:12:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Ecchi",
+    "currentPrice": 234,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/2.png"],
+    "itemNo": 123450,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T13:16:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Shoujo",
+    "currentPrice": 261,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/3.png"],
+    "itemNo": 123567,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T13:45:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Shounen",
+    "currentPrice": 200,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/4.png"],
+    "itemNo": 725634,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T13:32:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kokoro",
+    "currentPrice": 142,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/5.png"],
+    "itemNo": 843765,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T11:50:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Seiyuu",
+    "currentPrice": 200,
+    "categories": "pillows",
+    "imageUrls": ["/imgs/products/pillows/6.png"],
+    "itemNo": 234756,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T10:50:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "OVA",
     "currentPrice": 873,
     "categories": "hoodies",
     "imageUrls": ["/imgs/products/hoodie/1.png"],
@@ -99,7 +421,7 @@
   },
   {
     "enabled": true,
-    "name": "Kqncvdh",
+    "name": "Mecha",
     "currentPrice": 765,
     "categories": "hoodies",
     "imageUrls": ["/imgs/products/hoodie/2.png"],
@@ -113,16 +435,156 @@
   },
   {
     "enabled": true,
-    "name": "Kqncvdh",
-    "currentPrice": 678,
+    "name": "Iie",
+    "currentPrice": 325,
     "categories": "hoodies",
     "imageUrls": ["/imgs/products/hoodie/3.png"],
     "itemNo": 123560,
     "quantity": 7,
-    "sale": true,
+    "sale": false,
     "hot": true,
     "date": {
       "$date": "2023-12-10T12:53:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Sempai-kouhai",
+    "currentPrice": 764,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/4.png"],
+    "itemNo": 237456,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T10:01:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Iyashikei",
+    "currentPrice": 1234,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/5.png"],
+    "itemNo": 467523,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T10:02:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Fandub",
+    "currentPrice": 264,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/6.png"],
+    "itemNo": 253742,
+    "quantity": 7,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T10:03:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Henshin",
+    "currentPrice": 354,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/7.png"],
+    "itemNo": 349586,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T10:04:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Naruto",
+    "currentPrice": 234,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/8.png"],
+    "itemNo": 245212,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T10:05:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Shoujo-ai",
+    "currentPrice": 354,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/9.png"],
+    "itemNo": 485762,
+    "quantity": 7,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T10:06:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Shounen-ai",
+    "currentPrice": 245,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/10.png"],
+    "itemNo": 234519,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T10:07:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Isekai Tensei",
+    "currentPrice": 782,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/11.png"],
+    "itemNo": 3456812,
+    "quantity": 7,
+    "sale": false,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T10:08:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kareshi",
+    "currentPrice": 365,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/12.png"],
+    "itemNo": 563748,
+    "quantity": 7,
+    "sale": false,
+    "hot": true,
+    "date": {
+      "$date": "2023-12-10T10:10:49.042Z"
+    }
+  },
+  {
+    "enabled": true,
+    "name": "Kanojo",
+    "currentPrice": 754,
+    "categories": "hoodies",
+    "imageUrls": ["/imgs/products/hoodie/13.png"],
+    "itemNo": 23414,
+    "quantity": 7,
+    "sale": true,
+    "hot": false,
+    "date": {
+      "$date": "2023-12-10T11:52:49.042Z"
     }
   }
 ]
