@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function AgreementPage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <Agreement />
-    </div>
+    </main>
   );
 }

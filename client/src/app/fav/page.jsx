@@ -6,8 +6,8 @@ export const metadata = {
 };
 export default function FavouritePage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <FavList />
-    </div>
+    </main>
   );
 }

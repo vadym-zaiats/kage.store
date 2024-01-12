@@ -15,7 +15,7 @@ export default function CurrentProductPage({ searchParams }) {
   } = searchParams;
 
   return (
-    <div className={styles[`current-product`]}>
+    <main className={styles[`current-product`]}>
       <CurrentProduct
         name={name}
         currentPrice={currentPrice}
@@ -27,6 +27,6 @@ export default function CurrentProductPage({ searchParams }) {
         hot={hot}
         sale={sale}
       />
-    </div>
+    </main>
   );
 }

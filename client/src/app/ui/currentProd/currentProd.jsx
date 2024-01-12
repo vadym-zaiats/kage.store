@@ -29,7 +29,7 @@ export function CurrentProduct({
   };
 
   return (
-    <div>
+    <>
       <h3 className={styles[`current-product__title`]}>{name}</h3>
       <p className={styles[`current-product__quantity`]}>
         {quantity > 0 ? "Є" : "Немає"}
@@ -111,6 +111,6 @@ export function CurrentProduct({
       >
         Додати до корзини
       </button>
-    </div>
+    </>
   );
 }

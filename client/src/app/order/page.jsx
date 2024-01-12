@@ -5,5 +5,5 @@ export const metadata = {
   description: "How to make order",
 };
 export default function MakeOrderPage() {
-  return <div className="page-markup">MakeOrderPage</div>;
+  return <main className="page-markup">MakeOrderPage</main>;
 }

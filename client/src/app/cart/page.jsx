@@ -6,8 +6,8 @@ export const metadata = {
 };
 export default function CartPage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <CartList />
-    </div>
+    </main>
   );
 }

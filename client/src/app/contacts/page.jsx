@@ -6,8 +6,8 @@ export const metadata = {
 };
 export default function ContactsPage(params) {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <Contacts />
-    </div>
+    </main>
   );
 }

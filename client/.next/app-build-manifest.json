@@ -52,6 +52,18 @@
       "static/chunks/main-app.js",
       "static/css/app/my-order/page.css",
       "static/chunks/app/my-order/page.js"
+    ],
+    "/products/t-shirts/[itemNo]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/products/t-shirts/[itemNo]/page.css",
+      "static/chunks/app/products/t-shirts/[itemNo]/page.js"
+    ],
+    "/delivery/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/delivery/page.css",
+      "static/chunks/app/delivery/page.js"
     ]
   }
 }

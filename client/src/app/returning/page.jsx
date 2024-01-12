@@ -6,8 +6,8 @@ export const metadata = {
 };
 export default function ReturningPage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <Returning />
-    </div>
+    </main>
   );
 }

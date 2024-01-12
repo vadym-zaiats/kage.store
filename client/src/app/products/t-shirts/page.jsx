@@ -6,8 +6,8 @@ export const metadata = {
 };
 export default function TShirtPage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <TShirts />
-    </div>
+    </main>
   );
 }

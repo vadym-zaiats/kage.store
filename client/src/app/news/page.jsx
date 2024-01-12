@@ -6,8 +6,8 @@ export const metadata = {
 };
 export default function NewsPage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <News />
-    </div>
+    </main>
   );
 }

@@ -6,8 +6,8 @@ export const metadata = {
 };
 export default function ContractPage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <Contract />
-    </div>
+    </main>
   );
 }

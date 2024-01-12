@@ -6,8 +6,8 @@ export const metadata = {
 };
 export default function PillowsPage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <Pillows />
-    </div>
+    </main>
   );
 }

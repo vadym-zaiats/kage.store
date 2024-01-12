@@ -7,9 +7,9 @@ export const metadata = {
 };
 export default function DeliveryPaymentPage() {
   return (
-    <div className="page-markup">
+    <main className="page-markup">
       <Delivery />
       <Payment />
-    </div>
+    </main>
   );
 }
