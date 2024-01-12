@@ -39,7 +39,7 @@ export default function BurgerMenu() {
         </li>
       </ul>
       <div className={`${styles["burger-menu__content"]}`}>
-        <h3 className={`${styles["burger-menu__title"]}`}>Каталог</h3>
+        {/* <h3 className={`${styles["burger-menu__title"]}`}>Каталог</h3>
         <ul className={`${styles["burger-menu__list"]}`}>
           <li className={`${styles["burger-menu__item"]}`}>
             <Link
@@ -81,6 +81,14 @@ export default function BurgerMenu() {
               Подушки
             </Link>
           </li>
+        </ul> */}
+        <ul>
+          <li>Каталог</li>
+          <li>Контакти</li>
+          <li>Новини</li>
+          <li>Як зробити замовлення</li>
+          <li>Доставка і оплата</li>
+          <li>Де моє замовлення</li>
         </ul>
       </div>
     </div>

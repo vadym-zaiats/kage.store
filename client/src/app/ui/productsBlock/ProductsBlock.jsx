@@ -11,47 +11,23 @@ export function ProductsBlock({ title, products, num }) {
   };
 
   return (
-    <div className={styles[`block`]}>
+    <section className={styles[`block`]}>
       <h2 className={styles[`block__title`]}>{title}</h2>
-      <div className={styles[`block__list`]}>
+      <ul className={styles[`block__list`]}>
         {products &&
           Array.isArray(products) &&
           products.length > 0 &&
           products
             .slice(0, count)
-            .map(
-              ({
-                name,
-                currentPrice,
-                imageUrls,
-                _id,
-                itemNo,
-                quantity,
-                categories,
-                date,
-                hot,
-                sale,
-              }) => (
-                <Card
-                  key={_id}
-                  name={name}
-                  currentPrice={currentPrice}
-                  imageUrls={imageUrls}
-                  itemNo={itemNo}
-                  quantity={quantity}
-                  categories={categories}
-                  date={date}
-                  hot={hot}
-                  sale={sale}
-                />
-              )
-            )}
-      </div>
+            .map(({ _id, ...productProps }) => (
+              <Card key={_id} {...productProps} />
+            ))}
+      </ul>
       {count < products.length && (
         <button className={styles[`block__show-more`]} onClick={handleLoadMore}>
           Показати ще
         </button>
       )}
-    </div>
+    </section>
   );
 }
