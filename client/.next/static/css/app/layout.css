@@ -633,6 +633,19 @@ a {
   transform: translate(0, -50%);
 }
 
+.burgerMenu_burger-menu__content__YCxql {
+  margin: 15px 25px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.burgerMenu_burger-menu__item__SQqOJ {
+  border-bottom: 1px solid rgb(125, 193, 229);
+  padding: 0 0 10px 0;
+}
+.burgerMenu_burger-menu__item__SQqOJ:not(:last-child) {
+  margin-bottom: 25px;
+}
 .burgerMenu_burger-menu__item__SQqOJ:hover {
   cursor: pointer;
 }

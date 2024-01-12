@@ -26,7 +26,18 @@
   transform: translate(0, -50%);
 }
 
+.burger-menu__content {
+  margin: 15px 25px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
 .burger-menu__item {
+  border-bottom: 1px solid $second-color;
+  padding: 0 0 10px 0;
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
   &:hover {
     cursor: pointer;
   }

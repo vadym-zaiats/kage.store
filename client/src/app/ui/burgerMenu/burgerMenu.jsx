@@ -6,6 +6,8 @@ import { setBurger } from "@/redux/slices/burgerSlice";
 import Image from "next/image";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default function BurgerMenu() {
   const dispatch = useDispatch();
 
@@ -39,7 +41,65 @@ export default function BurgerMenu() {
         </li>
       </ul>
       <div className={`${styles["burger-menu__content"]}`}>
-        {/* <h3 className={`${styles["burger-menu__title"]}`}>Каталог</h3>
+        <ul className={`${styles["burger-menu__items-list"]}`}>
+          <li className={`${styles["burger-menu__item"]}`}>Каталог</li>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link
+              href="/contacts"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Контакти
+            </Link>
+          </li>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link
+              href="/news"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Новини
+            </Link>
+          </li>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link
+              href="/order"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Як зробити замовлення
+            </Link>
+          </li>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link
+              href="/delivery"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Доставка та оплата
+            </Link>
+          </li>
+          <li className={`${styles["burger-menu__item"]}`}>
+            <Link
+              href="/my-order"
+              onClick={() => {
+                dispatch(setBurger());
+              }}
+            >
+              Де моє замовлення
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+{
+  /* <h3 className={`${styles["burger-menu__title"]}`}>Каталог</h3>
         <ul className={`${styles["burger-menu__list"]}`}>
           <li className={`${styles["burger-menu__item"]}`}>
             <Link
@@ -81,16 +141,5 @@ export default function BurgerMenu() {
               Подушки
             </Link>
           </li>
-        </ul> */}
-        <ul>
-          <li>Каталог</li>
-          <li>Контакти</li>
-          <li>Новини</li>
-          <li>Як зробити замовлення</li>
-          <li>Доставка і оплата</li>
-          <li>Де моє замовлення</li>
-        </ul>
-      </div>
-    </div>
-  );
+        </ul> */
 }
