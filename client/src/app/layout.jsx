@@ -12,8 +12,8 @@ export const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "kage.store",
-  // description: "tviy.buyeer",
+  title: "Kage.store | Домашня сторінка",
+  description: "Home page",
 };
 
 export default async function RootLayout({ children }) {

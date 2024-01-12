@@ -1,6 +1,9 @@
 import { CurrentProduct } from "@/app/ui/currentProd/currentProd";
 import styles from "./item-no.module.scss";
-
+export const metadata = {
+  title: "Kage.store | T-SHIRTS",
+  description: "Kage.store t-shirts page",
+};
 export default function CurrentProductPage({ searchParams }) {
   const {
     name,
