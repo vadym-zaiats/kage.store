@@ -1,4 +1,9 @@
 {
   "/page": "app/page.js",
-  "/not-found": "app/not-found.js"
+  "/products/page": "app/products/page.js",
+  "/products/pillows/page": "app/products/pillows/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/products/t-shirts/page": "app/products/t-shirts/page.js",
+  "/my-order/page": "app/my-order/page.js",
+  "/products/hoodies/page": "app/products/hoodies/page.js"
 }

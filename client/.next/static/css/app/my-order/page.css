@@ -1,0 +1,168 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/whereIsMyOrder/whereIsMyOrderForm/whereIsMyOrderForm.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.whereIsMyOrderForm_form__IQrWA {
+  padding: 5px 15px;
+  background-color: rgb(178, 214, 234);
+  border-radius: 15px;
+}
+
+.whereIsMyOrderForm_form__body__OWH6O {
+  max-width: 328px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .whereIsMyOrderForm_form__body__OWH6O {
+    max-width: 380px;
+  }
+}
+
+.whereIsMyOrderForm_form__positions-wrapper__kJGS7 {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .whereIsMyOrderForm_form__positions-wrapper__kJGS7 {
+    max-width: 380px;
+  }
+}
+
+.whereIsMyOrderForm_form__name__KhZA_,
+.whereIsMyOrderForm_form__phone__EzCJO {
+  margin-top: 25px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid rgb(239, 239, 239);
+  position: relative;
+  padding: 4px 0;
+}
+
+.whereIsMyOrderForm_form__name-input__teAI7,
+.whereIsMyOrderForm_form__phone-input__MKfOF {
+  width: 90%;
+  padding: 0;
+  margin: 7px 15px;
+  border: none;
+  background-color: transparent;
+}
+.whereIsMyOrderForm_form__name-input__teAI7::placeholder,
+.whereIsMyOrderForm_form__phone-input__MKfOF::placeholder {
+  color: rgb(125, 193, 229);
+  font-size: 16px;
+}
+.whereIsMyOrderForm_form__name-input__teAI7:focus,
+.whereIsMyOrderForm_form__phone-input__MKfOF:focus {
+  outline: none;
+}
+
+.whereIsMyOrderForm_form__name__KhZA_.whereIsMyOrderForm_data__invalid__qcXoV,
+.whereIsMyOrderForm_form__phone__EzCJO.whereIsMyOrderForm_data__invalid__qcXoV {
+  border: 1px solid red;
+  margin-top: 49px;
+}
+
+.whereIsMyOrderForm_form__validation__VtNHt {
+  margin: 5px 0px 0px 15px;
+  color: rgb(125, 193, 229);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+@media (min-width: 768px) {
+  .whereIsMyOrderForm_form__validation__VtNHt {
+    margin: 0px 0px 0px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .whereIsMyOrderForm_form__validation__VtNHt {
+    font-size: 10px;
+    margin: 2px 0px 0px 16px;
+  }
+}
+@media (min-width: 1168px) {
+  .whereIsMyOrderForm_form__validation__VtNHt {
+    font-size: 12px;
+    margin: 5px 0px 0px 15px;
+  }
+}
+
+.whereIsMyOrderForm_form__validation__VtNHt.whereIsMyOrderForm_data__invalid__qcXoV {
+  color: red;
+}
+
+.whereIsMyOrderForm_form__name-label__yg2sT,
+.whereIsMyOrderForm_form__phone-label__NfLMD {
+  font-weight: 200;
+  color: rgb(239, 239, 239);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0%, -50%);
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.whereIsMyOrderForm_form__name-label__yg2sT.whereIsMyOrderForm_data__invalid__qcXoV,
+.whereIsMyOrderForm_form__phone-label__NfLMD.whereIsMyOrderForm_data__invalid__qcXoV {
+  color: red;
+}
+
+.whereIsMyOrderForm_form__name-label__yg2sT.whereIsMyOrderForm_input-focused__5I151,
+.whereIsMyOrderForm_form__phone-label__NfLMD.whereIsMyOrderForm_input-focused__5I151 {
+  top: -1px;
+  font-size: 12px;
+  background-color: rgb(178, 214, 234);
+  padding: 0 5px;
+  left: 10px;
+}
+
+.whereIsMyOrderForm_form__button__nCu9D {
+  border: none;
+  border-radius: 25px;
+  background-color: gray;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 9px 23px;
+  margin: 20px 0;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .whereIsMyOrderForm_form__button__nCu9D {
+    margin-top: 48px;
+    padding: 8px 23px;
+  }
+}
+@media (min-width: 1168px) {
+  .whereIsMyOrderForm_form__button__nCu9D {
+    margin-top: 45px;
+  }
+}
+
+.whereIsMyOrderForm_form__button__nCu9D.whereIsMyOrderForm_enabled__ixai7 {
+  background-color: rgb(125, 193, 229);
+  color: rgb(239, 239, 239);
+}
+.whereIsMyOrderForm_form__button__nCu9D.whereIsMyOrderForm_enabled__ixai7:hover {
+  cursor: pointer;
+  background-color: rgb(125, 193, 229);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/scss/pageMarkup.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page-markup {
+  flex: 1 1 auto;
+  margin: 57px 10px 30px;
+  position: relative;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/whereIsMyOrder/whereIsMyOrder.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.whereIsMyOrder_where-is-my-order__FO_oB p {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.whereIsMyOrder_where-is-my-order__title__LCVmQ {
+  margin: 25px 0;
+  font-size: 35px;
+}

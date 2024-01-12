@@ -25,7 +25,20 @@
   top: 50%;
   transform: translate(0, -50%);
 }
+.burger-menu__title-block {
+  position: relative;
+}
 
+.burger-menu__title {
+  margin-bottom: 35px;
+}
+
+.burger-menu__arrow-back {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 5px;
+  top: 1px;
+}
 .burger-menu__content {
   margin: 15px 25px;
   font-size: 25px;
@@ -33,7 +46,7 @@
 }
 
 .burger-menu__item {
-  border-bottom: 1px solid $second-color;
+  border-bottom: 2px solid $second-color;
   padding: 0 0 10px 0;
   &:not(:last-child) {
     margin-bottom: 25px;

@@ -633,6 +633,21 @@ a {
   transform: translate(0, -50%);
 }
 
+.burgerMenu_burger-menu__title-block__eXOIl {
+  position: relative;
+}
+
+.burgerMenu_burger-menu__title__O3K6_ {
+  margin-bottom: 35px;
+}
+
+.burgerMenu_burger-menu__arrow-back__rqqiP {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 5px;
+  top: 1px;
+}
+
 .burgerMenu_burger-menu__content__YCxql {
   margin: 15px 25px;
   font-size: 25px;
@@ -640,7 +655,7 @@ a {
 }
 
 .burgerMenu_burger-menu__item__SQqOJ {
-  border-bottom: 1px solid rgb(125, 193, 229);
+  border-bottom: 2px solid rgb(125, 193, 229);
   padding: 0 0 10px 0;
 }
 .burgerMenu_burger-menu__item__SQqOJ:not(:last-child) {
