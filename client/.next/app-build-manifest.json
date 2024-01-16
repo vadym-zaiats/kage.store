@@ -1,11 +1,5 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -23,47 +17,17 @@
       "static/css/app/products/page.css",
       "static/chunks/app/products/page.js"
     ],
-    "/products/t-shirts/page": [
+    "/products/[itemNo]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/products/t-shirts/page.css",
-      "static/chunks/app/products/t-shirts/page.js"
+      "static/css/app/products/[itemNo]/page.css",
+      "static/chunks/app/products/[itemNo]/page.js"
     ],
-    "/products/hoodies/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/products/hoodies/page.css",
-      "static/chunks/app/products/hoodies/page.js"
-    ],
-    "/products/pillows/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/products/pillows/page.css",
-      "static/chunks/app/products/pillows/page.js"
-    ],
-    "/contacts/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contacts/page.css",
-      "static/chunks/app/contacts/page.js"
-    ],
-    "/my-order/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/my-order/page.css",
-      "static/chunks/app/my-order/page.js"
-    ],
-    "/products/t-shirts/[itemNo]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/products/t-shirts/[itemNo]/page.css",
-      "static/chunks/app/products/t-shirts/[itemNo]/page.js"
-    ],
-    "/delivery/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/delivery/page.css",
-      "static/chunks/app/delivery/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ]
   }
 }

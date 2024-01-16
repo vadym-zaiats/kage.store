@@ -3,16 +3,19 @@
 import styles from "./header.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import BurgerMenu from "../burgerMenu/BurgerMenu.jsx";
+import { BurgerMenu } from "../burgerMenu/BurgerMenu.jsx";
 import { useSelector, useDispatch } from "react-redux";
 import { setBurger } from "@/redux/slices/burgerSlice";
 import { cartTotalCountSelector } from "@/redux/slices/cartSlice";
 import { favouriteSelector } from "@/redux/slices/favouriteSlice";
 import { burgerIsOpenSelector } from "@/redux/slices/burgerSlice";
+import { filterIsOpenSelector } from "@/redux/slices/filterSlice";
+import { Filter } from "../filter/Filter";
 
-export default function Header() {
+export function Header() {
   const dispatch = useDispatch();
   const burger = useSelector(burgerIsOpenSelector);
+  const filter = useSelector(filterIsOpenSelector);
   const totalCount = useSelector(cartTotalCountSelector);
   const totalInFav = useSelector(favouriteSelector);
   return (
@@ -75,6 +78,7 @@ export default function Header() {
         </ul>
       </header>
       {burger && <BurgerMenu />}
+      {filter && <Filter />}
     </>
   );
 }

@@ -2,7 +2,7 @@ import styles from "./footer.module.scss";
 import Image from "next/image";
 import { Info } from "./info/Info";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__logo}>

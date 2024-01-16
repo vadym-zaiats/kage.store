@@ -20,7 +20,7 @@ export function Card({
   const dispatch = useDispatch();
 
   return (
-    <div className={styles[`card-wrapper`]}>
+    <li className={styles[`card-wrapper`]}>
       <button className={styles[`card-wrapper__to-fav`]}>
         <Image
           onClick={() => {
@@ -47,7 +47,7 @@ export function Card({
       </button>
       <Link
         href={{
-          pathname: `/products/${categories}/${itemNo}`,
+          pathname: `/products/${itemNo}`,
           query: {
             name,
             currentPrice,
@@ -163,6 +163,6 @@ export function Card({
           </button>
         </div>
       )}
-    </div>
+    </li>
   );
 }

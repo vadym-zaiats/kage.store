@@ -16,6 +16,26 @@
   gap: 4px;
 }
 
+.block__button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $card-color;
+  border-radius: 10px;
+}
+
+.block__filter {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  &--text {
+    font-size: 16px;
+  }
+}
+
 .block__show-more {
   @include button();
 }

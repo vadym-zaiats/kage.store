@@ -83,6 +83,26 @@
   gap: 4px;
 }
 
+.productsBlock_block__button__DyWjO {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(178, 214, 234);
+  border-radius: 10px;
+}
+
+.productsBlock_block__filter__0xyb4 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+.productsBlock_block__filter--text__caPJM {
+  font-size: 16px;
+}
+
 .productsBlock_block__show-more__oJJg3 {
   margin-top: 15px;
   display: inline-block;

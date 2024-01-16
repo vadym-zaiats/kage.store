@@ -3,6 +3,7 @@ import burgerSlice from "./slices/burgerSlice";
 import productsSlice from "./slices/productsSlice";
 import cartSlice from "./slices/cartSlice";
 import favouriteSlice from "./slices/favouriteSlice";
+import filterSlice from "./slices/filterSlice";
 import { productsApi } from "./api/productsApi";
 
 export const makeStore = () => {
@@ -12,6 +13,7 @@ export const makeStore = () => {
       allProducts: productsSlice,
       cart: cartSlice,
       favourite: favouriteSlice,
+      filter: filterSlice,
       [productsApi.reducerPath]: productsApi.reducer,
     },
     middleware: (getDefaultMiddleware) =>

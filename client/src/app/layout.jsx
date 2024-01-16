@@ -1,7 +1,7 @@
 import "./global.css";
 import { Nunito } from "next/font/google";
-import Header from "./ui/header/Header.jsx";
-import Footer from "./ui/footer/Footer.jsx";
+import { Header } from "./ui/header/Header.jsx";
+import { Footer } from "./ui/footer/Footer.jsx";
 import { StoreProvider } from "../redux/StoreProvider";
 import styles from "./layout.module.scss";
 import { getAllProducts } from "@/api/getProducts";
