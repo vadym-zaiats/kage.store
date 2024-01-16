@@ -13,6 +13,7 @@ const initialState = {
 
 const selectors = {
   filterIsOpenSelector: (state) => state.isOpen,
+  availableFiltersSelector: (state) => state.availableFilters,
 };
 
 const filterSlice = createSlice({
@@ -65,4 +66,5 @@ const filterSlice = createSlice({
 
 export default filterSlice.reducer;
 export const { setFilter } = filterSlice.actions;
-export const { filterIsOpenSelector } = filterSlice.selectors;
+export const { filterIsOpenSelector, availableFiltersSelector } =
+  filterSlice.selectors;

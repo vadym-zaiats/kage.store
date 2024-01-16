@@ -10,7 +10,6 @@ export const fetchFilters = createAsyncThunk(
         throw new Error("Server error");
       }
       const data = await res.json();
-      console.log(data);
       return data;
     } catch (error) {
       return rejectWithValue(error.message);

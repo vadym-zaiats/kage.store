@@ -9,7 +9,7 @@ export default function BurgerMenuMain() {
 
   return (
     <div className={`${styles["burger-menu__content"]}`}>
-      <ul className={`${styles["burger-menu__items-list"]}`}>
+      <ul>
         <li
           className={`${styles["burger-menu__item"]}`}
           onClick={() => {

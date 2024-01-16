@@ -4,10 +4,12 @@ import Link from "next/link";
 import { useDispatch } from "react-redux";
 import Image from "next/image";
 import { setMainMenu } from "@/redux/slices/burgerSlice";
+import { availableFiltersSelector } from "@/redux/slices/filterSlice";
+import { useSelector } from "react-redux";
 
 export default function BurgerMenuCatalog() {
   const dispatch = useDispatch();
-
+  const { categories } = useSelector(availableFiltersSelector);
   return (
     <div className={`${styles["burger-menu__content"]}`}>
       <div className={`${styles["burger-menu__title-block"]}`}>
@@ -35,36 +37,20 @@ export default function BurgerMenuCatalog() {
             Усі товари
           </Link>
         </li>
-        <li className={`${styles["burger-menu__item"]}`}>
-          <Link
-            href="/products/t-shirts"
-            onClick={() => {
-              dispatch(setBurger());
-            }}
-          >
-            Футболки
-          </Link>
-        </li>
-        <li className={`${styles["burger-menu__item"]}`}>
-          <Link
-            href="/products/hoodies"
-            onClick={() => {
-              dispatch(setBurger());
-            }}
-          >
-            Худі
-          </Link>
-        </li>
-        <li className={`${styles["burger-menu__item"]}`}>
-          <Link
-            href="/products/pillows"
-            onClick={() => {
-              dispatch(setBurger());
-            }}
-          >
-            Подушки
-          </Link>
-        </li>
+        {[...categories].map(({ name, id }) => {
+          return (
+            <li key={id} className={`${styles["burger-menu__item"]}`}>
+              <Link
+                href={`/products/${id}`}
+                onClick={() => {
+                  dispatch(setBurger());
+                }}
+              >
+                {name}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
