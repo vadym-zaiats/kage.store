@@ -45,7 +45,7 @@ export function Slider({ products }) {
               >
                 <Link
                   href={{
-                    pathname: `/products/${categories}/${itemNo}`,
+                    pathname: `/products/${itemNo}`,
                     query: {
                       name,
                       currentPrice,

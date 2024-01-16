@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t-shirts",
+    "name": "Футболки",
+    "parentId": null,
+    "date": {
+      "$date": "2024-01-16T13:20:41.838Z"
+    }
+  },
+  {
+    "id": "pillows",
+    "name": "Подушки",
+    "parentId": null,
+    "date": {
+      "$date": "2024-01-16T13:20:42.838Z"
+    }
+  },
+  {
+    "id": "hoodies",
+    "name": "Худі",
+    "parentId": null,
+    "date": {
+      "$date": "2024-01-16T13:20:43.838Z"
+    }
+  }
+]

@@ -11,6 +11,8 @@ import { favouriteSelector } from "@/redux/slices/favouriteSlice";
 import { burgerIsOpenSelector } from "@/redux/slices/burgerSlice";
 import { filterIsOpenSelector } from "@/redux/slices/filterSlice";
 import { Filter } from "../filter/Filter";
+import { fetchFilters } from "@/redux/middlewares/filter";
+import { useEffect } from "react";
 
 export function Header() {
   const dispatch = useDispatch();
@@ -18,6 +20,11 @@ export function Header() {
   const filter = useSelector(filterIsOpenSelector);
   const totalCount = useSelector(cartTotalCountSelector);
   const totalInFav = useSelector(favouriteSelector);
+
+  useEffect(() => {
+    dispatch(fetchFilters());
+  }, []);
+
   return (
     <>
       <header className={`${styles["header"]} ${styles["header--find"]}`}>
