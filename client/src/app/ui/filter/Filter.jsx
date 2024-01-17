@@ -9,7 +9,7 @@ export function Filter() {
     <div className={`${styles["burger-menu"]}`}>
       <MenuHeader func={setFilter} />
       <div className={`${styles["burger-menu__content"]}`}>
-        <h2 className={`${styles["burger-menu__title"]}`}>Фільтри</h2>
+        <h3 className={`${styles["burger-menu__title"]}`}>Фільтри</h3>
         <ul></ul>
       </div>
     </div>

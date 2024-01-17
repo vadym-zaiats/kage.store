@@ -41,9 +41,14 @@ export default function BurgerMenuCatalog() {
           return (
             <li key={id} className={`${styles["burger-menu__item"]}`}>
               <Link
-                href={`/products/${id}`}
                 onClick={() => {
                   dispatch(setBurger());
+                }}
+                href={{
+                  pathname: `/products/`,
+                  query: {
+                    categories: id,
+                  },
                 }}
               >
                 {name}

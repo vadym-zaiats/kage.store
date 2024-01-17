@@ -18,7 +18,7 @@ export function ProductsBlock({ title, products, num }) {
     <section className={styles[`block`]}>
       <h2 className={styles[`block__title`]}>{title}</h2>
       <ul className={styles[`block__list`]}>
-        {title === "Усі товари" && (
+        {title === "Усі вироби" && (
           <>
             <li className={styles[`block__button`]}>
               <button

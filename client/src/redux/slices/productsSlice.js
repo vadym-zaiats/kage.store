@@ -5,9 +5,7 @@ const initialState = {
   hotProducts: [],
   newProducts: [],
   saleProducts: [],
-  tShirts: [],
-  hoodies: [],
-  pillows: [],
+  filteredProducts: [],
   isLoading: true,
 };
 
@@ -16,9 +14,7 @@ const selectors = {
   hotProductsSelector: (state) => state.hotProducts,
   newProductsSelector: (state) => state.newProducts,
   saleProductsSelector: (state) => state.saleProducts,
-  tShirtsSelector: (state) => state.tShirts,
-  pillowsSelector: (state) => state.pillows,
-  hoodiesSelector: (state) => state.hoodies,
+  filteredProductsSelector: (state) => state.filteredProducts,
   isLoadingSelector: (state) => state.isLoading,
 };
 
@@ -39,15 +35,9 @@ const productsSlice = createSlice({
       state.saleProducts = action.payload.filter((obj) => {
         return obj.sale === true;
       });
-      state.tShirts = action.payload.filter((obj) => {
-        return obj.categories === "t-shirts";
-      });
-      state.pillows = action.payload.filter((obj) => {
-        return obj.categories === "pillows";
-      });
-      state.hoodies = action.payload.filter((obj) => {
-        return obj.categories === "hoodies";
-      });
+    }),
+    setFilteredProducts: create.reducer((state, action) => {
+      state.filteredProducts = action.payload.products;
     }),
   }),
 });
@@ -60,9 +50,7 @@ export const {
   newProductsSelector,
   saleProductsSelector,
   isLoadingSelector,
-  tShirtsSelector,
-  pillowsSelector,
-  hoodiesSelector,
+  filteredProductsSelector,
 } = productsSlice.selectors;
 
-export const { setProducts } = productsSlice.actions;
+export const { setProducts, setFilteredProducts } = productsSlice.actions;

@@ -1,12 +1,22 @@
 "use client";
 
 import styles from "./allProducts.module.scss";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { ProductsBlock } from "../productsBlock/ProductsBlock";
-import { allProductsSelector } from "@/redux/slices/productsSlice";
+import {
+  allProductsSelector,
+  filteredProductsSelector,
+} from "@/redux/slices/productsSlice";
+import { fetchFilteredProducts } from "@/redux/middlewares/filteredProducts";
+import { useEffect, useState } from "react";
 
-export function AllProducts() {
-  const prods = useSelector(allProductsSelector);
+export function AllProducts({ searchParams }) {
+  const dispatch = useDispatch();
+  const filteredProds = useSelector(filteredProductsSelector);
+  const url = new URLSearchParams(searchParams).toString();
+  useEffect(() => {
+    dispatch(fetchFilteredProducts(url));
+  }, []);
 
-  return <ProductsBlock title="Усі товари" products={prods} num={4} />;
+  return <ProductsBlock title="Усі вироби" products={filteredProds} num={4} />;
 }
