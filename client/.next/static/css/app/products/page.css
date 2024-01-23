@@ -93,9 +93,11 @@
 }
 
 .productsBlock_block__filter__0xyb4 {
+  width: 100%;
   display: flex;
   gap: 15px;
   align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
 }
