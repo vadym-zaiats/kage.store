@@ -11,6 +11,10 @@ export const productsApi = createApi({
       query: () => "api/products",
       providesTags: () => [{ type: "Products" }],
     }),
+    getCurrentProduct: builder.query({
+      query: (itemNo) => `api/products/${itemNo}`,
+      providesTags: () => [{ type: "Products" }],
+    }),
     // createProduct: builder.mutation({
     //   query: (product) => ({
     //     url: 'api/products/',
@@ -29,4 +33,4 @@ export const productsApi = createApi({
   }),
 });
 
-export const { useGetProductsQuery } = productsApi;
+export const { useGetProductsQuery, useGetCurrentProductQuery } = productsApi;

@@ -7,10 +7,10 @@ import { useDispatch } from "react-redux";
 import { addToFavFunc } from "@/redux/middlewares/favourite";
 
 export function CurrentProduct({
+  itemNo,
   name,
   currentPrice,
   imageUrls,
-  itemNo,
   quantity,
   categories,
   date,
@@ -18,7 +18,9 @@ export function CurrentProduct({
   sale,
 }) {
   const dispatch = useDispatch();
+
   const [number, setNumber] = useState(1);
+
   const decrease = () => {
     number !== 1 ? setNumber((prevState) => prevState - 1) : null;
   };
@@ -61,7 +63,7 @@ export function CurrentProduct({
         />
         <Image
           className={styles[`current-product__img`]}
-          src={imageUrls}
+          src={imageUrls[0]}
           width={320}
           height={320}
           alt={name}

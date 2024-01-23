@@ -12,11 +12,13 @@ import { useEffect, useState } from "react";
 
 export function AllProducts({ searchParams }) {
   const dispatch = useDispatch();
+
   const filteredProds = useSelector(filteredProductsSelector);
   const url = new URLSearchParams(searchParams).toString();
+
   useEffect(() => {
     dispatch(fetchFilteredProducts(url));
-  }, []);
+  }, [filteredProds]);
 
   return <ProductsBlock title="Усі вироби" products={filteredProds} num={4} />;
 }

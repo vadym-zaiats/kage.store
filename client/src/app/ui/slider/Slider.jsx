@@ -25,48 +25,27 @@ export function Slider({ products }) {
         {products &&
           Array.isArray(products) &&
           products.length > 0 &&
-          products.map(
-            ({
-              name,
-              currentPrice,
-              imageUrls,
-              itemNo,
-              quantity,
-              _id,
-              categories,
-            }) => (
-              <SwiperSlide
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
-                key={_id}
-              >
-                <Link
-                  href={{
-                    pathname: `/products/${itemNo}`,
-                    query: {
-                      name,
-                      currentPrice,
-                      imageUrls,
-                      itemNo,
-                      quantity,
-                    },
-                  }}
-                >
-                  <Image
-                    className="slider__img"
-                    src={imageUrls[0]}
-                    alt={name}
-                    width={250}
-                    height={250}
-                    priority
-                  />
-                </Link>
-              </SwiperSlide>
-            )
-          )}
+          products.map(({ name, imageUrls, itemNo, _id }) => (
+            <SwiperSlide
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              key={_id}
+            >
+              <Link href={`/products/${itemNo}`}>
+                <Image
+                  className="slider__img"
+                  src={imageUrls[0]}
+                  alt={name}
+                  width={250}
+                  height={250}
+                  priority
+                />
+              </Link>
+            </SwiperSlide>
+          ))}
       </Swiper>
     </div>
   );

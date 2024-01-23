@@ -45,18 +45,7 @@ export function Card({
           priority
         />
       </button>
-      <Link
-        href={{
-          pathname: `/products/${itemNo}`,
-          query: {
-            name,
-            currentPrice,
-            imageUrls,
-            itemNo,
-            quantity,
-          },
-        }}
-      >
+      <Link href={`/products/${itemNo}`}>
         <Image
           className={styles[`card-wrapper__img`]}
           src={imageUrls[0]}
