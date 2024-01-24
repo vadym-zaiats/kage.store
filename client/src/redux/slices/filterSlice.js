@@ -14,6 +14,8 @@ const initialState = {
 const selectors = {
   filterIsOpenSelector: (state) => state.isOpen,
   availableFiltersSelector: (state) => state.availableFilters,
+  minPriceSelector: (state) => state.availableFilters.price.min,
+  maxPriceSelector: (state) => state.availableFilters.price.max,
   categoriesSelector: (state) => state.categories,
 };
 
@@ -35,12 +37,12 @@ const filterSlice = createSlice({
       );
       if (categoryIndex > -1) state.categories.splice(categoryIndex, 1);
     }),
-    // setMinPrice: create.reducer((state, { payload: { price } }) => {
-    //   state.minPrice = price;
-    // }),
-    // setMaxPrice: create.reducer((state, { payload: { price } }) => {
-    //   state.maxPrice = price;
-    // }),
+    setMinPrice: create.reducer((state, action) => {
+      state.minPrice = action.payload;
+    }),
+    setMaxPrice: create.reducer((state, action) => {
+      state.maxPrice = action.payload;
+    }),
     // resetFilters: create.reducer((state) => ({
     //   ...initialState,
     //   availableFilters: { ...state.availableFilters },
@@ -65,9 +67,17 @@ const filterSlice = createSlice({
 });
 
 export default filterSlice.reducer;
-export const { setFilter, addCategory, removeCategory } = filterSlice.actions;
+export const {
+  setFilter,
+  addCategory,
+  removeCategory,
+  setMinPrice,
+  setMaxPrice,
+} = filterSlice.actions;
 export const {
   filterIsOpenSelector,
   availableFiltersSelector,
   categoriesSelector,
+  minPriceSelector,
+  maxPriceSelector,
 } = filterSlice.selectors;

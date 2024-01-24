@@ -1,9 +1,16 @@
 @import "@/scss/variables";
-@import "@/scss/mixines";
 
-.form__name,
-.form__phone {
-  margin-top: 25px;
+.price-range {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.2fr;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-range__min,
+.price-range__max {
   width: 100%;
   background-color: transparent;
   border-radius: 10px;
@@ -12,51 +19,45 @@
   padding: 4px 0;
 }
 
-.form__name-input,
-.form__phone-input {
+.price-range__min-input,
+.price-range__max-input {
   width: 90%;
   padding: 0;
-  margin: 7px 15px;
+  margin: 10px 7px 7px;
   border: none;
   background-color: transparent;
+  font-size: 20px;
   &::placeholder {
     color: $second-color;
-    font-size: 16px;
+    opacity: 0.5;
   }
   &:focus {
     outline: none;
   }
 }
 
-.form__name-label,
-.form__phone-label {
+.price-range__min-label,
+.price-range__max-label {
   font-weight: 200;
   color: $second-color;
   position: absolute;
-  top: 50%;
-  left: 15px;
+  font-size: 20px;
+  top: -2px;
+  background-color: #fff;
+  left: 10px;
+  padding: 0 5px;
   transform: translate(0%, -50%);
   transition: top 0.3s, font-size 0.3s;
 }
 
-.form__name-label.input-focused,
-.form__phone-label.input-focused {
-  top: -1px;
-  font-size: 12px;
-  background-color: #fff;
-  padding: 0 5px;
-  left: 10px;
-}
-
-.form__button {
+.price-range__button {
+  width: 50px;
+  padding: 10px;
   border: none;
   border-radius: 10px;
   background-color: $second-color;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.87);
-  padding: 9px 23px;
-  margin: 20px 0;
-  width: 100%;
   &:hover {
     cursor: pointer;
   }

@@ -49,6 +49,7 @@ export function Filter() {
             );
           })}
           <li className={styles[`filter__variant`]}>
+            <h5>Ціна</h5>
             <PriceRange />
           </li>
         </ul>
