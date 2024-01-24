@@ -43,12 +43,13 @@ const filterSlice = createSlice({
     setMaxPrice: create.reducer((state, action) => {
       state.maxPrice = action.payload;
     }),
-    // resetFilters: create.reducer((state) => ({
-    //   ...initialState,
-    //   availableFilters: { ...state.availableFilters },
-    //   isLoaded: state.isLoaded,
-    //   isLoading: state.isLoading,
-    // })),
+    resetFilters: create.reducer((state) => ({
+      ...initialState,
+      isOpen: true,
+      availableFilters: { ...state.availableFilters },
+      isLoaded: state.isLoaded,
+      isLoading: state.isLoading,
+    })),
   }),
   extraReducers: (builder) => {
     builder.addCase(fetchFilters.pending, (state) => {
@@ -73,6 +74,7 @@ export const {
   removeCategory,
   setMinPrice,
   setMaxPrice,
+  resetFilters,
 } = filterSlice.actions;
 export const {
   filterIsOpenSelector,

@@ -3,7 +3,7 @@
 import styles from "./filter.module.scss";
 import { MenuHeader } from "../menuHeader/MenuHeader";
 import { PriceRange } from "./priceRange/PriceRange";
-import { setFilter } from "@/redux/slices/filterSlice";
+import { setFilter, categoriesSelector } from "@/redux/slices/filterSlice";
 import {
   availableFiltersSelector,
   addCategory,
@@ -14,6 +14,7 @@ import { useSelector, useDispatch } from "react-redux";
 export function Filter() {
   const dispatch = useDispatch();
   const { categories } = useSelector(availableFiltersSelector);
+  const selectedCategories = useSelector(categoriesSelector);
 
   const toggleCategory = ({ target }) => {
     const { checked, name } = target;
@@ -40,7 +41,7 @@ export function Filter() {
                   name={id}
                   value={name}
                   onChange={toggleCategory}
-                  // checked={}
+                  checked={selectedCategories.includes(id)}
                 />
                 <label htmlFor={id} className={styles[`filter__label`]}>
                   {name}

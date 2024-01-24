@@ -4,7 +4,10 @@ import Link from "next/link";
 import { useDispatch } from "react-redux";
 import Image from "next/image";
 import { setMainMenu } from "@/redux/slices/burgerSlice";
-import { availableFiltersSelector } from "@/redux/slices/filterSlice";
+import {
+  addCategory,
+  availableFiltersSelector,
+} from "@/redux/slices/filterSlice";
 import { useSelector } from "react-redux";
 
 export default function BurgerMenuCatalog() {
@@ -43,6 +46,7 @@ export default function BurgerMenuCatalog() {
               <Link
                 onClick={() => {
                   dispatch(setBurger());
+                  dispatch(addCategory(id));
                 }}
                 href={{
                   pathname: `/products/`,

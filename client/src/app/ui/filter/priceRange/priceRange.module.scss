@@ -3,8 +3,9 @@
 .price-range {
   margin: 20px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 0.2fr;
-  column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px 10px;
   justify-content: center;
   align-items: center;
 }
@@ -47,18 +48,17 @@
   left: 10px;
   padding: 0 5px;
   transform: translate(0%, -50%);
-  transition: top 0.3s, font-size 0.3s;
 }
 
 .price-range__button {
-  width: 50px;
   padding: 10px;
   border: none;
   border-radius: 10px;
   background-color: $second-color;
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.87);
+  color: $main-color;
   &:hover {
     cursor: pointer;
+    background-color: $card-color;
   }
 }

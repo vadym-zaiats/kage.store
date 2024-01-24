@@ -4,7 +4,11 @@ import styles from "./priceRange.module.scss";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { minPriceSelector, maxPriceSelector } from "@/redux/slices/filterSlice";
-import { setMaxPrice, setMinPrice } from "@/redux/slices/filterSlice";
+import {
+  setMaxPrice,
+  setMinPrice,
+  resetFilters,
+} from "@/redux/slices/filterSlice";
 export function PriceRange() {
   const dispatch = useDispatch();
   const min = useSelector(minPriceSelector);
@@ -22,6 +26,9 @@ export function PriceRange() {
     dispatch(setMinPrice(+minPriceFilter));
     dispatch(setMaxPrice(+maxPriceFilter));
   };
+  const handleResetFilter = (e) => {
+    dispatch(resetFilters());
+  };
 
   return (
     <div className={`${styles["price-range"]}`}>
@@ -33,16 +40,8 @@ export function PriceRange() {
           name="min"
           placeholder={min}
           onChange={handleMinPriceFilter}
-          // value={minPrice}
-          // onBlur={}
-          // onFocus={}
         />
-        <label
-          // onClick={}
-          className={`${styles["price-range__min-label"]}`}
-        >
-          від
-        </label>
+        <label className={`${styles["price-range__min-label"]}`}>від</label>
       </div>
       <div className={`${styles["price-range__max"]}`}>
         <input
@@ -52,22 +51,20 @@ export function PriceRange() {
           name="max"
           placeholder={max}
           onChange={handleMaxPriceFilter}
-          // value={maxPrice}
-          // onBlur={}
-          // onFocus={}
         />
-        <label
-          // onClick={}
-          className={`${styles["price-range__max-label"]}`}
-        >
-          до
-        </label>
+        <label className={`${styles["price-range__max-label"]}`}>до</label>
       </div>
       <button
         className={`${styles["price-range__button"]}`}
         onClick={handleAprovePriceFilter}
       >
         Ok
+      </button>
+      <button
+        className={`${styles["price-range__button"]}`}
+        onClick={handleResetFilter}
+      >
+        Скинути
       </button>
     </div>
   );
