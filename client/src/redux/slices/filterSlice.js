@@ -26,17 +26,15 @@ const filterSlice = createSlice({
       state.isOpen = !state.isOpen;
     }),
     addCategory: create.reducer((state, action) => {
-      if (!state.categories.includes(action.payload.category))
-        state.categories.push(action.payload.category);
+      if (!state.categories.includes(action.payload))
+        state.categories.push(action.payload);
     }),
-    // removeCategory: create.reducer(
-    //   ({ categories }, { payload: { category } }) => {
-    //     const categoryIndex = categories.findIndex(
-    //       (arrayItem) => arrayItem === category
-    //     );
-    //     if (categoryIndex > -1) categories.splice(categoryIndex, 1);
-    //   }
-    // ),
+    removeCategory: create.reducer((state, action) => {
+      const categoryIndex = state.categories.findIndex(
+        (arrayItem) => arrayItem === action.payload
+      );
+      if (categoryIndex > -1) state.categories.splice(categoryIndex, 1);
+    }),
     // setMinPrice: create.reducer((state, { payload: { price } }) => {
     //   state.minPrice = price;
     // }),
@@ -67,7 +65,7 @@ const filterSlice = createSlice({
 });
 
 export default filterSlice.reducer;
-export const { setFilter, addCategory } = filterSlice.actions;
+export const { setFilter, addCategory, removeCategory } = filterSlice.actions;
 export const {
   filterIsOpenSelector,
   availableFiltersSelector,

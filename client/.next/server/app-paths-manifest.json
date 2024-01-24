@@ -3,6 +3,5 @@
   "/cart/page": "app/cart/page.js",
   "/products/page": "app/products/page.js",
   "/order/page": "app/order/page.js",
-  "/delivery/page": "app/delivery/page.js",
-  "/not-found": "app/not-found.js"
+  "/delivery/page": "app/delivery/page.js"
 }

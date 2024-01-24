@@ -22,6 +22,9 @@
 
 .filter__variant {
   position: relative;
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
 }
 
 .filter__input {
@@ -77,4 +80,8 @@
 
 .filter__input:checked + .filter__label::after {
   opacity: 1;
+}
+
+.filter__range {
+  margin-top: 10px;
 }

@@ -671,6 +671,71 @@ button:hover {
   top: 50%;
   transform: translate(0, -50%);
 }
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/filter/priceRange/priceRange.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.priceRange_form__name__GARDR,
+.priceRange_form__phone__HU6WM {
+  margin-top: 25px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid rgb(125, 193, 229);
+  position: relative;
+  padding: 4px 0;
+}
+
+.priceRange_form__name-input__ClxLh,
+.priceRange_form__phone-input__tnSSM {
+  width: 90%;
+  padding: 0;
+  margin: 7px 15px;
+  border: none;
+  background-color: transparent;
+}
+.priceRange_form__name-input__ClxLh::placeholder,
+.priceRange_form__phone-input__tnSSM::placeholder {
+  color: rgb(125, 193, 229);
+  font-size: 16px;
+}
+.priceRange_form__name-input__ClxLh:focus,
+.priceRange_form__phone-input__tnSSM:focus {
+  outline: none;
+}
+
+.priceRange_form__name-label__C6Th0,
+.priceRange_form__phone-label__buQ_v {
+  font-weight: 200;
+  color: rgb(125, 193, 229);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0%, -50%);
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.priceRange_form__name-label__C6Th0.priceRange_input-focused__4lVmo,
+.priceRange_form__phone-label__buQ_v.priceRange_input-focused__4lVmo {
+  top: -1px;
+  font-size: 12px;
+  background-color: #fff;
+  padding: 0 5px;
+  left: 10px;
+}
+
+.priceRange_form__button__Gl_2M {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(125, 193, 229);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 9px 23px;
+  margin: 20px 0;
+  width: 100%;
+}
+.priceRange_form__button__Gl_2M:hover {
+  cursor: pointer;
+}
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/filter/filter.module.scss ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -696,6 +761,9 @@ button:hover {
 
 .filter_filter__variant__HGHYC {
   position: relative;
+}
+.filter_filter__variant__HGHYC:not(:first-child) {
+  margin-top: 10px;
 }
 
 .filter_filter__input__DQ6qM {
@@ -746,6 +814,10 @@ button:hover {
 
 .filter_filter__input__DQ6qM:checked + .filter_filter__label__kzYoM::after {
   opacity: 1;
+}
+
+.filter_filter__range__REJno {
+  margin-top: 10px;
 }
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/header/header.module.scss ***!

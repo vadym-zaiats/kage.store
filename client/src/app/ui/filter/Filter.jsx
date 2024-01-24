@@ -2,10 +2,12 @@
 
 import styles from "./filter.module.scss";
 import { MenuHeader } from "../menuHeader/MenuHeader";
+import { PriceRange } from "./priceRange/PriceRange";
 import { setFilter } from "@/redux/slices/filterSlice";
 import {
   availableFiltersSelector,
   addCategory,
+  removeCategory,
 } from "@/redux/slices/filterSlice";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -18,8 +20,7 @@ export function Filter() {
     if (checked) {
       dispatch(addCategory(name));
     } else {
-      console.log("Видалити категорію");
-      // dispatch(removeCategory(name));
+      dispatch(removeCategory(name));
     }
   };
 
@@ -47,8 +48,8 @@ export function Filter() {
               </li>
             );
           })}
-          <li>
-            <h4>Ціна</h4>
+          <li className={styles[`filter__variant`]}>
+            <PriceRange />
           </li>
         </ul>
       </div>
