@@ -8,13 +8,18 @@ import {
   setMaxPrice,
   setMinPrice,
   resetFilters,
+  selectedMinPriceSelector,
+  selectedMaxPriceSelector,
 } from "@/redux/slices/filterSlice";
+
 export function PriceRange() {
   const dispatch = useDispatch();
   const min = useSelector(minPriceSelector);
   const max = useSelector(maxPriceSelector);
-  const [minPriceFilter, setMinPriceFilter] = useState();
-  const [maxPriceFilter, setMaxPriceFilter] = useState();
+  const minPrice = useSelector(selectedMinPriceSelector);
+  const maxPrice = useSelector(selectedMaxPriceSelector);
+  const [minPriceFilter, setMinPriceFilter] = useState(minPrice);
+  const [maxPriceFilter, setMaxPriceFilter] = useState(maxPrice);
 
   const handleMinPriceFilter = (e) => {
     setMinPriceFilter(e.target.value);
@@ -23,10 +28,10 @@ export function PriceRange() {
     setMaxPriceFilter(e.target.value);
   };
   const handleAprovePriceFilter = () => {
-    dispatch(setMinPrice(+minPriceFilter));
-    dispatch(setMaxPrice(+maxPriceFilter));
+    dispatch(setMinPrice(minPriceFilter));
+    dispatch(setMaxPrice(maxPriceFilter));
   };
-  const handleResetFilter = (e) => {
+  const handleResetFilter = () => {
     dispatch(resetFilters());
   };
 
@@ -35,10 +40,11 @@ export function PriceRange() {
       <div className={`${styles["price-range__min"]}`}>
         <input
           className={styles[`price-range__min-input`]}
-          type="tel"
+          type="number"
           id="min"
           name="min"
           placeholder={min}
+          value={minPriceFilter !== null && minPriceFilter}
           onChange={handleMinPriceFilter}
         />
         <label className={`${styles["price-range__min-label"]}`}>від</label>
@@ -46,10 +52,11 @@ export function PriceRange() {
       <div className={`${styles["price-range__max"]}`}>
         <input
           className={styles[`price-range__max-input`]}
-          type="tel"
+          type="number"
           id="max"
           name="max"
           placeholder={max}
+          value={maxPriceFilter !== null && maxPriceFilter}
           onChange={handleMaxPriceFilter}
         />
         <label className={`${styles["price-range__max-label"]}`}>до</label>

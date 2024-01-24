@@ -17,6 +17,8 @@ const selectors = {
   minPriceSelector: (state) => state.availableFilters.price.min,
   maxPriceSelector: (state) => state.availableFilters.price.max,
   categoriesSelector: (state) => state.categories,
+  selectedMinPriceSelector: (state) => state.minPrice,
+  selectedMaxPriceSelector: (state) => state.maxPrice,
 };
 
 const filterSlice = createSlice({
@@ -82,4 +84,6 @@ export const {
   categoriesSelector,
   minPriceSelector,
   maxPriceSelector,
+  selectedMinPriceSelector,
+  selectedMaxPriceSelector,
 } = filterSlice.selectors;
