@@ -1,18 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Card } from "../card/Сard";
 import styles from "./productsBlock.module.scss";
 import Image from "next/image";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setFilter } from "@/redux/slices/filterSlice";
+import { fetchFilteredProducts } from "@/redux/middlewares/filteredProducts";
+import { filteredProductsSelector } from "@/redux/slices/productsSlice";
 
-export function ProductsBlock({ title, products, num }) {
-  const dispatch = useDispatch();
+export function ProductsBlock({ title, searchParams, num }) {
   const [count, setCount] = useState(num);
+  const dispatch = useDispatch();
+  const products = useSelector(filteredProductsSelector);
+  const url = new URLSearchParams(searchParams).toString();
+
   const handleLoadMore = () => {
     setCount((prevState) => prevState + num);
   };
+
+  useEffect(() => {
+    dispatch(fetchFilteredProducts(url));
+  }, [url]);
 
   return (
     <section className={styles[`block`]}>

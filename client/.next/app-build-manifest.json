@@ -6,34 +6,22 @@
       "static/css/app/products/page.css",
       "static/chunks/app/products/page.js"
     ],
-    "/not-found": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/not-found.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/page.css",
       "static/chunks/app/page.js"
-    ],
-    "/contacts/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contacts/page.css",
-      "static/chunks/app/contacts/page.js"
-    ],
-    "/products/[itemNo]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/products/[itemNo]/page.css",
-      "static/chunks/app/products/[itemNo]/page.js"
     ]
   }
 }
