@@ -3,11 +3,26 @@
 import styles from "./filter.module.scss";
 import { MenuHeader } from "../menuHeader/MenuHeader";
 import { setFilter } from "@/redux/slices/filterSlice";
-import { availableFiltersSelector } from "@/redux/slices/filterSlice";
-import { useSelector } from "react-redux";
+import {
+  availableFiltersSelector,
+  addCategory,
+} from "@/redux/slices/filterSlice";
+import { useSelector, useDispatch } from "react-redux";
 
 export function Filter() {
+  const dispatch = useDispatch();
   const { categories } = useSelector(availableFiltersSelector);
+
+  const toggleCategory = ({ target }) => {
+    const { checked, name } = target;
+    if (checked) {
+      dispatch(addCategory(name));
+    } else {
+      console.log("Видалити категорію");
+      // dispatch(removeCategory(name));
+    }
+  };
+
   return (
     <div className={`${styles["filter"]}`}>
       <MenuHeader func={setFilter} />
@@ -23,7 +38,7 @@ export function Filter() {
                   type="checkbox"
                   name={id}
                   value={name}
-                  // onChange={}
+                  onChange={toggleCategory}
                   // checked={}
                 />
                 <label htmlFor={id} className={styles[`filter__label`]}>

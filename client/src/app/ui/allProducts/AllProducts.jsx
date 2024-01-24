@@ -18,7 +18,7 @@ export function AllProducts({ searchParams }) {
 
   useEffect(() => {
     dispatch(fetchFilteredProducts(url));
-  }, [filteredProds]);
+  }, [url]);
 
   return <ProductsBlock title="Усі вироби" products={filteredProds} num={4} />;
 }
