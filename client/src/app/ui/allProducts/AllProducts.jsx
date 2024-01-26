@@ -35,7 +35,6 @@ export function AllProducts() {
     if (maxPrice !== null) priceFilter += `&maxPrice=${maxPrice}`;
     // full link
     const fullFilterURL = categoryFilter + priceFilter;
-    console.log(fullFilterURL);
     if (fullFilterURL.length !== 0) {
       router.push("products?" + fullFilterURL);
     } else {
@@ -44,6 +43,7 @@ export function AllProducts() {
   };
 
   const setFiltersByUrl = () => {
+    // categoiesInUrl parse
     const categoiesInUrl = searchParams.get("categories");
     if (categoiesInUrl !== null) {
       const arrFromFilters = categoiesInUrl?.split(",");
@@ -51,12 +51,12 @@ export function AllProducts() {
         dispatch(addCategory(category));
       });
     }
-    //
+    // minPrice parse
     const minPriceInUrl = searchParams.get("minPrice");
     if (minPriceInUrl) {
       dispatch(setMinPrice(minPriceInUrl));
     }
-    //
+    // maxPrice parse
     const maxPriceInUrl = searchParams.get("maxPrice");
     if (maxPriceInUrl) {
       dispatch(setMaxPrice(maxPriceInUrl));
