@@ -4,6 +4,7 @@ import "./allProducts.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { ProductsBlock } from "../productsBlock/ProductsBlock";
 import {
+  sortFilter,
   addCategory,
   setMinPrice,
   setMaxPrice,
@@ -40,6 +41,8 @@ export function AllProducts() {
       sortOrder = "&sort=currentPrice";
     } else if (sort === "-currentPrice") {
       sortOrder = "&sort=-currentPrice";
+    } else if (sort === "date") {
+      sortOrder = "&sort=date";
     } else sortOrder = "";
     console.log(sortOrder);
     // full link
@@ -69,6 +72,11 @@ export function AllProducts() {
     const maxPriceInUrl = searchParams.get("maxPrice");
     if (maxPriceInUrl) {
       dispatch(setMaxPrice(maxPriceInUrl));
+    }
+    // sort
+    const sortInUrl = searchParams.get("sort");
+    if (sortInUrl) {
+      dispatch(sortFilter(sortInUrl));
     }
   };
 
