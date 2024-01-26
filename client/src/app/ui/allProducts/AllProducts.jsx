@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./allProducts.module.scss";
+import "./allProducts.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { ProductsBlock } from "../productsBlock/ProductsBlock";
 import {
@@ -12,11 +12,12 @@ import {
   selectedMaxPriceSelector,
 } from "@/redux/slices/filterSlice";
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
-export function AllProducts({ searchParams }) {
+export function AllProducts() {
   const dispatch = useDispatch();
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const selectedCategories = useSelector(categoriesSelector);
   const minPrice = useSelector(selectedMinPriceSelector);
@@ -35,18 +36,15 @@ export function AllProducts({ searchParams }) {
     // full link
     const fullFilterURL = categoryFilter + priceFilter;
     console.log(fullFilterURL);
-    if (fullFilterURL.size !== 0) {
+    if (fullFilterURL.length !== 0) {
       router.push("products?" + fullFilterURL);
-      // dispatch(fetchFilteredProducts(fullFilterURL));
-      // setSearchParams(fullFilterURL);
     } else {
-      // dispatch(fetchFilteredProducts({}));
-      // setSearchParams({});
+      router.push("products");
     }
   };
 
   const setFiltersByUrl = () => {
-    const categoiesInUrl = searchParams.categories;
+    const categoiesInUrl = searchParams.get("categories");
     if (categoiesInUrl !== null) {
       const arrFromFilters = categoiesInUrl?.split(",");
       arrFromFilters?.forEach((category) => {
@@ -54,21 +52,24 @@ export function AllProducts({ searchParams }) {
       });
     }
     //
-    const minPriceInUrl = searchParams.minPrice;
+    const minPriceInUrl = searchParams.get("minPrice");
     if (minPriceInUrl) {
       dispatch(setMinPrice(minPriceInUrl));
     }
     //
-    const maxPriceInUrl = searchParams.maxPrice;
+    const maxPriceInUrl = searchParams.get("maxPrice");
     if (maxPriceInUrl) {
       dispatch(setMaxPrice(maxPriceInUrl));
     }
   };
 
   useEffect(() => {
-    // setFiltersByUrl();
     filterLinkConstructor();
   }, [minPrice, maxPrice, selectedCategories]);
+
+  useEffect(() => {
+    setFiltersByUrl();
+  }, [searchParams]);
 
   return (
     <ProductsBlock title="Усі вироби" searchParams={searchParams} num={4} />
