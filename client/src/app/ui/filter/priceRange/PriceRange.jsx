@@ -33,6 +33,8 @@ export function PriceRange() {
   };
   const handleResetFilter = () => {
     dispatch(resetFilters());
+    setMinPriceFilter(null);
+    setMaxPriceFilter(null);
   };
 
   return (
