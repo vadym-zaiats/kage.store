@@ -66,7 +66,7 @@ export function AllProducts({ searchParams }) {
   };
 
   useEffect(() => {
-    setFiltersByUrl();
+    // setFiltersByUrl();
     filterLinkConstructor();
   }, [minPrice, maxPrice, selectedCategories]);
 
