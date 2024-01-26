@@ -55,7 +55,11 @@ export function ProductsBlock({ title, searchParams, num }) {
                 <span className={styles[`block__filter--text`]}>Фільтри</span>
               </button>
             </li>
-            <li className={styles[`block__button`]}>
+            <li
+              className={`${styles[`block__button`]} ${
+                sortOptions && styles[`block__button--sort`]
+              }`}
+            >
               <span
                 className={styles[`block__sort-type`]}
                 onClick={() => {
@@ -89,10 +93,10 @@ export function ProductsBlock({ title, searchParams, num }) {
                   </li>
                   <li
                     data-option-type="date"
-                    data-option-text="По даті додавання"
+                    data-option-text="Найновіші"
                     onClick={handleSort}
                   >
-                    По даті додавання
+                    Найновіші
                   </li>
                 </ul>
               )}

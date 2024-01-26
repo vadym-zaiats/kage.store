@@ -88,9 +88,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(178, 214, 234);
+  background-color: rgb(125, 193, 229);
   border-radius: 10px;
   position: relative;
+}
+.productsBlock_block__button--sort__gsUwg {
+  border-radius: 10px 10px 0 0;
 }
 .productsBlock_block__button__DyWjO:hover {
   cursor: pointer;
@@ -110,9 +113,8 @@
 }
 
 .productsBlock_block__sort-options__GPqoD {
-  background-color: rgb(178, 214, 234);
-  border: 1px solid rgb(125, 193, 229);
-  border-radius: 10px;
+  background-color: rgb(125, 193, 229);
+  border-radius: 0 0 10px 10px;
   width: 100%;
   z-index: 10;
   position: absolute;

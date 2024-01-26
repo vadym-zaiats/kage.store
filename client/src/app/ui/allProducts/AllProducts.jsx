@@ -25,6 +25,7 @@ export function AllProducts() {
   const minPrice = useSelector(selectedMinPriceSelector);
   const maxPrice = useSelector(selectedMaxPriceSelector);
   const sort = useSelector(sortSelector);
+
   const filterLinkConstructor = () => {
     // categories;
     const categoryFilter =
