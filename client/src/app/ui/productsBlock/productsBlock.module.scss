@@ -23,6 +23,10 @@
   align-items: center;
   background-color: $card-color;
   border-radius: 10px;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .block__filter {
@@ -35,6 +39,21 @@
   border: none;
   &--text {
     font-size: 16px;
+  }
+}
+
+.block__sort-options {
+  background-color: $card-color;
+  border: 1px solid $second-color;
+  border-radius: 10px;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  bottom: -189px;
+  left: 0;
+
+  & li {
+    margin: 25px 0;
   }
 }
 

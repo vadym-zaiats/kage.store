@@ -3,6 +3,7 @@ import { fetchFilters } from "../middlewares/filter";
 
 const initialState = {
   isOpen: false,
+  sort: "false",
   categories: [],
   minPrice: null,
   maxPrice: null,
@@ -19,6 +20,7 @@ const selectors = {
   categoriesSelector: (state) => state.categories,
   selectedMinPriceSelector: (state) => state.minPrice,
   selectedMaxPriceSelector: (state) => state.maxPrice,
+  sortSelector: (state) => state.sort,
 };
 
 const filterSlice = createSlice({
@@ -28,6 +30,9 @@ const filterSlice = createSlice({
   reducers: (create) => ({
     setFilter: create.reducer((state) => {
       state.isOpen = !state.isOpen;
+    }),
+    sortFilter: create.reducer((state, action) => {
+      state.sort = action.payload;
     }),
     addCategory: create.reducer((state, action) => {
       if (!state.categories.includes(action.payload))
@@ -72,6 +77,7 @@ const filterSlice = createSlice({
 export default filterSlice.reducer;
 export const {
   setFilter,
+  sortFilter,
   addCategory,
   removeCategory,
   setMinPrice,
@@ -86,4 +92,5 @@ export const {
   maxPriceSelector,
   selectedMinPriceSelector,
   selectedMaxPriceSelector,
+  sortSelector,
 } = filterSlice.selectors;

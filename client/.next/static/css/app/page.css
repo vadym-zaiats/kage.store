@@ -90,6 +90,10 @@
   align-items: center;
   background-color: rgb(178, 214, 234);
   border-radius: 10px;
+  position: relative;
+}
+.productsBlock_block__button__DyWjO:hover {
+  cursor: pointer;
 }
 
 .productsBlock_block__filter__0xyb4 {
@@ -103,6 +107,20 @@
 }
 .productsBlock_block__filter--text__caPJM {
   font-size: 16px;
+}
+
+.productsBlock_block__sort-options__GPqoD {
+  background-color: rgb(178, 214, 234);
+  border: 1px solid rgb(125, 193, 229);
+  border-radius: 10px;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  bottom: -189px;
+  left: 0;
+}
+.productsBlock_block__sort-options__GPqoD li {
+  margin: 25px 0;
 }
 
 .productsBlock_block__show-more__oJJg3 {

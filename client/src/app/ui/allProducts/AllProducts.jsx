@@ -10,6 +10,7 @@ import {
   categoriesSelector,
   selectedMinPriceSelector,
   selectedMaxPriceSelector,
+  sortSelector,
 } from "@/redux/slices/filterSlice";
 import { useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -22,7 +23,7 @@ export function AllProducts() {
   const selectedCategories = useSelector(categoriesSelector);
   const minPrice = useSelector(selectedMinPriceSelector);
   const maxPrice = useSelector(selectedMaxPriceSelector);
-
+  const sort = useSelector(sortSelector);
   const filterLinkConstructor = () => {
     // categories;
     const categoryFilter =
@@ -33,8 +34,16 @@ export function AllProducts() {
     let priceFilter = "";
     if (minPrice !== null) priceFilter += `&minPrice=${minPrice}`;
     if (maxPrice !== null) priceFilter += `&maxPrice=${maxPrice}`;
+    // sort
+    let sortOrder;
+    if (sort === "currentPrice") {
+      sortOrder = "&sort=currentPrice";
+    } else if (sort === "-currentPrice") {
+      sortOrder = "&sort=-currentPrice";
+    } else sortOrder = "";
+    console.log(sortOrder);
     // full link
-    const fullFilterURL = categoryFilter + priceFilter;
+    const fullFilterURL = categoryFilter + priceFilter + sortOrder;
     if (fullFilterURL.length !== 0) {
       router.push("products?" + fullFilterURL);
     } else {
@@ -65,7 +74,7 @@ export function AllProducts() {
 
   useEffect(() => {
     filterLinkConstructor();
-  }, [minPrice, maxPrice, selectedCategories]);
+  }, [minPrice, maxPrice, selectedCategories, sort]);
 
   useEffect(() => {
     setFiltersByUrl();

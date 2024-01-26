@@ -5,12 +5,15 @@ import { Card } from "../card/Сard";
 import styles from "./productsBlock.module.scss";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
-import { setFilter } from "@/redux/slices/filterSlice";
+import { setFilter, sortFilter } from "@/redux/slices/filterSlice";
 import { fetchFilteredProducts } from "@/redux/middlewares/filteredProducts";
 import { filteredProductsSelector } from "@/redux/slices/productsSlice";
 
 export function ProductsBlock({ title, searchParams, num }) {
   const [count, setCount] = useState(num);
+  const [sortOptions, setSortOptions] = useState(true);
+  const [optionType, setOptionType] = useState("За замовчуванням");
+
   const dispatch = useDispatch();
   const products = useSelector(filteredProductsSelector);
   const url = new URLSearchParams(searchParams).toString();
@@ -22,6 +25,12 @@ export function ProductsBlock({ title, searchParams, num }) {
   useEffect(() => {
     dispatch(fetchFilteredProducts(url));
   }, [url]);
+
+  const handleSort = (e) => {
+    dispatch(sortFilter(e.target.getAttribute("data-option-type")));
+    setOptionType(e.target.getAttribute("data-option-text"));
+    setSortOptions(!sortOptions);
+  };
 
   return (
     <section className={styles[`block`]}>
@@ -46,7 +55,48 @@ export function ProductsBlock({ title, searchParams, num }) {
                 <span className={styles[`block__filter--text`]}>Фільтри</span>
               </button>
             </li>
-            <li className={styles[`block__button`]}>За замовчуванням</li>
+            <li className={styles[`block__button`]}>
+              <span
+                className={styles[`block__sort-type`]}
+                onClick={() => {
+                  setSortOptions(!sortOptions);
+                }}
+              >
+                {optionType}
+              </span>
+              {sortOptions && (
+                <ul className={styles[`block__sort-options`]}>
+                  <li
+                    data-option-type="false"
+                    data-option-text="За замовчуванням"
+                    onClick={handleSort}
+                  >
+                    За замовчуванням
+                  </li>
+                  <li
+                    data-option-type="currentPrice"
+                    data-option-text="Ціна від найменшої"
+                    onClick={handleSort}
+                  >
+                    Ціна від найменшої
+                  </li>
+                  <li
+                    data-option-type="-currentPrice"
+                    data-option-text="Ціна від найбільшої"
+                    onClick={handleSort}
+                  >
+                    Ціна від найбільшої
+                  </li>
+                  <li
+                    data-option-type="date"
+                    data-option-text="По даті додавання"
+                    onClick={handleSort}
+                  >
+                    По даті додавання
+                  </li>
+                </ul>
+              )}
+            </li>
           </>
         )}
         {products &&
