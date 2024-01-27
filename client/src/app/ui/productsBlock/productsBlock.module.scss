@@ -8,7 +8,7 @@
 .block__title {
   margin-bottom: 20px;
   font-weight: 700;
-  color: $second-color;
+  color: #000;
 }
 .block__list {
   display: grid;
@@ -17,10 +17,10 @@
 }
 
 .block__button {
+  width: 94%;
   padding: 10px;
+  margin: 0 auto 15px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: $second-color;
   border-radius: 10px;
   position: relative;
@@ -61,7 +61,7 @@
 }
 
 .block__sort-options.block__sort-options--open {
-  height: 189px;
+  height: 210px;
   transition: height 0.5s ease;
 }
 
