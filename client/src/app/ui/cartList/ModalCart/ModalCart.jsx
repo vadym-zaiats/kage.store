@@ -113,7 +113,7 @@ export function ModalCart() {
     <>
       {isOpen && (
         <div className={styles[`modal`]}>
-          <h2 className={styles[`modal__title`]}>Форма для замовлення</h2>
+          <h3 className={styles[`modal__title`]}>Форма для замовлення</h3>
           <button
             className={`${styles["modal__close"]}`}
             onClick={() => {

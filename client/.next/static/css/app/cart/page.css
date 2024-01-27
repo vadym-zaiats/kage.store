@@ -73,12 +73,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 95%;
-  text-align: center;
   z-index: 200;
 }
 
 .modalCart_modal__title__kJNTL {
-  margin: 20px 0 5px;
+  margin: 20px 0 5px 18px;
 }
 
 .modalCart_modal__close__f5kaM {
