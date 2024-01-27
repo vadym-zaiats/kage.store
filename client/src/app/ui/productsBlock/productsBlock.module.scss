@@ -51,11 +51,18 @@
   width: 100%;
   z-index: 10;
   position: absolute;
-  bottom: -189px;
+  top: 42px;
   left: 0;
+  height: 0px;
+  overflow: hidden;
   & li {
     margin: 25px 0;
   }
+}
+
+.block__sort-options.block__sort-options--open {
+  height: 189px;
+  transition: height 0.5s ease;
 }
 
 .block__show-more {

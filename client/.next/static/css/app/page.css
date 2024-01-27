@@ -118,11 +118,18 @@
   width: 100%;
   z-index: 10;
   position: absolute;
-  bottom: -189px;
+  top: 42px;
   left: 0;
+  height: 0px;
+  overflow: hidden;
 }
 .productsBlock_block__sort-options__GPqoD li {
   margin: 25px 0;
+}
+
+.productsBlock_block__sort-options__GPqoD.productsBlock_block__sort-options--open___ELQK {
+  height: 189px;
+  transition: height 0.5s ease;
 }
 
 .productsBlock_block__show-more__oJJg3 {

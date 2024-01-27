@@ -11,7 +11,7 @@ import { filteredProductsSelector } from "@/redux/slices/productsSlice";
 
 export function ProductsBlock({ title, searchParams, num }) {
   const [count, setCount] = useState(num);
-  const [sortOptions, setSortOptions] = useState(true);
+  const [sortOptions, setSortOptions] = useState(false);
   const [optionType, setOptionType] = useState("За замовчуванням");
 
   const dispatch = useDispatch();
@@ -68,38 +68,40 @@ export function ProductsBlock({ title, searchParams, num }) {
               >
                 {optionType}
               </span>
-              {sortOptions && (
-                <ul className={styles[`block__sort-options`]}>
-                  <li
-                    data-option-type="false"
-                    data-option-text="За замовчуванням"
-                    onClick={handleSort}
-                  >
-                    За замовчуванням
-                  </li>
-                  <li
-                    data-option-type="currentPrice"
-                    data-option-text="Ціна від найменшої"
-                    onClick={handleSort}
-                  >
-                    Ціна від найменшої
-                  </li>
-                  <li
-                    data-option-type="-currentPrice"
-                    data-option-text="Ціна від найбільшої"
-                    onClick={handleSort}
-                  >
-                    Ціна від найбільшої
-                  </li>
-                  <li
-                    data-option-type="date"
-                    data-option-text="Найновіші"
-                    onClick={handleSort}
-                  >
-                    Найновіші
-                  </li>
-                </ul>
-              )}
+              <ul
+                className={`${styles["block__sort-options"]} ${
+                  sortOptions && styles["block__sort-options--open"]
+                }`}
+              >
+                <li
+                  data-option-type="date"
+                  data-option-text="Найновіші"
+                  onClick={handleSort}
+                >
+                  Найновіші
+                </li>
+                <li
+                  data-option-type="false"
+                  data-option-text="За замовчуванням"
+                  onClick={handleSort}
+                >
+                  За замовчуванням
+                </li>
+                <li
+                  data-option-type="currentPrice"
+                  data-option-text="Від найменшої ціни"
+                  onClick={handleSort}
+                >
+                  Від найменшої ціни
+                </li>
+                <li
+                  data-option-type="-currentPrice"
+                  data-option-text="Від найбільшої ціни"
+                  onClick={handleSort}
+                >
+                  Від найбільшої ціни
+                </li>
+              </ul>
             </li>
           </>
         )}
