@@ -70,6 +70,12 @@
       "static/chunks/main-app.js",
       "static/css/app/returning/page.css",
       "static/chunks/app/returning/page.js"
+    ],
+    "/products/[itemNo]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/products/[itemNo]/page.css",
+      "static/chunks/app/products/[itemNo]/page.js"
     ]
   }
 }

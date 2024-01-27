@@ -40,7 +40,7 @@ export function CurrentProduct({
       <p className={styles[`current-product__img-container`]}>
         <Image
           className={styles[`current-product__fav`]}
-          src="/imgs/add-to-fav.png"
+          src="/imgs/fav.png"
           width={45}
           height={45}
           alt="to-fav"

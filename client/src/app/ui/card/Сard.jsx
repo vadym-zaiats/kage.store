@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./card.module.scss";
 import Link from "next/link";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToFavFunc } from "@/redux/middlewares/favourite";
 import { addToCart, delFromCart } from "@/redux/middlewares/cart";
+import { favouriteSelector } from "@/redux/slices/favouriteSlice";
+import { useEffect, useState } from "react";
 
 export function Card({
   name,
@@ -18,6 +20,15 @@ export function Card({
   count,
 }) {
   const dispatch = useDispatch();
+  const favourites = useSelector(favouriteSelector);
+  const [favourite, isFavourite] = useState(false);
+
+  useEffect(() => {
+    const isFavouriteProduct = favourites.some(
+      (product) => product.itemNo === itemNo
+    );
+    isFavourite(isFavouriteProduct);
+  }, [favourites, itemNo]);
 
   return (
     <li className={styles[`card-wrapper`]}>
@@ -38,10 +49,10 @@ export function Card({
               })
             );
           }}
-          src="/imgs/add-to-fav.png"
+          src={favourite ? "/imgs/in-fav.png" : "/imgs/fav.png"}
           width={25}
           height={25}
-          alt="to-fav"
+          alt="fav"
           priority
         />
       </button>

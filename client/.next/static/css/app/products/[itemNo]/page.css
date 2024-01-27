@@ -1,0 +1,117 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/currentProd/currentProd.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.currentProd_current-product__title__eI8bY {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.currentProd_current-product__quantity__GNPU3 {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.currentProd_current-product__item-no__1qwt4 {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.currentProd_current-product__img-container__WVe2T {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.currentProd_current-product__fav__FcfgY {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 20px;
+}
+
+.currentProd_current-product__img__Go6eE {
+  border-radius: 15px;
+}
+
+.currentProd_current-product__count__Ov0__ {
+  margin: 30px 0 0 0;
+  text-align: right;
+}
+
+.currentProd_current-product__decrease__aUORw {
+  border: transparent;
+  background-color: rgb(178, 214, 234);
+  width: 30px;
+  height: 30px;
+}
+
+.currentProd_current-product__number___T0su {
+  margin: 0 15px;
+}
+
+.currentProd_current-product__increase__GFhpp {
+  border: transparent;
+  background-color: rgb(178, 214, 234);
+  width: 30px;
+  height: 30px;
+}
+
+.currentProd_current-product__add-to-cart__E5oZs {
+  width: 100%;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 25px;
+  color: rgb(178, 214, 234);
+  text-align: center;
+  background-color: rgb(239, 239, 239);
+  border: 2px solid rgb(178, 214, 234);
+  border-radius: 30px;
+  transition: all ease 0.35s;
+}
+.currentProd_current-product__add-to-cart__E5oZs:hover {
+  cursor: pointer;
+  background-color: rgb(178, 214, 234);
+  color: rgb(239, 239, 239);
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/loader/loader.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.loader_preloader-container__7RFBT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.loader_preloader__7NpoH {
+  border: 4px solid rgb(178, 214, 234);
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: loader_spin__I0gSS 1s linear infinite;
+}
+
+@keyframes loader_spin__I0gSS {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/products/[itemNo]/item-no.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.item-no_current-product__sjl2m {
+  flex: 1 1 auto;
+  margin: 67px auto 10px;
+  padding: 10px 0;
+}
