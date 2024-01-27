@@ -22,6 +22,54 @@
       "static/chunks/main-app.js",
       "static/css/app/products/page.css",
       "static/chunks/app/products/page.js"
+    ],
+    "/contacts/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/contacts/page.css",
+      "static/chunks/app/contacts/page.js"
+    ],
+    "/news/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/news/page.css",
+      "static/chunks/app/news/page.js"
+    ],
+    "/news/[full-info]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/news/[full-info]/page.css",
+      "static/chunks/app/news/[full-info]/page.js"
+    ],
+    "/order/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/order/page.css",
+      "static/chunks/app/order/page.js"
+    ],
+    "/delivery/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/delivery/page.css",
+      "static/chunks/app/delivery/page.js"
+    ],
+    "/my-order/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/my-order/page.css",
+      "static/chunks/app/my-order/page.js"
+    ],
+    "/agreement/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/agreement/page.css",
+      "static/chunks/app/agreement/page.js"
+    ],
+    "/returning/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/returning/page.css",
+      "static/chunks/app/returning/page.js"
     ]
   }
 }

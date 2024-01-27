@@ -1,4 +1,8 @@
 {
-  "/page": "app/page.js",
+  "/my-order/page": "app/my-order/page.js",
+  "/agreement/page": "app/agreement/page.js",
+  "/returning/page": "app/returning/page.js",
+  "/delivery/page": "app/delivery/page.js",
+  "/contacts/page": "app/contacts/page.js",
   "/products/page": "app/products/page.js"
 }

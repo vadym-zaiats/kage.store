@@ -10,6 +10,16 @@ export default function BurgerMenuMain() {
   return (
     <div className={`${styles["burger-menu__content"]}`}>
       <ul>
+        <li className={`${styles["burger-menu__item"]}`}>
+          <Link
+            href="/news"
+            onClick={() => {
+              dispatch(setBurger());
+            }}
+          >
+            Новини
+          </Link>
+        </li>
         <li
           className={`${styles["burger-menu__item"]}`}
           onClick={() => {
@@ -30,22 +40,12 @@ export default function BurgerMenuMain() {
         </li>
         <li className={`${styles["burger-menu__item"]}`}>
           <Link
-            href="/news"
+            href="/my-order"
             onClick={() => {
               dispatch(setBurger());
             }}
           >
-            Новини
-          </Link>
-        </li>
-        <li className={`${styles["burger-menu__item"]}`}>
-          <Link
-            href="/order"
-            onClick={() => {
-              dispatch(setBurger());
-            }}
-          >
-            Як зробити замовлення
+            Де моє замовлення
           </Link>
         </li>
         <li className={`${styles["burger-menu__item"]}`}>
@@ -60,12 +60,12 @@ export default function BurgerMenuMain() {
         </li>
         <li className={`${styles["burger-menu__item"]}`}>
           <Link
-            href="/my-order"
+            href="/returning"
             onClick={() => {
               dispatch(setBurger());
             }}
           >
-            Де моє замовлення
+            Обмін так повернення
           </Link>
         </li>
       </ul>
