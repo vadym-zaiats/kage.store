@@ -15,13 +15,6 @@
   }
 }
 
-.form__positions-wrapper {
-  position: relative;
-  @media (min-width: 768px) {
-    max-width: 380px;
-  }
-}
-
 .form__name,
 .form__phone {
   margin-top: 25px;

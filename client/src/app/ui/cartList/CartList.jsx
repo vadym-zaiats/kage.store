@@ -1,11 +1,17 @@
 "use client";
 
 import styles from "./cartList.module.scss";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Card } from "../card/Сard";
-import { cartSelector, cartTotalSumSelector } from "@/redux/slices/cartSlice";
+import { ModalCart } from "./ModalCart/ModalCart";
+import {
+  cartSelector,
+  cartTotalSumSelector,
+  setModal,
+} from "@/redux/slices/cartSlice";
 
 export function CartList() {
+  const dispatch = useDispatch();
   const prodsInCart = useSelector(cartSelector);
   const totalSum = useSelector(cartTotalSumSelector);
 
@@ -45,14 +51,20 @@ export function CartList() {
               }
             )}
           </div>
-          <button className={styles["card-list__buy-button"]}>
-            Замовити {totalSum}
+          <button
+            className={styles["card-list__buy-button"]}
+            onClick={() => {
+              dispatch(setModal());
+            }}
+          >
+            Зробити замовлення на {totalSum} грн.
           </button>
         </>
       )}
       {prodsInCart.length === 0 && (
         <div className={styles["card-list"]}>No prods in cart</div>
       )}
+      <ModalCart />
     </>
   );
 }

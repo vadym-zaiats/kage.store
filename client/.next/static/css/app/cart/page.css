@@ -62,6 +62,141 @@
   width: 30px;
   height: 30px;
 }
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/cartList/ModalCart/modalCart.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.modalCart_modal__Wgg8I {
+  background-color: rgb(125, 193, 229);
+  border-radius: 10px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  text-align: center;
+  z-index: 200;
+}
+
+.modalCart_modal__title__kJNTL {
+  margin: 20px 0 5px;
+}
+
+.modalCart_modal__close__f5kaM {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.modalCart_modal__form__769DG {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalCart_form__name__wfEu2,
+.modalCart_form__phone__ZCFEz,
+.modalCart_form__email__gmsOZ {
+  margin-top: 25px;
+  width: 90%;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid rgb(239, 239, 239);
+  position: relative;
+  padding: 4px 0;
+}
+
+.modalCart_form__name-input__P9Q9R,
+.modalCart_form__phone-input__i6FMn,
+.modalCart_form__email-input__OOthZ {
+  width: 90%;
+  padding: 0;
+  margin: 7px 15px;
+  border: none;
+  background-color: transparent;
+}
+.modalCart_form__name-input__P9Q9R::placeholder,
+.modalCart_form__phone-input__i6FMn::placeholder,
+.modalCart_form__email-input__OOthZ::placeholder {
+  color: rgb(125, 193, 229);
+  font-size: 16px;
+}
+.modalCart_form__name-input__P9Q9R:focus,
+.modalCart_form__phone-input__i6FMn:focus,
+.modalCart_form__email-input__OOthZ:focus {
+  outline: none;
+}
+
+.modalCart_form__name__wfEu2.modalCart_data__invalid__51GJ5,
+.modalCart_form__phone__ZCFEz.modalCart_data__invalid__51GJ5,
+.modalCart_form__email__gmsOZ.modalCart_data__invalid__51GJ5 {
+  border: 1px solid red;
+  margin-top: 49px;
+}
+
+.modalCart_form__validation__laFCd {
+  margin: 5px 0px 0px 15px;
+  color: rgb(125, 193, 229);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.modalCart_form__validation__laFCd.modalCart_data__invalid__51GJ5 {
+  color: red;
+}
+
+.modalCart_form__name-label__P3H7d,
+.modalCart_form__phone-label__ohtEE,
+.modalCart_form__email-label__F7bil {
+  font-weight: 200;
+  color: rgb(239, 239, 239);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0%, -50%);
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.modalCart_form__name-label__P3H7d.modalCart_data__invalid__51GJ5,
+.modalCart_form__phone-label__ohtEE.modalCart_data__invalid__51GJ5,
+.modalCart_form__email-label__F7bil.modalCart_data__invalid__51GJ5 {
+  color: red;
+}
+
+.modalCart_form__name-label__P3H7d.modalCart_input-focused__cJNLQ,
+.modalCart_form__phone-label__ohtEE.modalCart_input-focused__cJNLQ,
+.modalCart_form__email-label__F7bil.modalCart_input-focused__cJNLQ {
+  top: -1px;
+  font-size: 12px;
+  background-color: rgb(125, 193, 229);
+  padding: 0 5px;
+  left: 10px;
+}
+
+.modalCart_form__button__nlVeu {
+  border: none;
+  border-radius: 25px;
+  background-color: gray;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 9px 23px;
+  margin: 20px 0;
+  width: 70%;
+}
+
+.modalCart_form__button__nlVeu.modalCart_enabled__TajTN {
+  background-color: rgb(178, 214, 234);
+  color: rgb(239, 239, 239);
+}
+.modalCart_form__button__nlVeu.modalCart_enabled__TajTN:hover {
+  cursor: pointer;
+  background-color: rgb(239, 239, 239);
+  color: rgb(125, 193, 229);
+}
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/cartList/cartList.module.scss ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/

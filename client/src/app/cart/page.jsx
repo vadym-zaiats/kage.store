@@ -1,4 +1,4 @@
-import styles from "@/scss/pageMarkup.scss";
+import "@/scss/pageMarkup.scss";
 import { CartList } from "../ui/cartList/CartList";
 export const metadata = {
   title: "Kage.store | Корзина",

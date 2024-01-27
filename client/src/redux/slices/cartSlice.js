@@ -7,6 +7,7 @@ const initialState = {
   error: null,
   totalCount: 0,
   totalSum: 0,
+  modalIsOpen: false,
 };
 
 const selectors = {
@@ -14,6 +15,7 @@ const selectors = {
   errorCartSelector: (state) => state.error,
   cartTotalCountSelector: (state) => state.totalCount,
   cartTotalSumSelector: (state) => state.totalSum,
+  modalIsOpenSelector: (state) => state.modalIsOpen,
 };
 
 const calcCartPriceSum = (productsInCart) => {
@@ -29,6 +31,11 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   selectors,
+  reducers: (create) => ({
+    setModal: create.reducer((state) => {
+      state.modalIsOpen = !state.modalIsOpen;
+    }),
+  }),
   extraReducers: (builder) => {
     builder.addCase(addToCart.pending, (state) => {
       state.loading = true;
@@ -77,4 +84,6 @@ export const {
   errorCartSelector,
   cartTotalCountSelector,
   cartTotalSumSelector,
+  modalIsOpenSelector,
 } = cartSlice.selectors;
+export const { setModal } = cartSlice.actions;

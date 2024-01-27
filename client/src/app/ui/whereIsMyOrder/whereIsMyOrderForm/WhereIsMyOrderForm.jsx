@@ -2,7 +2,6 @@
 
 import styles from "./whereIsMyOrderForm.module.scss";
 import { useRef, useState } from "react";
-import { useDispatch } from "react-redux";
 
 export function WhereIsMyOrderForm() {
   const [nameIsFocused, setNameIsFocused] = useState(false);
