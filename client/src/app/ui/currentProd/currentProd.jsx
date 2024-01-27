@@ -2,9 +2,10 @@
 import styles from "./currentProd.module.scss";
 import Image from "next/image";
 import { addToCart } from "@/redux/middlewares/cart";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { addToFavFunc } from "@/redux/middlewares/favourite";
+import { favouriteSelector } from "@/redux/slices/favouriteSlice";
 
 export function CurrentProduct({
   itemNo,
@@ -18,6 +19,8 @@ export function CurrentProduct({
   sale,
 }) {
   const dispatch = useDispatch();
+  const favourites = useSelector(favouriteSelector);
+  const [favourite, isFavourite] = useState(false);
 
   const [number, setNumber] = useState(1);
 
@@ -30,6 +33,13 @@ export function CurrentProduct({
       : null;
   };
 
+  useEffect(() => {
+    const isFavouriteProduct = favourites.some(
+      (product) => product.itemNo === itemNo
+    );
+    isFavourite(isFavouriteProduct);
+  }, [favourites, itemNo]);
+
   return (
     <>
       <h3 className={styles[`current-product__title`]}>{name}</h3>
@@ -40,7 +50,7 @@ export function CurrentProduct({
       <p className={styles[`current-product__img-container`]}>
         <Image
           className={styles[`current-product__fav`]}
-          src="/imgs/fav.png"
+          src={favourite ? "/imgs/in-fav.png" : "/imgs/fav.png"}
           width={45}
           height={45}
           alt="to-fav"
