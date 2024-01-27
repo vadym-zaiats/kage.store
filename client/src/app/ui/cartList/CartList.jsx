@@ -57,7 +57,7 @@ export function CartList() {
               dispatch(setModal());
             }}
           >
-            Зробити замовлення на {totalSum} грн.
+            Замовити на {totalSum} грн.
           </button>
         </>
       )}

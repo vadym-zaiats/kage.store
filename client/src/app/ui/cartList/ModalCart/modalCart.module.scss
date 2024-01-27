@@ -120,10 +120,10 @@
 
 .form__button.enabled {
   background-color: $card-color;
-  color: $main-color;
+  color: #000;
+  font-weight: 800;
   &:hover {
     cursor: pointer;
     background-color: $main-color;
-    color: $second-color;
   }
 }

@@ -4,18 +4,18 @@
   margin-top: 15px;
   display: inline-block;
   padding: 10px 25px;
-  color: $card-color;
   text-align: center;
-  background-color: $bc;
-  border: 2px solid $brdrclr;
+  font-weight: 800;
+  border: 3px solid #000;
   border-radius: 30px;
   -webkit-transition: all ease 0.35s;
   -o-transition: all ease 0.35s;
   transition: all ease 0.35s;
   &:hover {
     cursor: pointer;
-    background-color: $brdrclr;
-    color: $main-color;
+    background-color: $bc;
+    color: $second-color;
+    border: 3px solid $second-color;
   }
 }
 
