@@ -60,14 +60,14 @@ export function ProductsBlock({ title, searchParams, num }) {
                 sortOptions && styles[`block__button--sort`]
               }`}
             >
-              <span
+              <button
                 className={styles[`block__sort-type`]}
                 onClick={() => {
                   setSortOptions(!sortOptions);
                 }}
               >
                 {optionType}
-              </span>
+              </button>
               <ul
                 className={`${styles["block__sort-options"]} ${
                   sortOptions && styles["block__sort-options--open"]

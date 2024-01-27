@@ -88,6 +88,7 @@
   padding: 10px;
   margin: 0 auto 15px;
   display: flex;
+  justify-content: center;
   background-color: rgb(125, 193, 229);
   border-radius: 10px;
   position: relative;
@@ -97,6 +98,12 @@
 }
 .productsBlock_block__button__DyWjO:hover {
   cursor: pointer;
+}
+
+.productsBlock_block__sort-type__jbkeG {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
 }
 
 .productsBlock_block__filter__0xyb4 {
@@ -109,7 +116,7 @@
   border: none;
 }
 .productsBlock_block__filter--text__caPJM {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .productsBlock_block__sort-options__GPqoD {
@@ -122,13 +129,17 @@
   left: 0;
   height: 0px;
   overflow: hidden;
+  font-size: 14px;
 }
 .productsBlock_block__sort-options__GPqoD li {
-  margin: 25px 0;
+  margin: 10px 0 0;
+}
+.productsBlock_block__sort-options__GPqoD li:not(:first-child) {
+  margin: 25px 0 0;
 }
 
 .productsBlock_block__sort-options__GPqoD.productsBlock_block__sort-options--open___ELQK {
-  height: 210px;
+  height: 155px;
   transition: height 0.5s ease;
 }
 

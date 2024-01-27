@@ -1,0 +1,169 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/card/card.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.card_card-wrapper__D_8n0 {
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  background-color: rgb(178, 214, 234);
+  border-radius: 10px;
+}
+
+.card_card-wrapper__img__OeIwZ {
+  margin: 10px 0;
+  border-radius: 15px;
+}
+
+.card_card-wrapper__name__7TXCI,
+.card_card-wrapper__current-price__vgRpv,
+.card_card-wrapper__count__psGlZ {
+  text-align: left;
+  margin: 10px;
+}
+
+.card_card-wrapper__to-fav__JJlyQ {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.card_card-wrapper__delete__S1xwS {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card_card-wrapper__to-cart__fAjdC {
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+}
+
+.card_card-wrapper__decrease__ruwsb {
+  border: transparent;
+  background-color: rgb(239, 239, 239);
+  width: 30px;
+  height: 30px;
+}
+
+.card_card-wrapper__number__QprGe {
+  margin: 0 15px;
+}
+
+.card_card-wrapper__increase__lbsVc {
+  border: transparent;
+  background-color: rgb(239, 239, 239);
+  width: 30px;
+  height: 30px;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/productsBlock/productsBlock.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.productsBlock_block__bJsBH {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.productsBlock_block__title__3Y05z {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.productsBlock_block__list__6lTLr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4px;
+  gap: 4px;
+}
+
+.productsBlock_block__button__DyWjO {
+  width: 94%;
+  padding: 10px;
+  margin: 0 auto 15px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(125, 193, 229);
+  border-radius: 10px;
+  position: relative;
+}
+.productsBlock_block__button--sort__gsUwg {
+  border-radius: 10px 10px 0 0;
+}
+.productsBlock_block__button__DyWjO:hover {
+  cursor: pointer;
+}
+
+.productsBlock_block__sort-type__jbkeG {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+}
+
+.productsBlock_block__filter__0xyb4 {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+.productsBlock_block__filter--text__caPJM {
+  font-size: 14px;
+}
+
+.productsBlock_block__sort-options__GPqoD {
+  background-color: rgb(125, 193, 229);
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  height: 0px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.productsBlock_block__sort-options__GPqoD li {
+  margin: 10px 0 0;
+}
+.productsBlock_block__sort-options__GPqoD li:not(:first-child) {
+  margin: 25px 0 0;
+}
+
+.productsBlock_block__sort-options__GPqoD.productsBlock_block__sort-options--open___ELQK {
+  height: 155px;
+  transition: height 0.5s ease;
+}
+
+.productsBlock_block__show-more__oJJg3 {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 25px;
+  color: rgb(178, 214, 234);
+  text-align: center;
+  background-color: rgb(239, 239, 239);
+  border: 2px solid rgb(178, 214, 234);
+  border-radius: 30px;
+  transition: all ease 0.35s;
+}
+.productsBlock_block__show-more__oJJg3:hover {
+  cursor: pointer;
+  background-color: rgb(178, 214, 234);
+  color: rgb(239, 239, 239);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/scss/pageMarkup.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page-markup {
+  flex: 1 1 auto;
+  margin: 57px 10px 30px;
+  position: relative;
+}
