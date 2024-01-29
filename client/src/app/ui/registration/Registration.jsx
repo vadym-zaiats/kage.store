@@ -6,8 +6,10 @@ import { useRef, useState } from "react";
 export function Registration() {
   const [firstnameIsFocused, setFirstnameIsFocused] = useState(false);
   const [lastnameIsFocused, setLastnameIsFocused] = useState(false);
+  const [loginIsFocused, setLoginIsFocused] = useState(false);
   const firstnameFocus = useRef(null);
   const lastnameFocus = useRef(null);
+  const loginFocus = useRef(null);
 
   const handleSelectedFirstname = () => {
     firstnameIsFocused.current.focus();
@@ -27,30 +29,45 @@ export function Registration() {
   const handleLastnameIsFocusedBlur = () => {
     setLastnameIsFocused(false);
   };
+  const handleSelectedLogin = () => {
+    loginIsFocused.current.focus();
+  };
+  const handleLoginIsFocusedFocus = () => {
+    setLoginIsFocused(true);
+  };
+  const handleLoginIsFocusedBlur = () => {
+    setLoginIsFocused(false);
+  };
 
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    // login: "",
+    login: "",
     // email: "",
     // password: "",
     // passwordSecond: "",
     // phone: "",
   });
-  const { firstName, lastName } = formData;
+  const { firstName, lastName, login } = formData;
 
   const [validationErrors, setValidationErrors] = useState({
     firstName: null,
     lastName: null,
+    login: null,
   });
   const validateForm = () => {
+    const loginRegex = /^[a-zA-Z0-9]+$/;
     const phoneRegex = /^[\+]{0,1}380([0-9]{9})$/;
+
     let errors = {};
     if (firstName.length < 2 || firstName.length > 60) {
       errors.firstName = "Firstname must be between 2 and 60 characters";
     }
     if (lastName.length < 2 || lastName.length > 60) {
       errors.lastName = "Lastname must be between 2 and 60 characters";
+    }
+    if (!loginRegex.test(login)) {
+      errors.login = "Невірний формат логіну";
     }
     // if (!phoneRegex.test(phone)) {
     //   errors.phone = "Формат повинен бути +380ХХХХХХХХХ";
@@ -151,6 +168,38 @@ export function Registration() {
           }`}
         >
           {validationErrors.lastName && `${validationErrors.lastName}`}
+        </div>
+        <div
+          className={`${styles["form__login"]} ${
+            validationErrors.login && styles["data__invalid"]
+          }`}
+        >
+          <input
+            className={styles[`form__login-input`]}
+            type="text"
+            id="login"
+            name="login"
+            value={formData.login}
+            onChange={handleChange}
+            onBlur={login ? null : handleLoginIsFocusedBlur}
+            onFocus={handleLoginIsFocusedFocus}
+            ref={loginFocus}
+          />
+          <label
+            onClick={handleSelectedLogin}
+            className={`${styles["form__login-label"]} ${
+              loginIsFocused && styles["input-focused"]
+            } ${validationErrors.login && styles["data__invalid"]}`}
+          >
+            Логін
+          </label>
+        </div>
+        <div
+          className={`${styles["form__validation"]} ${
+            validationErrors.login && styles["data__invalid"]
+          }`}
+        >
+          {validationErrors.login && `${validationErrors.login}`}
         </div>
         {/* <div
           className={`${styles["form__phone"]} ${
