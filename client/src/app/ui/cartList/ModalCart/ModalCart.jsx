@@ -4,11 +4,14 @@ import { useRef, useState } from "react";
 import styles from "./modalCart.module.scss";
 import Image from "next/image";
 import { modalIsOpenSelector, setModal } from "@/redux/slices/cartSlice";
+import { cartSelector } from "@/redux/slices/cartSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { postOrder } from "@/redux/middlewares/postOrder";
 
 export function ModalCart() {
   const dispatch = useDispatch();
   const isOpen = useSelector(modalIsOpenSelector);
+  const products = useSelector(cartSelector);
   const [nameIsFocused, setNameIsFocused] = useState(false);
   const [phoneIsFocused, setPhoneIsFocused] = useState(false);
   const [emailIsFocused, setEmailIsFocused] = useState(false);
@@ -61,7 +64,7 @@ export function ModalCart() {
   const validateForm = () => {
     const emailRegex =
       /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
-    const phoneRegex = /^[\+]{0,1}380([0-9]{9})$/;
+    const phoneRegex = /^380([0-9]{9})$/;
     let errors = {};
     if (name.length < 2 || name.length > 60) {
       errors.name = "Name must be between 2 and 60 characters";
@@ -98,12 +101,14 @@ export function ModalCart() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log(formData);
-      // const validFormData = new FormData();
-      // Object.entries(formData).forEach(([key, value]) => {
-      //   validFormData.set(key, value);
-      // });
-      // dispatch(postCard({ validFormData, token }));
+      const letterSubject = "Дякуємо за замовлення";
+      const letterHtml = `
+      <div>
+        ТЕКСТ ДЛЯ НАДСИЛАННЯ НА ПОШТУ КОРИСТУВАЧА
+      </div>`;
+      dispatch(
+        postOrder({ phone, email, products, letterSubject, letterHtml })
+      );
     } else {
       console.log("Form has validation errors");
     }
@@ -192,7 +197,7 @@ export function ModalCart() {
               }`}
             >
               {validationErrors.phone &&
-                "Номер має бути у форматі +380ХХХХХХХХХ"}
+                "Номер має бути у форматі 380ХХХХХХХХХ"}
             </div>
             <div
               className={`${styles["form__email"]} ${

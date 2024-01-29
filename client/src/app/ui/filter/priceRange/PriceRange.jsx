@@ -10,6 +10,7 @@ import {
   resetFilters,
   selectedMinPriceSelector,
   selectedMaxPriceSelector,
+  setFilter,
 } from "@/redux/slices/filterSlice";
 
 export function PriceRange() {
@@ -30,6 +31,7 @@ export function PriceRange() {
   const handleAprovePriceFilter = () => {
     dispatch(setMinPrice(minPriceFilter));
     dispatch(setMaxPrice(maxPriceFilter));
+    dispatch(setFilter());
   };
   const handleResetFilter = () => {
     dispatch(resetFilters());

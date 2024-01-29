@@ -45,7 +45,6 @@ export function AllProducts() {
     } else if (sort === "date") {
       sortOrder = "&sort=date";
     } else sortOrder = "";
-    console.log(sortOrder);
     // full link
     const fullFilterURL = categoryFilter + priceFilter + sortOrder;
     if (fullFilterURL.length !== 0) {
