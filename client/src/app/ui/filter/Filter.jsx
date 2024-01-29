@@ -27,7 +27,7 @@ export function Filter() {
 
   return (
     <div className={`${styles["filter"]}`}>
-      <MenuHeader func={setFilter} />
+      <MenuHeader func={setFilter} loginButton={false} />
       <div className={`${styles["filter__content"]}`}>
         <h3 className={`${styles["filter__title"]}`}>Фільтри</h3>
         <ul>

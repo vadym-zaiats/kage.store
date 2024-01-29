@@ -1,0 +1,147 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/registration/whereIsMyOrderForm.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.whereIsMyOrderForm_form__zmkZQ {
+  padding: 5px 15px;
+  background-color: rgb(178, 214, 234);
+  border-radius: 15px;
+}
+
+.whereIsMyOrderForm_form__body__v0Gnp {
+  max-width: 328px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .whereIsMyOrderForm_form__body__v0Gnp {
+    max-width: 380px;
+  }
+}
+
+.whereIsMyOrderForm_form__name__zdbco,
+.whereIsMyOrderForm_form__phone__UD9ZG {
+  margin-top: 25px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid rgb(239, 239, 239);
+  position: relative;
+  padding: 4px 0;
+}
+
+.whereIsMyOrderForm_form__name-input__u88_I,
+.whereIsMyOrderForm_form__phone-input__JWFqX {
+  width: 90%;
+  padding: 0;
+  margin: 7px 15px;
+  border: none;
+  background-color: transparent;
+}
+.whereIsMyOrderForm_form__name-input__u88_I::placeholder,
+.whereIsMyOrderForm_form__phone-input__JWFqX::placeholder {
+  color: rgb(125, 193, 229);
+  font-size: 16px;
+}
+.whereIsMyOrderForm_form__name-input__u88_I:focus,
+.whereIsMyOrderForm_form__phone-input__JWFqX:focus {
+  outline: none;
+}
+
+.whereIsMyOrderForm_form__name__zdbco.whereIsMyOrderForm_data__invalid__FOVIt,
+.whereIsMyOrderForm_form__phone__UD9ZG.whereIsMyOrderForm_data__invalid__FOVIt {
+  border: 1px solid red;
+  margin-top: 49px;
+}
+
+.whereIsMyOrderForm_form__validation__EK6qM {
+  margin: 5px 0px 0px 15px;
+  color: rgb(125, 193, 229);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+@media (min-width: 768px) {
+  .whereIsMyOrderForm_form__validation__EK6qM {
+    margin: 0px 0px 0px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .whereIsMyOrderForm_form__validation__EK6qM {
+    font-size: 10px;
+    margin: 2px 0px 0px 16px;
+  }
+}
+@media (min-width: 1168px) {
+  .whereIsMyOrderForm_form__validation__EK6qM {
+    font-size: 12px;
+    margin: 5px 0px 0px 15px;
+  }
+}
+
+.whereIsMyOrderForm_form__validation__EK6qM.whereIsMyOrderForm_data__invalid__FOVIt {
+  color: red;
+}
+
+.whereIsMyOrderForm_form__name-label__Mrash,
+.whereIsMyOrderForm_form__phone-label__xLmBF {
+  font-weight: 200;
+  color: rgb(239, 239, 239);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0%, -50%);
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.whereIsMyOrderForm_form__name-label__Mrash.whereIsMyOrderForm_data__invalid__FOVIt,
+.whereIsMyOrderForm_form__phone-label__xLmBF.whereIsMyOrderForm_data__invalid__FOVIt {
+  color: red;
+}
+
+.whereIsMyOrderForm_form__name-label__Mrash.whereIsMyOrderForm_input-focused__L6V8L,
+.whereIsMyOrderForm_form__phone-label__xLmBF.whereIsMyOrderForm_input-focused__L6V8L {
+  top: -1px;
+  font-size: 12px;
+  background-color: rgb(178, 214, 234);
+  padding: 0 5px;
+  left: 10px;
+}
+
+.whereIsMyOrderForm_form__button__c1TxY {
+  border: none;
+  border-radius: 25px;
+  background-color: gray;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 9px 23px;
+  margin: 20px 0;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .whereIsMyOrderForm_form__button__c1TxY {
+    margin-top: 48px;
+    padding: 8px 23px;
+  }
+}
+@media (min-width: 1168px) {
+  .whereIsMyOrderForm_form__button__c1TxY {
+    margin-top: 45px;
+  }
+}
+
+.whereIsMyOrderForm_form__button__c1TxY.whereIsMyOrderForm_enabled__NaU7r {
+  background-color: rgb(125, 193, 229);
+  color: rgb(239, 239, 239);
+}
+.whereIsMyOrderForm_form__button__c1TxY.whereIsMyOrderForm_enabled__NaU7r:hover {
+  cursor: pointer;
+  background-color: rgb(125, 193, 229);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/scss/pageMarkup.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page-markup {
+  flex: 1 1 auto;
+  margin: 57px 10px 30px;
+  position: relative;
+}

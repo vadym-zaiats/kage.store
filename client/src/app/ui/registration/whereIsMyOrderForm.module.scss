@@ -1,0 +1,125 @@
+@import "@/scss/variables";
+@import "@/scss/mixines";
+
+.form {
+  padding: 5px 15px;
+  background-color: $card-color;
+  border-radius: 15px;
+}
+
+.form__body {
+  max-width: 328px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 380px;
+  }
+}
+
+.form__name,
+.form__phone {
+  margin-top: 25px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid $main-color;
+  position: relative;
+  padding: 4px 0;
+}
+
+.form__name-input,
+.form__phone-input {
+  width: 90%;
+  padding: 0;
+  margin: 7px 15px;
+  border: none;
+  background-color: transparent;
+  &::placeholder {
+    color: $second-color;
+    font-size: 16px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.form__name.data__invalid,
+.form__phone.data__invalid {
+  border: 1px solid red;
+  margin-top: 49px;
+}
+
+.form__validation {
+  margin: 5px 0px 0px 15px;
+  color: $second-color;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  @media (min-width: 768px) {
+    margin: 0px 0px 0px 16px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 10px;
+    margin: 2px 0px 0px 16px;
+  }
+  @media (min-width: 1168px) {
+    font-size: 12px;
+    margin: 5px 0px 0px 15px;
+  }
+}
+
+.form__validation.data__invalid {
+  color: red;
+}
+
+.form__name-label,
+.form__phone-label {
+  font-weight: 200;
+  color: $main-color;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0%, -50%);
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.form__name-label.data__invalid,
+.form__phone-label.data__invalid {
+  color: red;
+}
+
+.form__name-label.input-focused,
+.form__phone-label.input-focused {
+  top: -1px;
+  font-size: 12px;
+  background-color: $card-color;
+  padding: 0 5px;
+  left: 10px;
+}
+
+.form__button {
+  border: none;
+  border-radius: 25px;
+  background-color: gray;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 9px 23px;
+  margin: 20px 0;
+  width: 100%;
+  @media (min-width: 1024px) {
+    margin-top: 48px;
+    padding: 8px 23px;
+  }
+  @media (min-width: 1168px) {
+    margin-top: 45px;
+  }
+}
+
+.form__button.enabled {
+  background-color: $second-color;
+  color: $main-color;
+  &:hover {
+    cursor: pointer;
+    background-color: $second-color;
+  }
+}

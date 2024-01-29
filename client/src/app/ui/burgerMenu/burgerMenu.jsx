@@ -13,7 +13,7 @@ export function BurgerMenu() {
 
   return (
     <div className={`${styles["burger-menu"]}`}>
-      <MenuHeader func={setBurger} />
+      <MenuHeader func={setBurger} loginButton={true} />
       {mainMenu && <BurgerMenuMain />}
       {!mainMenu && <BurgerMenuCatalog />}
     </div>

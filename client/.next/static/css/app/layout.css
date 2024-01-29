@@ -663,6 +663,15 @@ button:hover {
   position: relative;
 }
 
+.menuHeader_menu-login__lqQGp {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
 .menuHeader_menu-close__CBkYT {
   border: none;
   background-color: transparent;
