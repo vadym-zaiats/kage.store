@@ -15,7 +15,8 @@
   }
 }
 
-.form__name,
+.form__firstname,
+.form__lastname,
 .form__phone {
   margin-top: 25px;
   width: 100%;
@@ -26,7 +27,8 @@
   padding: 4px 0;
 }
 
-.form__name-input,
+.form__firstname-input,
+.form__lastname-input,
 .form__phone-input {
   width: 90%;
   padding: 0;
@@ -42,7 +44,8 @@
   }
 }
 
-.form__name.data__invalid,
+.form__firstname.data__invalid,
+.form__lastname.data__invalid,
 .form__phone.data__invalid {
   border: 1px solid red;
   margin-top: 49px;
@@ -72,7 +75,8 @@
   color: red;
 }
 
-.form__name-label,
+.form__firstname-label,
+.form__lastname-label,
 .form__phone-label {
   font-weight: 200;
   color: $main-color;
@@ -83,12 +87,14 @@
   transition: top 0.3s, font-size 0.3s;
 }
 
-.form__name-label.data__invalid,
+.form__firstname-label.data__invalid,
+.form__lastname-label.data__invalid,
 .form__phone-label.data__invalid {
   color: red;
 }
 
-.form__name-label.input-focused,
+.form__firstname-label.input-focused,
+.form__lastname-label.input-focused,
 .form__phone-label.input-focused {
   top: -1px;
   font-size: 12px;

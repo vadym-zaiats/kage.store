@@ -4,39 +4,53 @@ import styles from "./whereIsMyOrderForm.module.scss";
 import { useRef, useState } from "react";
 
 export function Registration() {
-  const [nameIsFocused, setNameIsFocused] = useState(false);
-  const nameFocus = useRef(null);
+  const [firstnameIsFocused, setFirstnameIsFocused] = useState(false);
+  const [lastnameIsFocused, setLastnameIsFocused] = useState(false);
+  const firstnameFocus = useRef(null);
+  const lastnameFocus = useRef(null);
 
-  const handleSelectedName = () => {
-    nameFocus.current.focus();
+  const handleSelectedFirstname = () => {
+    firstnameIsFocused.current.focus();
   };
-  const handleNameFocus = () => {
-    setNameIsFocused(true);
+  const handleFirstnameIsFocusedFocus = () => {
+    setFirstnameIsFocused(true);
   };
-  const handleNameBlur = () => {
-    setNameIsFocused(false);
+  const handleFirstnameIsFocusedBlur = () => {
+    setFirstnameIsFocused(false);
+  };
+  const handleSelectedLastname = () => {
+    lastnameIsFocused.current.focus();
+  };
+  const handleLastnameIsFocusedFocus = () => {
+    setLastnameIsFocused(true);
+  };
+  const handleLastnameIsFocusedBlur = () => {
+    setLastnameIsFocused(false);
   };
 
   const [formData, setFormData] = useState({
     firstName: "",
-    // lastName: "",
+    lastName: "",
     // login: "",
     // email: "",
     // password: "",
     // passwordSecond: "",
     // phone: "",
   });
-  const { firstName, phone } = formData;
+  const { firstName, lastName } = formData;
 
   const [validationErrors, setValidationErrors] = useState({
     firstName: null,
-    // phone: null,
+    lastName: null,
   });
   const validateForm = () => {
     const phoneRegex = /^[\+]{0,1}380([0-9]{9})$/;
     let errors = {};
     if (firstName.length < 2 || firstName.length > 60) {
-      errors.firstName = "Name must be between 2 and 60 characters";
+      errors.firstName = "Firstname must be between 2 and 60 characters";
+    }
+    if (lastName.length < 2 || lastName.length > 60) {
+      errors.lastName = "Lastname must be between 2 and 60 characters";
     }
     // if (!phoneRegex.test(phone)) {
     //   errors.phone = "Формат повинен бути +380ХХХХХХХХХ";
@@ -75,25 +89,25 @@ export function Registration() {
     <div className={styles[`form`]}>
       <form className={styles[`form__body`]} onSubmit={handleSubmit}>
         <div
-          className={`${styles["form__name"]} ${
+          className={`${styles["form__firstname"]} ${
             validationErrors.firstName && styles["data__invalid"]
           }`}
         >
           <input
-            className={styles[`form__name-input`]}
+            className={styles[`form__firstname-input`]}
             type="text"
             id="firstName"
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            onBlur={firstName ? null : handleNameBlur}
-            onFocus={handleNameFocus}
-            ref={nameFocus}
+            onBlur={firstName ? null : handleFirstnameIsFocusedBlur}
+            onFocus={handleFirstnameIsFocusedFocus}
+            ref={firstnameFocus}
           />
           <label
-            onClick={handleSelectedName}
-            className={`${styles["form__name-label"]} ${
-              nameIsFocused && styles["input-focused"]
+            onClick={handleSelectedFirstname}
+            className={`${styles["form__firstname-label"]} ${
+              firstnameIsFocused && styles["input-focused"]
             } ${validationErrors.firstName && styles["data__invalid"]}`}
           >
             Імʼя
@@ -105,6 +119,38 @@ export function Registration() {
           }`}
         >
           {validationErrors.firstName && `${validationErrors.firstName}`}
+        </div>
+        <div
+          className={`${styles["form__lastname"]} ${
+            validationErrors.lastName && styles["data__invalid"]
+          }`}
+        >
+          <input
+            className={styles[`form__lastname-input`]}
+            type="text"
+            id="lastName"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            onBlur={lastName ? null : handleLastnameIsFocusedBlur}
+            onFocus={handleLastnameIsFocusedFocus}
+            ref={lastnameFocus}
+          />
+          <label
+            onClick={handleSelectedLastname}
+            className={`${styles["form__lastname-label"]} ${
+              lastnameIsFocused && styles["input-focused"]
+            } ${validationErrors.lastName && styles["data__invalid"]}`}
+          >
+            Прізвище
+          </label>
+        </div>
+        <div
+          className={`${styles["form__validation"]} ${
+            validationErrors.lastName && styles["data__invalid"]
+          }`}
+        >
+          {validationErrors.lastName && `${validationErrors.lastName}`}
         </div>
         {/* <div
           className={`${styles["form__phone"]} ${
