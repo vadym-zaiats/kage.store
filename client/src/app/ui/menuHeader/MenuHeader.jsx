@@ -10,7 +10,7 @@ export function MenuHeader({ func, loginButton }) {
       {loginButton && (
         <li>
           <Link
-            href="/registration"
+            href="/login"
             className={`${styles["menu-login"]}`}
             onClick={() => {
               dispatch(func());
