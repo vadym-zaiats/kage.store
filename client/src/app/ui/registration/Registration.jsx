@@ -18,6 +18,8 @@ export function Registration() {
   const passwordFocus = useRef(null);
   const [passwordSecondIsFocused, setPasswordSecondIsFocused] = useState(false);
   const passwordSecondFocus = useRef(null);
+  const [telephoneIsFocused, setTelephoneIsFocused] = useState(false);
+  const telephoneFocus = useRef(null);
   // firstName
   const handleSelectedFirstname = () => {
     firstnameFocus.current.focus();
@@ -77,6 +79,16 @@ export function Registration() {
   };
   const handlePasswordSecondBlur = () => {
     setPasswordSecondIsFocused(false);
+  };
+  // Telephone
+  const handleSelectedTelephone = () => {
+    telephoneFocus.current.focus();
+  };
+  const handleTelephoneFocus = () => {
+    setTelephoneIsFocused(true);
+  };
+  const handleTelephoneBlur = () => {
+    setTelephoneIsFocused(false);
   };
 
   const formik = useFormik({
@@ -305,6 +317,41 @@ export function Registration() {
         <div className={styles[`form__error`]}>
           {formik.errors.passwordSecond}
         </div>
+      )}
+      <div
+        className={`${styles["form__telephone"]} ${
+          formik.touched.telephone &&
+          formik.errors.telephone &&
+          styles["data__invalid"]
+        }`}
+      >
+        <input
+          className={styles[`form__telephone-input`]}
+          type="text"
+          id="telephone"
+          name="telephone"
+          value={formik.values.telephone}
+          onChange={formik.handleChange}
+          onBlur={formik.values.telephone ? null : handleTelephoneBlur}
+          onFocus={handleTelephoneFocus}
+          ref={telephoneFocus}
+        />
+        <label
+          htmlFor="telephone"
+          onClick={handleSelectedTelephone}
+          className={`${styles["form__telephone-label"]} ${
+            telephoneIsFocused && styles["input-focused"]
+          } ${
+            formik.touched.telephone &&
+            formik.errors.telephone &&
+            styles["data__invalid"]
+          }`}
+        >
+          Номер телефону
+        </label>
+      </div>
+      {formik.touched.telephone && formik.errors.telephone && (
+        <div className={styles[`form__error`]}>{formik.errors.telephone}</div>
       )}
       <button className={`${styles["form__button"]}`} type="submit">
         Зареєструватись

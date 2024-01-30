@@ -22,7 +22,8 @@
 .whereIsMyOrderForm_form__login__vfGoS,
 .whereIsMyOrderForm_form__email__ctHnR,
 .whereIsMyOrderForm_form__password__5B_VZ,
-.whereIsMyOrderForm_form__password-second__J9Ppy {
+.whereIsMyOrderForm_form__password-second__J9Ppy,
+.whereIsMyOrderForm_form__telephone__JDqHu {
   margin-top: 25px;
   width: 100%;
   background-color: transparent;
@@ -37,7 +38,8 @@
 .whereIsMyOrderForm_form__login-input__Ovbd_,
 .whereIsMyOrderForm_form__email-input__6787C,
 .whereIsMyOrderForm_form__password-input__VIEdc,
-.whereIsMyOrderForm_form__password-second-input__05zVA {
+.whereIsMyOrderForm_form__password-second-input__05zVA,
+.whereIsMyOrderForm_form__telephone-input__KrXP7 {
   width: 90%;
   padding: 0;
   margin: 7px 15px;
@@ -49,7 +51,8 @@
 .whereIsMyOrderForm_form__login-input__Ovbd_::placeholder,
 .whereIsMyOrderForm_form__email-input__6787C::placeholder,
 .whereIsMyOrderForm_form__password-input__VIEdc::placeholder,
-.whereIsMyOrderForm_form__password-second-input__05zVA::placeholder {
+.whereIsMyOrderForm_form__password-second-input__05zVA::placeholder,
+.whereIsMyOrderForm_form__telephone-input__KrXP7::placeholder {
   color: rgb(125, 193, 229);
   font-size: 16px;
 }
@@ -58,7 +61,8 @@
 .whereIsMyOrderForm_form__login-input__Ovbd_:focus,
 .whereIsMyOrderForm_form__email-input__6787C:focus,
 .whereIsMyOrderForm_form__password-input__VIEdc:focus,
-.whereIsMyOrderForm_form__password-second-input__05zVA:focus {
+.whereIsMyOrderForm_form__password-second-input__05zVA:focus,
+.whereIsMyOrderForm_form__telephone-input__KrXP7:focus {
   outline: none;
 }
 
@@ -67,7 +71,8 @@
 .whereIsMyOrderForm_form__login__vfGoS.whereIsMyOrderForm_data__invalid__FOVIt,
 .whereIsMyOrderForm_form__email__ctHnR.whereIsMyOrderForm_data__invalid__FOVIt,
 .whereIsMyOrderForm_form__password__5B_VZ.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__password-second__J9Ppy.whereIsMyOrderForm_data__invalid__FOVIt {
+.whereIsMyOrderForm_form__password-second__J9Ppy.whereIsMyOrderForm_data__invalid__FOVIt,
+.whereIsMyOrderForm_form__telephone__JDqHu.whereIsMyOrderForm_data__invalid__FOVIt {
   border: 1px solid red;
 }
 
@@ -108,7 +113,8 @@
 .whereIsMyOrderForm_form__login-label__PX0zJ,
 .whereIsMyOrderForm_form__email-label__XLJXq,
 .whereIsMyOrderForm_form__password-label__YQsVF,
-.whereIsMyOrderForm_form__password-second-label__Vnv1T {
+.whereIsMyOrderForm_form__password-second-label__Vnv1T,
+.whereIsMyOrderForm_form__telephone-label__m7ppl {
   font-weight: 200;
   color: rgb(239, 239, 239);
   position: absolute;
@@ -123,7 +129,8 @@
 .whereIsMyOrderForm_form__login-label__PX0zJ.whereIsMyOrderForm_data__invalid__FOVIt,
 .whereIsMyOrderForm_form__email-label__XLJXq.whereIsMyOrderForm_data__invalid__FOVIt,
 .whereIsMyOrderForm_form__password-label__YQsVF.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__password-second-label__Vnv1T.whereIsMyOrderForm_data__invalid__FOVIt {
+.whereIsMyOrderForm_form__password-second-label__Vnv1T.whereIsMyOrderForm_data__invalid__FOVIt,
+.whereIsMyOrderForm_form__telephone-label__m7ppl.whereIsMyOrderForm_data__invalid__FOVIt {
   color: red;
 }
 
@@ -132,7 +139,8 @@
 .whereIsMyOrderForm_form__login-label__PX0zJ.whereIsMyOrderForm_input-focused__L6V8L,
 .whereIsMyOrderForm_form__email-label__XLJXq.whereIsMyOrderForm_input-focused__L6V8L,
 .whereIsMyOrderForm_form__password-label__YQsVF.whereIsMyOrderForm_input-focused__L6V8L,
-.whereIsMyOrderForm_form__password-second-label__Vnv1T.whereIsMyOrderForm_input-focused__L6V8L {
+.whereIsMyOrderForm_form__password-second-label__Vnv1T.whereIsMyOrderForm_input-focused__L6V8L,
+.whereIsMyOrderForm_form__telephone-label__m7ppl.whereIsMyOrderForm_input-focused__L6V8L {
   top: -1px;
   font-size: 12px;
   background-color: rgb(178, 214, 234);
