@@ -34,6 +34,17 @@ export const customerApi = createApi({
       }),
       invalidatesTags: ["Customers"],
     }),
+    getCustomerToken: builder.mutation({
+      query: ({ login, password }) => ({
+        url: "api/customers/login",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ login, password }),
+      }),
+      invalidatesTags: ["Customers"],
+    }),
     // deleteProduct: builder.mutation<IProduct[], any>({
     //   query: (id) => ({
     //     url: `api/products/${id}`,
@@ -44,4 +55,5 @@ export const customerApi = createApi({
   }),
 });
 
-export const { useCreateCustomerMutation } = customerApi;
+export const { useCreateCustomerMutation, useGetCustomerTokenMutation } =
+  customerApi;

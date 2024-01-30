@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import { useState, useRef } from "react";
 import validationSchema from "./validation";
 import Link from "next/link";
+import { useGetCustomerTokenMutation } from "@/redux/api/customersApi";
 
 export function Login() {
   const [loginIsFocused, setLoginIsFocused] = useState(false);
@@ -32,20 +33,30 @@ export function Login() {
   const handlePasswordBlur = () => {
     setPasswordIsFocused(false);
   };
+
+  const [getCustomerToken, { data, error, isLoading }] =
+    useGetCustomerTokenMutation();
+
   const formik = useFormik({
     initialValues: {
       login: "",
       password: "",
     },
     validationSchema,
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      //   try {
+      //     const res = await getCustomerToken(values).unwrap(); // unwrap витягне дані з об'єкта response
+      //     console.log(res);
+      //     // Очистити форму або виконати інші дії після успішного відправлення даних
+      //   } catch (err) {
+      //     console.error("Помилка:", err);
+      //   }
     },
   });
   return (
     <>
       <form className={`${styles["form"]}`} onSubmit={formik.handleSubmit}>
-        <h3 className={`${styles["form__title"]}`}>Реєстрація</h3>
+        <h3 className={`${styles["form__title"]}`}>Авторизація</h3>
         <div
           className={`${styles["form__login"]} ${
             formik.touched.login &&

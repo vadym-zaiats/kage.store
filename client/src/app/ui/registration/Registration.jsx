@@ -5,8 +5,10 @@ import { useFormik } from "formik";
 import { useState, useRef } from "react";
 import validationSchema from "./validation";
 import { useCreateCustomerMutation } from "@/redux/api/customersApi";
+import { useRouter } from "next/navigation";
 
 export function Registration() {
+  const router = useRouter();
   const [firstnameIsFocused, setFirstnameIsFocused] = useState(false);
   const firstnameFocus = useRef(null);
   const [lastnameIsFocused, setLastnameIsFocused] = useState(false);
@@ -107,6 +109,7 @@ export function Registration() {
     validationSchema,
     onSubmit: (values) => {
       createCustomer(values);
+      router.push("/login");
     },
   });
   return (
