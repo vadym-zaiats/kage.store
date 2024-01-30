@@ -35,20 +35,20 @@ export const customerApi = createApi({
       invalidatesTags: ["Customers"],
     }),
     getCustomerToken: builder.mutation({
-      query: ({ login, password }) => ({
+      query: ({ login: loginOrEmail, password }) => ({
         url: "api/customers/login",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ login, password }),
+        body: JSON.stringify({ loginOrEmail, password }),
       }),
       invalidatesTags: ["Customers"],
     }),
-    // deleteProduct: builder.mutation<IProduct[], any>({
+    // deleteProduct: builder.mutation({
     //   query: (id) => ({
     //     url: `api/products/${id}`,
-    //     method: "DELETE"
+    //     method: "DELETE",
     //   }),
     //   invalidatesTags: ["Products"],
     // }),

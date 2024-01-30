@@ -44,13 +44,12 @@ export function Login() {
     },
     validationSchema,
     onSubmit: async (values) => {
-      //   try {
-      //     const res = await getCustomerToken(values).unwrap(); // unwrap витягне дані з об'єкта response
-      //     console.log(res);
-      //     // Очистити форму або виконати інші дії після успішного відправлення даних
-      //   } catch (err) {
-      //     console.error("Помилка:", err);
-      //   }
+      try {
+        const res = await getCustomerToken(values).unwrap();
+        localStorage.setItem("token", JSON.stringify(res.token));
+      } catch (err) {
+        console.error("Помилка:", err);
+      }
     },
   });
   return (
