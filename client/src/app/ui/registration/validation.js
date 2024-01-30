@@ -35,7 +35,10 @@ const validationSchema = Yup.object({
     .oneOf([Yup.ref("password"), null], "Паролі мають співпадати")
     .required("Поле має бути заповнено"),
   telephone: Yup.string()
-    .matches(/^380\d{9}$/, "Номер має бути у форматі 380ХХХХХХХХХ")
+    .matches(
+      /^\+380\d{3}\d{2}\d{2}\d{2}$/,
+      "Номер має бути у форматі +380ХХХХХХХХХ"
+    )
     .required("Поле має бути заповнено"),
 });
 

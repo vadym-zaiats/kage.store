@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { productsApi } from "./api/productsApi";
+import { customerApi } from "./api/customersApi";
 import burgerSlice from "./slices/burgerSlice";
 import productsSlice from "./slices/productsSlice";
 import cartSlice from "./slices/cartSlice";
@@ -17,8 +18,12 @@ export const makeStore = () => {
       filter: filterSlice,
       order: orderSlice,
       [productsApi.reducerPath]: productsApi.reducer,
+      [customerApi.reducerPath]: customerApi.reducer,
     },
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware().concat(productsApi.middleware),
+      getDefaultMiddleware().concat(
+        productsApi.middleware,
+        customerApi.middleware
+      ),
   });
 };

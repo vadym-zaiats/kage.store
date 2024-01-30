@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/registration/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/registration/page.css",
-      "static/chunks/app/registration/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -17,17 +17,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/page": [
+    "/registration/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
-    "/my-order/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/my-order/page.css",
-      "static/chunks/app/my-order/page.js"
+      "static/css/app/registration/page.css",
+      "static/chunks/app/registration/page.js"
     ]
   }
 }

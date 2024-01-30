@@ -4,6 +4,7 @@ import styles from "./registration.module.scss";
 import { useFormik } from "formik";
 import { useState, useRef } from "react";
 import validationSchema from "./validation";
+import { useCreateCustomerMutation } from "@/redux/api/customersApi";
 
 export function Registration() {
   const [firstnameIsFocused, setFirstnameIsFocused] = useState(false);
@@ -91,6 +92,8 @@ export function Registration() {
     setTelephoneIsFocused(false);
   };
 
+  const [createCustomer] = useCreateCustomerMutation();
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -101,10 +104,9 @@ export function Registration() {
       passwordSecond: "",
       telephone: "",
     },
-    validationSchema: validationSchema,
+    validationSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-      // POST
+      createCustomer(values);
     },
   });
   return (
