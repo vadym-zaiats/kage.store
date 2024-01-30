@@ -59,7 +59,6 @@
 .whereIsMyOrderForm_form__login__vfGoS.whereIsMyOrderForm_data__invalid__FOVIt,
 .whereIsMyOrderForm_form__email__ctHnR.whereIsMyOrderForm_data__invalid__FOVIt {
   border: 1px solid red;
-  margin-top: 49px;
 }
 
 .whereIsMyOrderForm_form__validation__EK6qM {
@@ -88,7 +87,9 @@
   }
 }
 
-.whereIsMyOrderForm_form__validation__EK6qM.whereIsMyOrderForm_data__invalid__FOVIt {
+.whereIsMyOrderForm_form__firstname-error__Smoth {
+  margin: 10px 10px 0 0;
+  text-align: right;
   color: red;
 }
 
@@ -126,30 +127,14 @@
 .whereIsMyOrderForm_form__button__c1TxY {
   border: none;
   border-radius: 25px;
-  background-color: gray;
+  background-color: rgb(125, 193, 229);
   font-size: 16px;
   color: rgba(255, 255, 255, 0.87);
   padding: 9px 23px;
   margin: 20px 0;
   width: 100%;
 }
-@media (min-width: 1024px) {
-  .whereIsMyOrderForm_form__button__c1TxY {
-    margin-top: 48px;
-    padding: 8px 23px;
-  }
-}
-@media (min-width: 1168px) {
-  .whereIsMyOrderForm_form__button__c1TxY {
-    margin-top: 45px;
-  }
-}
-
-.whereIsMyOrderForm_form__button__c1TxY.whereIsMyOrderForm_enabled__NaU7r {
-  background-color: rgb(125, 193, 229);
-  color: rgb(239, 239, 239);
-}
-.whereIsMyOrderForm_form__button__c1TxY.whereIsMyOrderForm_enabled__NaU7r:hover {
+.whereIsMyOrderForm_form__button__c1TxY:hover {
   cursor: pointer;
   background-color: rgb(125, 193, 229);
 }

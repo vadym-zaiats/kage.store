@@ -3,6 +3,7 @@
 import styles from "./whereIsMyOrderForm.module.scss";
 import { useFormik } from "formik";
 import { useState, useRef } from "react";
+import validationSchema from "./validation";
 
 export function Registration() {
   const [firstnameIsFocused, setFirstnameIsFocused] = useState(false);
@@ -22,21 +23,20 @@ export function Registration() {
     initialValues: {
       firstName: "",
     },
+    validationSchema: validationSchema,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
   });
   return (
     <form className={`${styles["form"]}`} onSubmit={formik.handleSubmit}>
-      {/* <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-      /> */}
-      <div className={`${styles["form__firstname"]}`}>
+      <div
+        className={`${styles["form__firstname"]} ${
+          formik.touched.firstName &&
+          formik.errors.firstName &&
+          styles["data__invalid"]
+        }`}
+      >
         <input
           className={styles[`form__firstname-input`]}
           type="text"
@@ -53,13 +53,23 @@ export function Registration() {
           onClick={handleSelectedFirstname}
           className={`${styles["form__firstname-label"]} ${
             firstnameIsFocused && styles["input-focused"]
+          } ${
+            formik.touched.firstName &&
+            formik.errors.firstName &&
+            styles["data__invalid"]
           }`}
         >
           Імʼя
         </label>
       </div>
-
-      <button type="submit">Submit</button>
+      {formik.touched.firstName && formik.errors.firstName && (
+        <div className={styles[`form__firstname-error`]}>
+          {formik.errors.firstName}
+        </div>
+      )}
+      <button className={`${styles["form__button"]}`} type="submit">
+        Submit
+      </button>
     </form>
   );
 }

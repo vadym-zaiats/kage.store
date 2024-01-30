@@ -51,7 +51,6 @@
 .form__login.data__invalid,
 .form__email.data__invalid {
   border: 1px solid red;
-  margin-top: 49px;
 }
 
 .form__validation {
@@ -74,7 +73,9 @@
   }
 }
 
-.form__validation.data__invalid {
+.form__firstname-error {
+  margin: 10px 10px 0 0;
+  text-align: right;
   color: red;
 }
 
@@ -112,24 +113,12 @@
 .form__button {
   border: none;
   border-radius: 25px;
-  background-color: gray;
+  background-color: $second-color;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.87);
   padding: 9px 23px;
   margin: 20px 0;
   width: 100%;
-  @media (min-width: 1024px) {
-    margin-top: 48px;
-    padding: 8px 23px;
-  }
-  @media (min-width: 1168px) {
-    margin-top: 45px;
-  }
-}
-
-.form__button.enabled {
-  background-color: $second-color;
-  color: $main-color;
   &:hover {
     cursor: pointer;
     background-color: $second-color;
