@@ -17,7 +17,8 @@
 
 .form__firstname,
 .form__lastname,
-.form__login {
+.form__login,
+.form__email {
   margin-top: 25px;
   width: 100%;
   background-color: transparent;
@@ -29,7 +30,8 @@
 
 .form__firstname-input,
 .form__lastname-input,
-.form__login-input {
+.form__login-input,
+.form__email-input {
   width: 90%;
   padding: 0;
   margin: 7px 15px;
@@ -46,7 +48,8 @@
 
 .form__firstname.data__invalid,
 .form__lastname.data__invalid,
-.form__login.data__invalid {
+.form__login.data__invalid,
+.form__email.data__invalid {
   border: 1px solid red;
   margin-top: 49px;
 }
@@ -77,7 +80,8 @@
 
 .form__firstname-label,
 .form__lastname-label,
-.form__login-label {
+.form__login-label,
+.form__email-label {
   font-weight: 200;
   color: $main-color;
   position: absolute;
@@ -89,13 +93,15 @@
 
 .form__firstname-label.data__invalid,
 .form__lastname-label.data__invalid,
-.form__login-label.data__invalid {
+.form__login-label.data__invalid,
+.form__email-label.data__invalid {
   color: red;
 }
 
 .form__firstname-label.input-focused,
 .form__lastname-label.input-focused,
-.form__login-label.input-focused {
+.form__login-label.input-focused,
+.form__email-label.input-focused {
   top: -1px;
   font-size: 12px;
   background-color: $card-color;

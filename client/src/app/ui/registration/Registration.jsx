@@ -10,6 +10,8 @@ export function Registration() {
   const lastnameFocus = useRef(null);
   const [loginIsFocused, setLoginIsFocused] = useState(false);
   const loginFocus = useRef(null);
+  const [emailIsFocused, setEmailIsFocused] = useState(false);
+  const emailFocus = useRef(null);
   // firstName
   const handleSelectedFirstname = () => {
     firstnameFocus.current.focus();
@@ -40,24 +42,37 @@ export function Registration() {
   const handleLoginBlur = () => {
     setLoginIsFocused(false);
   };
+  // Email
+  const handleSelectedEmail = () => {
+    emailFocus.current.focus();
+  };
+  const handleEmailFocus = () => {
+    setEmailIsFocused(true);
+  };
+  const handleEmailBlur = () => {
+    setEmailIsFocused(false);
+  };
 
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     login: "",
-    // email: "",
+    email: "",
     // password: "",
     // passwordSecond: "",
     // phone: "",
   });
-  const { firstName, lastName, login } = formData;
+  const { firstName, lastName, login, email } = formData;
 
   const [validationErrors, setValidationErrors] = useState({
     firstName: null,
     lastName: null,
     login: null,
+    email: null,
   });
   const validateForm = () => {
+    const emailRegex =
+      /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
     let errors = {};
     if (firstName.length < 2 || firstName.length > 60) {
       errors.firstName = "Firstname must be between 2 and 60 characters";
@@ -67,6 +82,9 @@ export function Registration() {
     }
     if (login.length < 2 || login.length > 60) {
       errors.login = "Login must be between 2 and 60 characters";
+    }
+    if (!emailRegex.test(email)) {
+      errors.email = "Invalid email format";
     }
     setValidationErrors(errors);
     return Object.keys(errors).length === 0;
@@ -86,7 +104,10 @@ export function Registration() {
   const isFormFilled = () => {
     // const isFormValid = name.length > 0 && phone.length > 0;
     const isFormValid =
-      firstName.length > 0 && lastName.length > 0 && login.length > 0;
+      firstName.length > 0 &&
+      lastName.length > 0 &&
+      login.length > 0 &&
+      email.length > 0;
     return isFormValid;
   };
   const handleSubmit = (e) => {
@@ -197,6 +218,38 @@ export function Registration() {
           }`}
         >
           {validationErrors.login && `${validationErrors.login}`}
+        </div>
+        <div
+          className={`${styles["form__email"]} ${
+            validationErrors.email && styles["data__invalid"]
+          }`}
+        >
+          <input
+            className={styles[`form__email-input`]}
+            type="text"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            onBlur={email ? null : handleEmailBlur}
+            onFocus={handleEmailFocus}
+            ref={emailFocus}
+          />
+          <label
+            onClick={handleSelectedEmail}
+            className={`${styles["form__email-label"]} ${
+              emailIsFocused && styles["input-focused"]
+            } ${validationErrors.email && styles["data__invalid"]}`}
+          >
+            E-mail
+          </label>
+        </div>
+        <div
+          className={`${styles["form__validation"]} ${
+            validationErrors.email && styles["data__invalid"]
+          }`}
+        >
+          {validationErrors.email && `${validationErrors.email}`}
         </div>
         <button
           className={`${styles["form__button"]} ${

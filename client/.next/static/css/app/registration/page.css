@@ -19,7 +19,8 @@
 
 .whereIsMyOrderForm_form__firstname__a6pJ9,
 .whereIsMyOrderForm_form__lastname__WaAUy,
-.whereIsMyOrderForm_form__login__vfGoS {
+.whereIsMyOrderForm_form__login__vfGoS,
+.whereIsMyOrderForm_form__email__ctHnR {
   margin-top: 25px;
   width: 100%;
   background-color: transparent;
@@ -31,7 +32,8 @@
 
 .whereIsMyOrderForm_form__firstname-input__pOzqQ,
 .whereIsMyOrderForm_form__lastname-input__jneuO,
-.whereIsMyOrderForm_form__login-input__Ovbd_ {
+.whereIsMyOrderForm_form__login-input__Ovbd_,
+.whereIsMyOrderForm_form__email-input__6787C {
   width: 90%;
   padding: 0;
   margin: 7px 15px;
@@ -40,19 +42,22 @@
 }
 .whereIsMyOrderForm_form__firstname-input__pOzqQ::placeholder,
 .whereIsMyOrderForm_form__lastname-input__jneuO::placeholder,
-.whereIsMyOrderForm_form__login-input__Ovbd_::placeholder {
+.whereIsMyOrderForm_form__login-input__Ovbd_::placeholder,
+.whereIsMyOrderForm_form__email-input__6787C::placeholder {
   color: rgb(125, 193, 229);
   font-size: 16px;
 }
 .whereIsMyOrderForm_form__firstname-input__pOzqQ:focus,
 .whereIsMyOrderForm_form__lastname-input__jneuO:focus,
-.whereIsMyOrderForm_form__login-input__Ovbd_:focus {
+.whereIsMyOrderForm_form__login-input__Ovbd_:focus,
+.whereIsMyOrderForm_form__email-input__6787C:focus {
   outline: none;
 }
 
 .whereIsMyOrderForm_form__firstname__a6pJ9.whereIsMyOrderForm_data__invalid__FOVIt,
 .whereIsMyOrderForm_form__lastname__WaAUy.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__login__vfGoS.whereIsMyOrderForm_data__invalid__FOVIt {
+.whereIsMyOrderForm_form__login__vfGoS.whereIsMyOrderForm_data__invalid__FOVIt,
+.whereIsMyOrderForm_form__email__ctHnR.whereIsMyOrderForm_data__invalid__FOVIt {
   border: 1px solid red;
   margin-top: 49px;
 }
@@ -89,7 +94,8 @@
 
 .whereIsMyOrderForm_form__firstname-label__dkaYZ,
 .whereIsMyOrderForm_form__lastname-label__8neRB,
-.whereIsMyOrderForm_form__login-label__PX0zJ {
+.whereIsMyOrderForm_form__login-label__PX0zJ,
+.whereIsMyOrderForm_form__email-label__XLJXq {
   font-weight: 200;
   color: rgb(239, 239, 239);
   position: absolute;
@@ -101,13 +107,15 @@
 
 .whereIsMyOrderForm_form__firstname-label__dkaYZ.whereIsMyOrderForm_data__invalid__FOVIt,
 .whereIsMyOrderForm_form__lastname-label__8neRB.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__login-label__PX0zJ.whereIsMyOrderForm_data__invalid__FOVIt {
+.whereIsMyOrderForm_form__login-label__PX0zJ.whereIsMyOrderForm_data__invalid__FOVIt,
+.whereIsMyOrderForm_form__email-label__XLJXq.whereIsMyOrderForm_data__invalid__FOVIt {
   color: red;
 }
 
 .whereIsMyOrderForm_form__firstname-label__dkaYZ.whereIsMyOrderForm_input-focused__L6V8L,
 .whereIsMyOrderForm_form__lastname-label__8neRB.whereIsMyOrderForm_input-focused__L6V8L,
-.whereIsMyOrderForm_form__login-label__PX0zJ.whereIsMyOrderForm_input-focused__L6V8L {
+.whereIsMyOrderForm_form__login-label__PX0zJ.whereIsMyOrderForm_input-focused__L6V8L,
+.whereIsMyOrderForm_form__email-label__XLJXq.whereIsMyOrderForm_input-focused__L6V8L {
   top: -1px;
   font-size: 12px;
   background-color: rgb(178, 214, 234);
