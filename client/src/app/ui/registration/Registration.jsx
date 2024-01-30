@@ -14,7 +14,10 @@ export function Registration() {
   const loginFocus = useRef(null);
   const [emailIsFocused, setEmailIsFocused] = useState(false);
   const emailFocus = useRef(null);
-
+  const [passwordIsFocused, setPasswordIsFocused] = useState(false);
+  const passwordFocus = useRef(null);
+  const [passwordSecondIsFocused, setPasswordSecondIsFocused] = useState(false);
+  const passwordSecondFocus = useRef(null);
   // firstName
   const handleSelectedFirstname = () => {
     firstnameFocus.current.focus();
@@ -54,6 +57,26 @@ export function Registration() {
   };
   const handleEmailBlur = () => {
     setEmailIsFocused(false);
+  };
+  // Password
+  const handleSelectedPassword = () => {
+    passwordFocus.current.focus();
+  };
+  const handlePasswordFocus = () => {
+    setPasswordIsFocused(true);
+  };
+  const handlePasswordBlur = () => {
+    setPasswordIsFocused(false);
+  };
+  // PasswordSecond
+  const handleSelectedPasswordSecond = () => {
+    passwordSecondFocus.current.focus();
+  };
+  const handlePasswordSecondFocus = () => {
+    setPasswordSecondIsFocused(true);
+  };
+  const handlePasswordSecondBlur = () => {
+    setPasswordSecondIsFocused(false);
   };
 
   const formik = useFormik({
@@ -175,6 +198,113 @@ export function Registration() {
       </div>
       {formik.touched.login && formik.errors.login && (
         <div className={styles[`form__error`]}>{formik.errors.login}</div>
+      )}
+      <div
+        className={`${styles["form__email"]} ${
+          formik.touched.email && formik.errors.email && styles["data__invalid"]
+        }`}
+      >
+        <input
+          className={styles[`form__email-input`]}
+          type="email"
+          id="email"
+          name="email"
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          onBlur={formik.values.email ? null : handleEmailBlur}
+          onFocus={handleEmailFocus}
+          ref={emailFocus}
+        />
+        <label
+          htmlFor="email"
+          onClick={handleSelectedEmail}
+          className={`${styles["form__email-label"]} ${
+            emailIsFocused && styles["input-focused"]
+          } ${
+            formik.touched.email &&
+            formik.errors.email &&
+            styles["data__invalid"]
+          }`}
+        >
+          E-mail
+        </label>
+      </div>
+      {formik.touched.email && formik.errors.email && (
+        <div className={styles[`form__error`]}>{formik.errors.email}</div>
+      )}
+      <div
+        className={`${styles["form__password"]} ${
+          formik.touched.password &&
+          formik.errors.password &&
+          styles["data__invalid"]
+        }`}
+      >
+        <input
+          className={styles[`form__password-input`]}
+          type="password"
+          id="password"
+          name="password"
+          value={formik.values.password}
+          onChange={formik.handleChange}
+          onBlur={formik.values.password ? null : handlePasswordBlur}
+          onFocus={handlePasswordFocus}
+          ref={passwordFocus}
+        />
+        <label
+          htmlFor="password"
+          onClick={handleSelectedPassword}
+          className={`${styles["form__password-label"]} ${
+            passwordIsFocused && styles["input-focused"]
+          } ${
+            formik.touched.password &&
+            formik.errors.password &&
+            styles["data__invalid"]
+          }`}
+        >
+          Пароль
+        </label>
+      </div>
+      {formik.touched.password && formik.errors.password && (
+        <div className={styles[`form__error`]}>{formik.errors.password}</div>
+      )}
+      <div
+        className={`${styles["form__password-second"]} ${
+          formik.touched.passwordSecond &&
+          formik.errors.passwordSecond &&
+          styles["data__invalid"]
+        }`}
+      >
+        <input
+          className={styles[`form__password-second-input`]}
+          type="password"
+          id="passwordSecond"
+          name="passwordSecond"
+          value={formik.values.passwordSecond}
+          onChange={formik.handleChange}
+          onBlur={
+            formik.values.passwordSecond ? null : handlePasswordSecondBlur
+          }
+          onFocus={handlePasswordSecondFocus}
+          ref={passwordSecondFocus}
+        />
+        <label
+          htmlFor="passwordSecond"
+          onClick={handleSelectedPasswordSecond}
+          className={`${styles["form__password-second-label"]} ${
+            passwordSecondIsFocused && styles["input-focused"]
+          } ${
+            formik.touched.passwordSecond &&
+            formik.errors.passwordSecond &&
+            styles["data__invalid"]
+          }`}
+        >
+          Повтроити пароль
+        </label>
+      </div>
+      {formik.touched.passwordSecond && formik.errors.passwordSecond && (
+        <div className={styles[`form__error`]}>
+          {formik.errors.passwordSecond}
+        </div>
       )}
       <button className={`${styles["form__button"]}`} type="submit">
         Зареєструватись

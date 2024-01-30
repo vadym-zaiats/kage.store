@@ -16,23 +16,24 @@ const validationSchema = Yup.object({
     .max(10, "Максимум 10 букв")
     .matches(/^[a-zA-Z0-9]*$/, "Тільки латинські літери та цифри без пробілів")
     .required("Поле має бути заповнено"),
-  // email: Yup.string()
-  //   .email("Invalid email address")
-  //   .min(6, "Min 6 letters required")
-  //   .max(30, "Max 30 letters required")
-  //   .required("This field is required!"),
-  // password: Yup.string()
-  //   .min(7, "Min 7 letters required")
-  //   .max(30, "Max 30 letters allowed")
-  //   .matches(/^[a-zA-Z]/, "Password must contain Latin letters only")
-  //   .matches(/\d/, "Password must contain at least one number")
-  //   .matches(/[a-z]/, "Password must contain at least one lowercase letter")
-  //   .matches(/[A-Z]/, "Password must contain at least one uppercase letter")
-  //   .matches(/^[a-zA-Z0-9]+$/, "Password must not contain spaces")
-  //   .required("This field is required!"),
-  // passwordSecond: Yup.string()
-  //   .oneOf([Yup.ref("password"), null], "Passwords must match")
-  //   .required("This field is required!"),
+  email: Yup.string()
+    .email("Некоректна пошта")
+    .min(6, "Мінімум 6 букви")
+    .max(30, "Максимум 30 букв")
+    .required("Поле має бути заповнено"),
+  // need more checks
+  password: Yup.string()
+    .min(7, "Мінімум 7 символів")
+    .max(30, "Максимум 30 символів")
+    .matches(/^[a-zA-Z]/, "Пароль повинен містити тільки латинські літери")
+    .matches(/\d/, "Пароль повинен містити хоча б одне число")
+    .matches(/[a-z]/, "Пароль має містити принаймні одну малу літеру")
+    .matches(/[A-Z]/, "Пароль має містити принаймні одну велику літеру")
+    .matches(/^[a-zA-Z0-9]+$/, "Пароль не повинен містити пробілів")
+    .required("Поле має бути заповнено"),
+  passwordSecond: Yup.string()
+    .oneOf([Yup.ref("password"), null], "Паролі мають співпадати")
+    .required("Поле має бути заповнено"),
   // telephone: Yup.string()
   //   .matches(
   //     /^\+380\s?\(\d{2}\)\s?\d{2}\s?\d{2}\s?\d{3}$/,
