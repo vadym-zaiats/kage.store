@@ -6,19 +6,16 @@ const validationSchema = Yup.object({
     .max(25, "Максимум 25 букв")
     .matches(/^[a-zA-Zа-яА-Я]*$/, "Тільки літери")
     .required("Поле має бути заповнено"),
-  // lastName: Yup.string()
-  //   .min(2, "Min 2 letters required")
-  //   .max(25, "Max 25 letters allowed")
-  //   .matches(/^[a-zA-Zа-яА-Я]*$/, "The name must contain only letters")
-  //   .required("This field is required!"),
-  // login: Yup.string()
-  //   .min(4, "Min 4 letters required")
-  //   .max(10, "Max 10 letters allowed")
-  //   .matches(
-  //     /^[a-zA-Z0-9]*$/,
-  //     "Login must contain Latin letters and numbers only, without spaces"
-  //   )
-  //   .required("This field is required!"),
+  lastName: Yup.string()
+    .min(2, "Мінімум 2 букви")
+    .max(25, "Максимум 25 букв")
+    .matches(/^[a-zA-Zа-яА-Я]*$/, "Тільки літери")
+    .required("Поле має бути заповнено"),
+  login: Yup.string()
+    .min(4, "Мінімум 4 букви")
+    .max(10, "Максимум 10 букв")
+    .matches(/^[a-zA-Z0-9]*$/, "Тільки латинські літери та цифри без пробілів")
+    .required("Поле має бути заповнено"),
   // email: Yup.string()
   //   .email("Invalid email address")
   //   .min(6, "Min 6 letters required")
