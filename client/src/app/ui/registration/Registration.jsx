@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./whereIsMyOrderForm.module.scss";
+import styles from "./registration.module.scss";
 import { useFormik } from "formik";
 import { useState, useRef } from "react";
 import validationSchema from "./validation";
@@ -104,10 +104,12 @@ export function Registration() {
     validationSchema: validationSchema,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
+      // POST
     },
   });
   return (
     <form className={`${styles["form"]}`} onSubmit={formik.handleSubmit}>
+      <h3 className={`${styles["form__title"]}`}>Реєстрація</h3>
       <div
         className={`${styles["form__firstname"]} ${
           formik.touched.firstName &&

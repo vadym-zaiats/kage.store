@@ -1,122 +1,85 @@
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/registration/whereIsMyOrderForm.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.whereIsMyOrderForm_form__zmkZQ {
-  padding: 5px 15px;
-  background-color: rgb(178, 214, 234);
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[9].use[5]!./src/app/ui/registration/registration.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.registration_form__4RBVN {
+  margin: 25px 0 0;
+  padding: 25px 15px 15px;
   border-radius: 15px;
+  text-align: center;
 }
 
-.whereIsMyOrderForm_form__body__v0Gnp {
-  max-width: 328px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .whereIsMyOrderForm_form__body__v0Gnp {
-    max-width: 380px;
-  }
+.registration_form__title__Y22QM {
+  font-size: 36px;
 }
 
-.whereIsMyOrderForm_form__firstname__a6pJ9,
-.whereIsMyOrderForm_form__lastname__WaAUy,
-.whereIsMyOrderForm_form__login__vfGoS,
-.whereIsMyOrderForm_form__email__ctHnR,
-.whereIsMyOrderForm_form__password__5B_VZ,
-.whereIsMyOrderForm_form__password-second__J9Ppy,
-.whereIsMyOrderForm_form__telephone__JDqHu {
+.registration_form__firstname__Ai8HR,
+.registration_form__lastname__dIY4B,
+.registration_form__login__AEjah,
+.registration_form__email__ZXnB0,
+.registration_form__password__gBljh,
+.registration_form__password-second__S7XYN,
+.registration_form__telephone__Cynh3 {
   margin-top: 25px;
   width: 100%;
   background-color: transparent;
   border-radius: 50px;
-  border: 1px solid rgb(239, 239, 239);
+  border: 1px solid #000;
   position: relative;
   padding: 4px 0;
 }
 
-.whereIsMyOrderForm_form__firstname-input__pOzqQ,
-.whereIsMyOrderForm_form__lastname-input__jneuO,
-.whereIsMyOrderForm_form__login-input__Ovbd_,
-.whereIsMyOrderForm_form__email-input__6787C,
-.whereIsMyOrderForm_form__password-input__VIEdc,
-.whereIsMyOrderForm_form__password-second-input__05zVA,
-.whereIsMyOrderForm_form__telephone-input__KrXP7 {
+.registration_form__firstname-input__Yqq4T,
+.registration_form__lastname-input___2rqa,
+.registration_form__login-input__kwS_A,
+.registration_form__email-input__NqAPz,
+.registration_form__password-input__ldCIi,
+.registration_form__password-second-input__5zFJt,
+.registration_form__telephone-input__VeaA6 {
   width: 90%;
   padding: 0;
   margin: 7px 15px;
   border: none;
   background-color: transparent;
 }
-.whereIsMyOrderForm_form__firstname-input__pOzqQ::placeholder,
-.whereIsMyOrderForm_form__lastname-input__jneuO::placeholder,
-.whereIsMyOrderForm_form__login-input__Ovbd_::placeholder,
-.whereIsMyOrderForm_form__email-input__6787C::placeholder,
-.whereIsMyOrderForm_form__password-input__VIEdc::placeholder,
-.whereIsMyOrderForm_form__password-second-input__05zVA::placeholder,
-.whereIsMyOrderForm_form__telephone-input__KrXP7::placeholder {
-  color: rgb(125, 193, 229);
+.registration_form__firstname-input__Yqq4T::placeholder,
+.registration_form__lastname-input___2rqa::placeholder,
+.registration_form__login-input__kwS_A::placeholder,
+.registration_form__email-input__NqAPz::placeholder,
+.registration_form__password-input__ldCIi::placeholder,
+.registration_form__password-second-input__5zFJt::placeholder,
+.registration_form__telephone-input__VeaA6::placeholder {
+  color: #000;
   font-size: 16px;
 }
-.whereIsMyOrderForm_form__firstname-input__pOzqQ:focus,
-.whereIsMyOrderForm_form__lastname-input__jneuO:focus,
-.whereIsMyOrderForm_form__login-input__Ovbd_:focus,
-.whereIsMyOrderForm_form__email-input__6787C:focus,
-.whereIsMyOrderForm_form__password-input__VIEdc:focus,
-.whereIsMyOrderForm_form__password-second-input__05zVA:focus,
-.whereIsMyOrderForm_form__telephone-input__KrXP7:focus {
+.registration_form__firstname-input__Yqq4T:focus,
+.registration_form__lastname-input___2rqa:focus,
+.registration_form__login-input__kwS_A:focus,
+.registration_form__email-input__NqAPz:focus,
+.registration_form__password-input__ldCIi:focus,
+.registration_form__password-second-input__5zFJt:focus,
+.registration_form__telephone-input__VeaA6:focus {
   outline: none;
 }
 
-.whereIsMyOrderForm_form__firstname__a6pJ9.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__lastname__WaAUy.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__login__vfGoS.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__email__ctHnR.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__password__5B_VZ.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__password-second__J9Ppy.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__telephone__JDqHu.whereIsMyOrderForm_data__invalid__FOVIt {
+.registration_form__firstname__Ai8HR.registration_data__invalid__bYSTr,
+.registration_form__lastname__dIY4B.registration_data__invalid__bYSTr,
+.registration_form__login__AEjah.registration_data__invalid__bYSTr,
+.registration_form__email__ZXnB0.registration_data__invalid__bYSTr,
+.registration_form__password__gBljh.registration_data__invalid__bYSTr,
+.registration_form__password-second__S7XYN.registration_data__invalid__bYSTr,
+.registration_form__telephone__Cynh3.registration_data__invalid__bYSTr {
   border: 1px solid red;
 }
 
-.whereIsMyOrderForm_form__validation__EK6qM {
-  margin: 5px 0px 0px 15px;
-  color: rgb(125, 193, 229);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px;
-}
-@media (min-width: 768px) {
-  .whereIsMyOrderForm_form__validation__EK6qM {
-    margin: 0px 0px 0px 16px;
-  }
-}
-@media (min-width: 1024px) {
-  .whereIsMyOrderForm_form__validation__EK6qM {
-    font-size: 10px;
-    margin: 2px 0px 0px 16px;
-  }
-}
-@media (min-width: 1168px) {
-  .whereIsMyOrderForm_form__validation__EK6qM {
-    font-size: 12px;
-    margin: 5px 0px 0px 15px;
-  }
-}
-
-.whereIsMyOrderForm_form__error__UMKIz {
-  margin: 10px 10px 0 0;
-  text-align: right;
-  color: red;
-}
-
-.whereIsMyOrderForm_form__firstname-label__dkaYZ,
-.whereIsMyOrderForm_form__lastname-label__8neRB,
-.whereIsMyOrderForm_form__login-label__PX0zJ,
-.whereIsMyOrderForm_form__email-label__XLJXq,
-.whereIsMyOrderForm_form__password-label__YQsVF,
-.whereIsMyOrderForm_form__password-second-label__Vnv1T,
-.whereIsMyOrderForm_form__telephone-label__m7ppl {
-  font-weight: 200;
-  color: rgb(239, 239, 239);
+.registration_form__firstname-label__ofbTi,
+.registration_form__lastname-label__IhL3e,
+.registration_form__login-label__H8C3L,
+.registration_form__email-label__kx1wr,
+.registration_form__password-label__OWrbY,
+.registration_form__password-second-label__6MEcC,
+.registration_form__telephone-label__FgZsx {
+  font-weight: 300;
+  color: #000;
   position: absolute;
   top: 50%;
   left: 15px;
@@ -124,43 +87,52 @@
   transition: top 0.3s, font-size 0.3s;
 }
 
-.whereIsMyOrderForm_form__firstname-label__dkaYZ.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__lastname-label__8neRB.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__login-label__PX0zJ.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__email-label__XLJXq.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__password-label__YQsVF.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__password-second-label__Vnv1T.whereIsMyOrderForm_data__invalid__FOVIt,
-.whereIsMyOrderForm_form__telephone-label__m7ppl.whereIsMyOrderForm_data__invalid__FOVIt {
+.registration_form__firstname-label__ofbTi.registration_data__invalid__bYSTr,
+.registration_form__lastname-label__IhL3e.registration_data__invalid__bYSTr,
+.registration_form__login-label__H8C3L.registration_data__invalid__bYSTr,
+.registration_form__email-label__kx1wr.registration_data__invalid__bYSTr,
+.registration_form__password-label__OWrbY.registration_data__invalid__bYSTr,
+.registration_form__password-second-label__6MEcC.registration_data__invalid__bYSTr,
+.registration_form__telephone-label__FgZsx.registration_data__invalid__bYSTr {
   color: red;
 }
 
-.whereIsMyOrderForm_form__firstname-label__dkaYZ.whereIsMyOrderForm_input-focused__L6V8L,
-.whereIsMyOrderForm_form__lastname-label__8neRB.whereIsMyOrderForm_input-focused__L6V8L,
-.whereIsMyOrderForm_form__login-label__PX0zJ.whereIsMyOrderForm_input-focused__L6V8L,
-.whereIsMyOrderForm_form__email-label__XLJXq.whereIsMyOrderForm_input-focused__L6V8L,
-.whereIsMyOrderForm_form__password-label__YQsVF.whereIsMyOrderForm_input-focused__L6V8L,
-.whereIsMyOrderForm_form__password-second-label__Vnv1T.whereIsMyOrderForm_input-focused__L6V8L,
-.whereIsMyOrderForm_form__telephone-label__m7ppl.whereIsMyOrderForm_input-focused__L6V8L {
+.registration_form__firstname-label__ofbTi.registration_input-focused___JKs5,
+.registration_form__lastname-label__IhL3e.registration_input-focused___JKs5,
+.registration_form__login-label__H8C3L.registration_input-focused___JKs5,
+.registration_form__email-label__kx1wr.registration_input-focused___JKs5,
+.registration_form__password-label__OWrbY.registration_input-focused___JKs5,
+.registration_form__password-second-label__6MEcC.registration_input-focused___JKs5,
+.registration_form__telephone-label__FgZsx.registration_input-focused___JKs5 {
   top: -1px;
-  font-size: 12px;
-  background-color: rgb(178, 214, 234);
+  background-color: rgb(239, 239, 239);
   padding: 0 5px;
   left: 10px;
 }
 
-.whereIsMyOrderForm_form__button__c1TxY {
+.registration_form__error__fvVK5 {
+  margin: 10px 10px 0 0;
+  text-align: right;
+  color: red;
+  font-size: 12px;
+}
+
+.registration_form__button__MqHDf {
   border: none;
   border-radius: 25px;
-  background-color: rgb(125, 193, 229);
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.87);
+  border: 1px solid #000;
+  background-color: rgb(239, 239, 239);
+  font-size: 20px;
+  color: #000;
   padding: 9px 23px;
-  margin: 20px 0;
-  width: 100%;
+  margin: 35px 0 0;
+  width: 70%;
+  transition: background-color 0.6s;
 }
-.whereIsMyOrderForm_form__button__c1TxY:hover {
+.registration_form__button__MqHDf:hover {
   cursor: pointer;
   background-color: rgb(125, 193, 229);
+  transition: background-color 0.6s;
 }
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/scss/pageMarkup.scss ***!
