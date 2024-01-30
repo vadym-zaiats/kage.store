@@ -8,7 +8,9 @@ export function Registration() {
   const firstnameFocus = useRef(null);
   const [lastnameIsFocused, setLastnameIsFocused] = useState(false);
   const lastnameFocus = useRef(null);
-
+  const [loginIsFocused, setLoginIsFocused] = useState(false);
+  const loginFocus = useRef(null);
+  // firstName
   const handleSelectedFirstname = () => {
     firstnameFocus.current.focus();
   };
@@ -18,7 +20,7 @@ export function Registration() {
   const handleFirstnameBlur = () => {
     setFirstnameIsFocused(false);
   };
-
+  // lastName
   const handleSelectedLastname = () => {
     lastnameFocus.current.focus();
   };
@@ -28,22 +30,32 @@ export function Registration() {
   const handleLastnameBlur = () => {
     setLastnameIsFocused(false);
   };
+  // Login
+  const handleSelectedLogin = () => {
+    loginFocus.current.focus();
+  };
+  const handleLoginFocus = () => {
+    setLoginIsFocused(true);
+  };
+  const handleLoginBlur = () => {
+    setLoginIsFocused(false);
+  };
 
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    // login: "",
+    login: "",
     // email: "",
     // password: "",
     // passwordSecond: "",
     // phone: "",
   });
-  const { firstName, lastName } = formData;
+  const { firstName, lastName, login } = formData;
 
   const [validationErrors, setValidationErrors] = useState({
     firstName: null,
     lastName: null,
-    // login: null,
+    login: null,
   });
   const validateForm = () => {
     let errors = {};
@@ -51,7 +63,10 @@ export function Registration() {
       errors.firstName = "Firstname must be between 2 and 60 characters";
     }
     if (lastName.length < 2 || lastName.length > 60) {
-      errors.firstName = "Lastname must be between 2 and 60 characters";
+      errors.lastName = "Lastname must be between 2 and 60 characters";
+    }
+    if (login.length < 2 || login.length > 60) {
+      errors.login = "Login must be between 2 and 60 characters";
     }
     setValidationErrors(errors);
     return Object.keys(errors).length === 0;
@@ -70,7 +85,8 @@ export function Registration() {
   };
   const isFormFilled = () => {
     // const isFormValid = name.length > 0 && phone.length > 0;
-    const isFormValid = firstName.length > 0 && lastName.length > 0;
+    const isFormValid =
+      firstName.length > 0 && lastName.length > 0 && login.length > 0;
     return isFormValid;
   };
   const handleSubmit = (e) => {
@@ -149,6 +165,38 @@ export function Registration() {
           }`}
         >
           {validationErrors.lastName && `${validationErrors.lastName}`}
+        </div>
+        <div
+          className={`${styles["form__login"]} ${
+            validationErrors.login && styles["data__invalid"]
+          }`}
+        >
+          <input
+            className={styles[`form__login-input`]}
+            type="text"
+            id="login"
+            name="login"
+            value={formData.login}
+            onChange={handleChange}
+            onBlur={login ? null : handleLoginBlur}
+            onFocus={handleLoginFocus}
+            ref={loginFocus}
+          />
+          <label
+            onClick={handleSelectedLogin}
+            className={`${styles["form__login-label"]} ${
+              loginIsFocused && styles["input-focused"]
+            } ${validationErrors.login && styles["data__invalid"]}`}
+          >
+            Логін
+          </label>
+        </div>
+        <div
+          className={`${styles["form__validation"]} ${
+            validationErrors.login && styles["data__invalid"]
+          }`}
+        >
+          {validationErrors.login && `${validationErrors.login}`}
         </div>
         <button
           className={`${styles["form__button"]} ${
