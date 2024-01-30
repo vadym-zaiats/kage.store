@@ -4,39 +4,54 @@ import styles from "./whereIsMyOrderForm.module.scss";
 import { useRef, useState } from "react";
 
 export function Registration() {
-  const [firstnameIsFocused, setfirstnameIsFocused] = useState(false);
+  const [firstnameIsFocused, setFirstnameIsFocused] = useState(false);
   const firstnameFocus = useRef(null);
+  const [lastnameIsFocused, setLastnameIsFocused] = useState(false);
+  const lastnameFocus = useRef(null);
 
-  const handleSelectedName = () => {
+  const handleSelectedFirstname = () => {
     firstnameFocus.current.focus();
   };
   const handleFirstnameFocus = () => {
-    setfirstnameIsFocused(true);
+    setFirstnameIsFocused(true);
   };
   const handleFirstnameBlur = () => {
-    setfirstnameIsFocused(false);
+    setFirstnameIsFocused(false);
+  };
+
+  const handleSelectedLastname = () => {
+    lastnameFocus.current.focus();
+  };
+  const handleLastnameFocus = () => {
+    setLastnameIsFocused(true);
+  };
+  const handleLastnameBlur = () => {
+    setLastnameIsFocused(false);
   };
 
   const [formData, setFormData] = useState({
     firstName: "",
-    // lastName: "",
+    lastName: "",
     // login: "",
     // email: "",
     // password: "",
     // passwordSecond: "",
     // phone: "",
   });
-  const { firstName } = formData;
+  const { firstName, lastName } = formData;
 
   const [validationErrors, setValidationErrors] = useState({
-    name: null,
-    // lastName: null,
+    firstName: null,
+    lastName: null,
     // login: null,
   });
   const validateForm = () => {
     let errors = {};
     if (firstName.length < 2 || firstName.length > 60) {
       errors.firstName = "Firstname must be between 2 and 60 characters";
+    }
+    if (lastName.length < 2 || lastName.length > 60) {
+      errors.firstName = "Lastname must be between 2 and 60 characters";
     }
     setValidationErrors(errors);
     return Object.keys(errors).length === 0;
@@ -55,7 +70,7 @@ export function Registration() {
   };
   const isFormFilled = () => {
     // const isFormValid = name.length > 0 && phone.length > 0;
-    const isFormValid = firstName.length > 0;
+    const isFormValid = firstName.length > 0 && lastName.length > 0;
     return isFormValid;
   };
   const handleSubmit = (e) => {
@@ -88,7 +103,7 @@ export function Registration() {
             ref={firstnameFocus}
           />
           <label
-            onClick={handleSelectedName}
+            onClick={handleSelectedFirstname}
             className={`${styles["form__firstname-label"]} ${
               firstnameIsFocused && styles["input-focused"]
             } ${validationErrors.firstName && styles["data__invalid"]}`}
@@ -102,6 +117,38 @@ export function Registration() {
           }`}
         >
           {validationErrors.firstName && `${validationErrors.firstName}`}
+        </div>
+        <div
+          className={`${styles["form__lastname"]} ${
+            validationErrors.lastName && styles["data__invalid"]
+          }`}
+        >
+          <input
+            className={styles[`form__lastname-input`]}
+            type="text"
+            id="lastName"
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            onBlur={lastName ? null : handleLastnameBlur}
+            onFocus={handleLastnameFocus}
+            ref={lastnameFocus}
+          />
+          <label
+            onClick={handleSelectedLastname}
+            className={`${styles["form__lastname-label"]} ${
+              lastnameIsFocused && styles["input-focused"]
+            } ${validationErrors.lastName && styles["data__invalid"]}`}
+          >
+            Прізвище
+          </label>
+        </div>
+        <div
+          className={`${styles["form__validation"]} ${
+            validationErrors.lastName && styles["data__invalid"]
+          }`}
+        >
+          {validationErrors.lastName && `${validationErrors.lastName}`}
         </div>
         <button
           className={`${styles["form__button"]} ${
