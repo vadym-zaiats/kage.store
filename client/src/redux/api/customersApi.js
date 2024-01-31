@@ -45,6 +45,17 @@ export const customerApi = createApi({
       }),
       invalidatesTags: ["Customers"],
     }),
+    getCustomerInfo: builder.mutation({
+      query: () => ({
+        url: "api/customers/customer",
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: JSON.parse(localStorage.getItem("token")),
+        },
+      }),
+      invalidatesTags: ["Customers"],
+    }),
     // deleteProduct: builder.mutation({
     //   query: (id) => ({
     //     url: `api/products/${id}`,
@@ -55,5 +66,8 @@ export const customerApi = createApi({
   }),
 });
 
-export const { useCreateCustomerMutation, useGetCustomerTokenMutation } =
-  customerApi;
+export const {
+  useCreateCustomerMutation,
+  useGetCustomerTokenMutation,
+  useGetCustomerInfoMutation,
+} = customerApi;

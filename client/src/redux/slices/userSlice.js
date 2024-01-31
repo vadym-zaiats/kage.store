@@ -12,6 +12,11 @@ const userSlice = createSlice({
   name: "user",
   initialState,
   selectors,
+  reducers: (create) => ({
+    setUser: create.reducer((state, action) => {
+      state.user = action.payload;
+    }),
+  }),
   extraReducers: (builder) => {
     // builder.addCase(postOrder.pending, (state) => {
     //   state.isLoading = true;
@@ -26,5 +31,5 @@ const userSlice = createSlice({
 });
 
 export default userSlice.reducer;
-// export const {  } = orderSlice.actions;
+export const { setUser } = userSlice.actions;
 export const { userSelector } = userSlice.selectors;

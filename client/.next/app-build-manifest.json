@@ -17,12 +17,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/registration/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/registration/page.css",
-      "static/chunks/app/registration/page.js"
-    ],
     "/login/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",

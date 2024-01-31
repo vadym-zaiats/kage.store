@@ -7,6 +7,7 @@ import cartSlice from "./slices/cartSlice";
 import favouriteSlice from "./slices/favouriteSlice";
 import filterSlice from "./slices/filterSlice";
 import orderSlice from "./slices/orderSlice";
+import userSlice from "./slices/userSlice";
 
 export const makeStore = () => {
   return configureStore({
@@ -17,6 +18,7 @@ export const makeStore = () => {
       favourite: favouriteSlice,
       filter: filterSlice,
       order: orderSlice,
+      user: userSlice,
       [productsApi.reducerPath]: productsApi.reducer,
       [customerApi.reducerPath]: customerApi.reducer,
     },
