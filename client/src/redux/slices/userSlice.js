@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  user: {},
+  user: null,
 };
 
 const selectors = {
@@ -16,20 +16,12 @@ const userSlice = createSlice({
     setUser: create.reducer((state, action) => {
       state.user = action.payload;
     }),
+    clearUser: create.reducer((state) => {
+      state.user = null;
+    }),
   }),
-  extraReducers: (builder) => {
-    // builder.addCase(postOrder.pending, (state) => {
-    //   state.isLoading = true;
-    // });
-    // builder.addCase(postOrder.fulfilled, (state, action) => {
-    //   state.isLoading = false;
-    // });
-    // builder.addCase(postOrder.rejected, (state) => {
-    //   state.isLoading = false;
-    // });
-  },
 });
 
 export default userSlice.reducer;
-export const { setUser } = userSlice.actions;
+export const { setUser, clearUser } = userSlice.actions;
 export const { userSelector } = userSlice.selectors;

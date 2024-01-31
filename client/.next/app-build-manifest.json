@@ -22,6 +22,18 @@
       "static/chunks/main-app.js",
       "static/css/app/login/page.css",
       "static/chunks/app/login/page.js"
+    ],
+    "/user/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/user/page.css",
+      "static/chunks/app/user/page.js"
+    ],
+    "/products/[itemNo]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/products/[itemNo]/page.css",
+      "static/chunks/app/products/[itemNo]/page.js"
     ]
   }
 }

@@ -5,9 +5,11 @@ import { useFormik } from "formik";
 import { useState, useRef } from "react";
 import validationSchema from "./validation";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useGetCustomerTokenMutation } from "@/redux/api/customersApi";
 
 export function Login() {
+  const router = useRouter();
   const [loginIsFocused, setLoginIsFocused] = useState(false);
   const loginFocus = useRef(null);
   const [passwordIsFocused, setPasswordIsFocused] = useState(false);
@@ -47,6 +49,7 @@ export function Login() {
       try {
         const res = await getCustomerToken(values).unwrap();
         localStorage.setItem("token", JSON.stringify(res.token));
+        router.push("/user");
       } catch (err) {
         console.error("Помилка:", err);
       }
