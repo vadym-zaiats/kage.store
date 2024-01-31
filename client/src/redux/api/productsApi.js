@@ -15,6 +15,10 @@ export const productsApi = createApi({
       query: (itemNo) => `api/products/${itemNo}`,
       providesTags: () => [{ type: "Products" }],
     }),
+    // getFilteredProduct: builder.query({
+    //   query: (url) => `api/products/filter?${url}`,
+    //   providesTags: () => [{ type: "Products" }],
+    // }),
   }),
 });
 
